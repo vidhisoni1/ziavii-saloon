@@ -13,26 +13,26 @@
 
   <body class="bg-gray-900 text-white">
     <!-- Header -->
-    <header class="bg-black">
+    <header class="bg-black border-b-[0.5px] border-[#787777]">
       <div
-        class="container mx-auto flex justify-between items-center  px-4"
+        class="container max-w-[1390px] mx-auto flex justify-between items-center  "
       >
         <a href="index.html">
           <img src="assets/images/logo.png" class="h-[89px]" />
         </a>
         <nav class="hidden lg:flex space-x-8">
-          <a href="index.html" class="text-white hover:text-gray-400">Home</a>
-          <a href="about.html" class="text-white hover:text-gray-400"
+          <a href="index.html" class="text-[#8D8C8C] hover:text-white">Home</a>
+          <a href="about.html" class="text-[#8D8C8C] hover:text-white"
             >About Us</a
           >
-          <a href="services.html" class="text-white hover:text-gray-400"
+          <a href="services.html" class="text-[#8D8C8C] hover:text-white"
             >Services</a
           >
-          <a href="gallery.html" class="text-white hover:text-gray-400"
+          <a href="gallery.html" class="text-[#8D8C8C] hover:text-white"
             >Gallery</a
           >
-          <a href="blog.html" class="text-white hover:text-gray-400">Blog</a>
-          <a href="contact.html" class="text-white hover:text-gray-400"
+          <a href="blog.html" class="text-[#8D8C8C] hover:text-white">Blog</a>
+          <a href="contact.html" class="text-[#8D8C8C] hover:text-white"
             >Contact Us</a
           >
           <button
@@ -76,53 +76,64 @@
     <section class="relative">
      
         <!-- Hero Background Image -->
-        <div class="relative w-full h-[500px]">
-          <img
-            src="assets/images/banner-back.jpg"
-            alt="Barbershop"
-            class="w-full h-full "
-          />
-          <!-- Overlay -->
-          <div
-          class="container mx-auto items-center py-1"
+       <div class="relative w-full h-[800px]">
+    <img
+      src="assets/images/banner-back.jpg"
+      alt="Barbershop"
+      class="w-full h-full object-cover"
+    />
+       <!-- Hero Content -->
+        
+        <div class="container max-w-[1390px] mx-auto flex flex-wrap items-center justify-between   py-12 absolute top-0 left-1/2 transform -translate-x-1/2 h-full">
+      <!-- Left Content (Text) -->
+      <div class="w-full lg:w-1/2 text-white">
+        <h1 class="text-4xl lg:text-6xl font-bold ">
+          BARBERS & HAIR CUTTING
+        </h1>
+        <p class="text-gray-400 mt-4">
+          Lorem ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <button
+          class="mt-6 bg-white text-black px-6 py-3 rounded hover:bg-gray-300"
         >
-          <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        </div>
-
-        <!-- Hero Content -->
-        <div
-          class="absolute inset-0 flex flex-col lg:flex-row justify-center items-center lg:items-start  px-6 lg:px-16"
-        >
-          <!-- Left Content (Text) -->
-          <div class="text-center lg:text-left max-w-lg text-white">
-            <h1 class="text-4xl lg:text-6xl font-bold">
-              BARBERS & HAIR CUTTING
-            </h1>
-            <p class="text-gray-400 mt-4">
-              Lorem ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <button
-              class="mt-6 bg-white text-black px-6 py-3 rounded hover:bg-gray-300"
-            >
-              Book Now
-            </button>
-          </div>
-
-          <!-- Right Content (Image) -->
-          <div class="hidden lg:block relative mt-6 lg:mt-0">
-            <!-- The floating image -->
-            <img
-              src="assets/images/Rectangle 5.png"
-              alt="Barber Cutting Hair"
-              class="w-[350px] rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
+          Book Now
+        </button>
       </div>
+
+      <!-- Right Content (Image) -->
+      <div class="w-full lg:w-auto mt-6 lg:mt-0">
+        <img
+          src="assets/images/Rectangle 5.png"
+          alt="Barber Cutting Hair"
+          class="w-[350px] h-auto rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
     </section>
 
-    <!-- Footer -->
+ <!-- Why Choose Us Section -->
+     <section id="about" class="py-16 bg-gray-800">
+    <div class="container mzx-w-[1390px] mx-auto text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold">Why Choose Us</h2>
+      <div class="grid lg:grid-cols-3 gap-8 mt-12">
+        <div class="p-8 bg-gray-900 rounded-lg">
+          <h3 class="text-xl font-bold">Experienced Team</h3>
+          <p class="text-gray-400 mt-4">We believe in delivering the best service with our experienced professionals.</p>
+        </div>
+        <div class="p-8 bg-gray-900 rounded-lg">
+          <h3 class="text-xl font-bold">Book Your Slot</h3>
+          <p class="text-gray-400 mt-4">Easily book your slot and enjoy our exceptional services on time.</p>
+        </div>
+        <div class="p-8 bg-gray-900 rounded-lg">
+          <h3 class="text-xl font-bold">Affordable Cost</h3>
+          <p class="text-gray-400 mt-4">Our services are affordable and deliver instant satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer
     <footer class="bg-black py-6">
       <div class="container mx-auto text-center">
         <p>&copy; 2024 Ziavii. All rights reserved.</p>
@@ -142,7 +153,7 @@
           /></a>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
