@@ -9,6 +9,17 @@
     <!-- jQuery (if needed) -->
     <script src="assets/js/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- fonts -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
   </head>
 
   <body class="bg-gray-900 text-white">
@@ -71,12 +82,12 @@
         </button>
       </div>
     </header>
-
+<!-- header -->
     <!-- Hero Section -->
     <section class="relative">
      
         <!-- Hero Background Image -->
-       <div class="relative w-full h-[800px]">
+       <div class="relative w-full h-[850px]">
     <img
       src="assets/images/banner-back.jpg"
       alt="Barbershop"
@@ -87,11 +98,12 @@
         <div class="container max-w-[1390px] mx-auto flex flex-wrap items-center justify-between   py-12 absolute top-0 left-1/2 transform -translate-x-1/2 h-full">
       <!-- Left Content (Text) -->
       <div class="w-full lg:w-1/2 text-white">
-        <h1 class="text-4xl lg:text-6xl font-bold ">
+        <h1 class="text-4xl lg:text-8xl font-family-inter text-weight-[700px]">
           BARBERS & HAIR CUTTING
         </h1>
-        <p class="text-gray-400 mt-4">
+        <p class="text-white text-[18px] line-height-22px mt-4">
           Lorem ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem will be come to ipsum......
         </p>
         <button
           class="mt-6 bg-white text-black px-6 py-3 rounded hover:bg-gray-300"
@@ -111,27 +123,287 @@
     </div>
   </div>
     </section>
+<!-- Hero Section  -->
+ <!-- why choose us -->
+  <section id="why-choose-us" class="py-16 bg-[#1B1B1B]">
+  <div class="container max-w-[1390px] mx-auto px-4">
+    <!-- 2-Column Layout -->
+    <div class="grid lg:grid-cols-2 gap-12  items-center">
+      <!-- Column 1: Image -->
+      <div>
+        <img
+          src="assets/images/why-choose-us.png"
+          alt="Barber Image"
+          class="w-[572px] h-[611px] rounded-lg shadow-lg"
+        />
+      </div>
 
- <!-- Why Choose Us Section -->
-     <section id="about" class="py-16 bg-gray-800">
-    <div class="container mzx-w-[1390px] mx-auto text-center">
-      <h2 class="text-3xl lg:text-4xl font-bold">Why Choose Us</h2>
-      <div class="grid lg:grid-cols-3 gap-8 mt-12">
-        <div class="p-8 bg-gray-900 rounded-lg">
-          <h3 class="text-xl font-bold">Experienced Team</h3>
-          <p class="text-gray-400 mt-4">We believe in delivering the best service with our experienced professionals.</p>
+      <!-- Column 2: Features and Heading -->
+       <div>
+        <!-- Features with Arrow -->
+        <div class="mb-4">
+          <p class="text-sm uppercase tracking-wide text-white flex items-center">
+            Features
+            <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-6px] w-[1px]"></i></span>
+          </p>
         </div>
-        <div class="p-8 bg-gray-900 rounded-lg">
-          <h3 class="text-xl font-bold">Book Your Slot</h3>
-          <p class="text-gray-400 mt-4">Easily book your slot and enjoy our exceptional services on time.</p>
+        <!-- Heading -->
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-20">
+          Why Choose Us
+        </h2>
+
+        <!-- 3-Card Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 ">
+      <!-- Card 1: Experienced Team -->
+      <div class="p-3 bg-[#1B1B1B] border-x border-b  border-white border-top-[0px] rounded-lg  text-center transform -translate-y-4 relative">
+        <div class=""><i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i></div>
+        <h3 class="text-lg font-bold text-white mt-10">Experienced Team</h3>
+        <p class="text-gray-400 text-sm mt-2">
+          We at Ziavii believe in customer satisfaction. Our team works on the needs of the user.
+        </p>
+      </div>
+
+      <!-- Card 2: Book Your Slot -->
+      <div class="p-3 bg-[#1B1B1B] border-x border-b  border-white rounded-lg  text-center transform translate-y-4 relative">
+        <div><i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i></div>
+        <h3 class="text-lg font-bold text-white mt-10">Book Your Slot</h3>
+        <p class="text-gray-400 text-sm mt-2">
+          We at Ziavii ensure you get an easy booking process with instant scheduling.
+        </p>
+      </div>
+
+      <!-- Card 3: Affordable Cost -->
+      <div class="p-3 bg-[#1B1B1B] border-x border-b  bg-border-gradient  rounded-lg  text-center transform -translate-y-4 relative">
+        <div class=""> <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i></div>
+        <h3 class="text-lg font-bold text-white mt-10">Affordable Cost</h3>
+        <p class="text-gray-400 text-sm mt-2">
+          Our services are not only top-notch but also affordable for everyone.
+        </p>
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="mt-8 text-left">
+      <button class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300">
+        View More
+      </button>
+    </div>
+  </div>
+</section>
+<!-- whychooseus -->
+<!-- services -->
+<section id="services" class="bg-black py-16">
+  <div class="container max-w-[1390px] mx-auto px-4">
+    <!-- Heading -->
+    <div class="mb-4">
+      <p class="text-sm uppercase tracking-wide text-white flex items-center">
+        SERVICES
+        <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-6px] w-[1px]"></i></span>
+      </p>
+    </div>
+    <!-- Heading -->
+    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-20">
+      We Provide Better
+    </h2>
+
+    <div class="mt-12">
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+           <!-- Slide 1 -->
+           <div class="swiper-slide text-center">
+            <img
+              src="assets/images/hair-styling.png"
+              alt="Hair Styling"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold text-white">Hair Styling</h3>
+            <p class="text-gray-400 text-sm mt-2">
+              This is the content where we will write about hair styling
+              services available at Ziavii.
+            </p>
+          </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide text-center">
+              <img
+                src="assets/images/spa.png"
+                alt="Hair Care"
+                class="w-32 h-32 rounded-full mx-auto mb-4"
+              />
+              <h3 class="text-xl font-bold text-white">Hair Care</h3>
+              <p class="text-gray-400 text-sm mt-2">
+                This is the content where we will write about hair care services
+                available at Ziavii.
+              </p>
+            </div>
+           <!-- Slide 3 -->
+           <div class="swiper-slide text-center">
+            <img
+              src="assets/images/hair-cutting.png"
+              alt="Hair Coloring"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold text-white">Hair Coloring</h3>
+            <p class="text-gray-400 text-sm mt-2">
+              This is the content where we will write about hair coloring
+              services available at Ziavii.
+            </p>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide text-center">
+            <img
+              src="assets/images/hair-styling-2.jpg"
+              alt="Hair Styling"
+              class="w-32 h-32 rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold text-white">Hair Styling</h3>
+            <p class="text-gray-400 text-sm mt-2">
+              This is the content where we will write about hair styling
+              services available at Ziavii.
+            </p>
+          </div>
         </div>
-        <div class="p-8 bg-gray-900 rounded-lg">
-          <h3 class="text-xl font-bold">Affordable Cost</h3>
-          <p class="text-gray-400 mt-4">Our services are affordable and deliver instant satisfaction.</p>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-nextx"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="mt-6 text-center">
+      <button class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300">
+        View More
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+
+<!-- gallery -->
+<section id="gallery" class="py-16 relative bg-white overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute top-0 right-0 transform translate-y-[-50px]">
+    <img
+      src="assets/images/g-bg.png"
+      alt="Background Design"
+      class="h-[800px] object-cover opacity-10"
+    />
+  </div>
+    
+  <div class="container max-w-[1390px] mx-auto px-4">
+ 
+    <!-- Section Header -->
+    <div class="text-center">
+      <p class="text-sm uppercase tracking-wide text-black flex items-center justify-center relative">
+        <i class="fa-solid fa-diamond absolute mr-[165px]  text-black"></i>
+        <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
+        Gallery
+        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-5 my-[-6px] w-[1px] text-black"></i></span>
+      </p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-black mt-2">
+        Picture Perfect Moments
+      </h2>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 mt-12">
+      <!-- Image 1 -->
+      <div class="relative group">
+        <img
+          src="assets/images/gallery1.jpg"
+          alt="Gallery Image 1"
+          class="w-full h-auto rounded-lg shadow-md"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"
+        >
+          <span class="text-white text-lg font-semibold">View</span>
+        </div>
+      </div>
+      <!-- Image 2 -->
+      <div class="relative group">
+        <img
+          src="assets/images/gallery2.jpg"
+          alt="Gallery Image 2"
+          class="w-full h-auto rounded-lg shadow-md"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"
+        >
+          <span class="text-white text-lg font-semibold">View</span>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="relative group">
+        <img
+          src="assets/images/gallery3.jpg"
+          alt="Gallery Image 3"
+          class="w-full h-auto rounded-lg shadow-md"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"
+        >
+          <span class="text-white text-lg font-semibold">View</span>
+        </div>
+      </div>
+      <!-- Image 4 -->
+      <div class="relative group">
+        <img
+          src="assets/images/gallery4.jpg"
+          alt="Gallery Image 4"
+          class="w-full h-auto rounded-lg shadow-md"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"
+        >
+          <span class="text-white text-lg font-semibold">View</span>
+        </div>
+      </div>
+      <!-- Image 5 -->
+      <div class="relative group">
+        <img
+          src="assets/images/gallery5.jpg"
+          alt="Gallery Image 5"
+          class="w-full h-auto rounded-lg shadow-md"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"
+        >
+          <span class="text-white text-lg font-semibold">View</span>
+        </div>
+      </div>
+      <!-- Image 6 -->
+      <div class="relative group">
+        <img
+          src="assets/images/gallery6.jpg"
+          alt="Gallery Image 6"
+          class="w-full h-auto rounded-lg shadow-md"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"
+        >
+          <span class="text-white text-lg font-semibold">View</span>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- View More Button -->
+    <div class="mt-8 text-center">
+      <button class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800">
+        View More
+      </button>
+    </div>
+  </div> 
+</section>
+
+<!-- gallery -->
 
     <!-- Footer
     <footer class="bg-black py-6">
@@ -156,11 +428,72 @@
     </footer> -->
 
     <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+     <!-- Swiper JS -->
+     <script src="assets/js/main.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       // Mobile menu toggle
       $("#mobile-menu-btn").click(function () {
         $("#mobile-menu").toggle();
+      });
+      const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 4, // Show 4 slides at a time
+  spaceBetween: 30, // Space between slides
+  loop: true, // Infinite scrolling
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // Responsive Breakpoints
+    320: {
+      slidesPerView: 1, // 1 slide on mobile
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2, // 2 slides on tablets
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4, // 4 slides on desktop
+      spaceBetween: 40,
+    },
+  },
+});
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
       });
     </script>
   </body>
