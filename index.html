@@ -43,7 +43,11 @@
                         black: "900",
                     },
                     colors: {
-                        gold: "#C2A74E",
+                        black: "#101010",
+                        dark: "#1B1B1B",
+                        gray: "#8D8C8C",
+                        darkgray:"#282727",
+                  
                     },
           },
       },
@@ -53,26 +57,26 @@
 
   <body class="bg-gray-900 text-white">
     <!-- Header -->
-    <header class="bg-black border-b-[0.5px] border-[#787777]">
+    <header class="bg-black border-b-[0.5px] border-gray">
       <div
         class="container max-w-[1390px] mx-auto flex justify-between items-center  "
       >
         <a href="index.html">
-          <img src="assets/images/logo.png" class="h-[89px]" />
+          <img src="assets/images/banner/logo.png" class="h-[89px]" />
         </a>
         <nav class="hidden lg:flex space-x-8">
-          <a href="index.html" class="text-[#8D8C8C] hover:text-white font-inter">Home</a>
-          <a href="about.html" class="text-[#8D8C8C] hover:text-white font-inter"
+          <a href="index.html" class="text-gray hover:text-white font-inter">Home</a>
+          <a href="about.html" class="text-gray hover:text-white font-inter"
             >About Us</a
           >
-          <a href="services.html" class="text-[#8D8C8C] hover:text-white font-inter"
+          <a href="services.html" class="text-gray hover:text-white font-inter"
             >Services</a
           >
-          <a href="gallery.html" class="text-[#8D8C8C] hover:text-white font-inter"
+          <a href="gallery.html" class="text-gray hover:text-white font-inter"
             >Gallery</a
           >
-          <a href="blog.html" class="text-[#8D8C8C] hover:text-white font-inter">Blog</a>
-          <a href="contact.html" class="text-[#8D8C8C] hover:text-white"
+          <a href="blog.html" class="text-gray hover:text-white font-inter">Blog</a>
+          <a href="contact.html" class="text-gray hover:text-white"
             >Contact Us</a
           >
           <button
@@ -118,7 +122,7 @@
         <!-- Hero Background Image -->
        <div class="relative w-full h-[850px]">
     <img
-      src="assets/images/banner-back.jpg"
+      src="assets/images/banner/banner-back.jpg"
       alt="Barbershop"
       class="w-full h-full object-cover"
     />
@@ -144,7 +148,7 @@
       <!-- Right Content (Image) -->
       <div class="w-full lg:w-auto mt-6 lg:mt-0">
         <img
-          src="assets/images/Rectangle 5.png"
+          src="assets/images/banner/Rectangle 5.png"
           alt="Barber Cutting Hair"
           class="w-[600px] h-[599px] rounded-lg shadow-lg"
         />
@@ -154,14 +158,14 @@
     </section>
 <!-- Hero Section  -->
  <!-- why choose us -->
-  <section id="why-choose-us" class="py-16 bg-[#1B1B1B]">
+  <section id="why-choose-us" class="py-16 bg-dark">
   <div class="container max-w-[1390px] mx-auto px-4">
     <!-- 2-Column Layout -->
     <div class="grid lg:grid-cols-2 gap-2 items-center">
       <!-- Column 1: Image -->
       <div>
         <img
-          src="assets/images/why-choose-us.png"
+          src="assets/images/features/why-choose-us.png"
           alt="Barber Image"
           class="w-[572px] h-[611px] rounded-lg shadow-lg"
         />
@@ -171,7 +175,7 @@
        <div>
         <!-- Features with Arrow -->
         <div class="mb-4 mx-0">
-          <p class="text-sm uppercase tracking-wide text-white flex items-center font-inter">
+          <p class="text-lg uppercase tracking-wide text-white text-bold flex items-center font-inter">
             Features
             <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-5px]  text-[10px]"></i></span>
           </p>
@@ -225,7 +229,7 @@
   <div class="container max-w-[1390px] mx-auto px-4">
     <!-- Heading -->
     <div class="mb-4">
-      <p class="text-sm uppercase tracking-wide text-white flex items-center">
+      <p class="text-lg uppercase tracking-wide font-inter font-bold  text-white flex items-center">
         SERVICES
         <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-5px]  text-[10px] "></i></span>
       </p>
@@ -235,74 +239,67 @@
       We Provide Better
     </h2>
 
-    <div class="mt-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service Item 1 -->
+      <div class="text-center">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden  ">
+          <img src="assets/images/serv/hair-styling.png" alt="Hair Styling" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-2xl font-inter font-semibold mt-4">Hair Styling</h3>
+        <p class="text-lg text-gray font-inter font-normal mt-2">
+          This is the content where we will write about our Hair Styling services available at.
+        </p>
+      </div>
 
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-           <!-- Slide 1 -->
-           <div class="swiper-slide text-center">
-            <img
-              src="assets/images/hair-styling.png"
-              alt="Hair Styling"
-              class="w-32 h-32 rounded-full mx-auto object-cover mb-4  transform translate-y-4"
-            />
-            <h3 class="text-xl font-bold text-white">Hair Styling</h3>
-            <p class="text-gray-400 text-sm mt-2">
-              This is the content where we will write about hair styling
-              services available at Ziavii.
-            </p>
-          </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide text-center">
-              <img
-                src="assets/images/spa.png"
-                alt="Hair Care"
-                class="w-32 h-32 rounded-full object-cover mx-auto mb-4"
-              />
-              <h3 class="text-xl font-bold text-white">Hair Care</h3>
-              <p class="text-gray-400 text-sm mt-2">
-                This is the content where we will write about hair care services
-                available at Ziavii.
-              </p>
-            </div>
-           <!-- Slide 3 -->
-           <div class="swiper-slide text-center">
-            <img
-              src="assets/images/hair-cutting.png"
-              alt="Hair Coloring"
-              class="w-32 h-32 rounded-full object-cover mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-white">Hair Styling</h3>
-            <p class="text-gray-400 text-sm mt-2">
-              This is the content where we will write about hair coloring
-              services available at Ziavii.
-            </p>
-          </div>
-          <!-- Slide 4 -->
-          <div class="swiper-slide text-center">
-            <img
-              src="assets/images/facemask.png"
-              alt="Hair Styling"
-              class="w-32 h-32 rounded-full object-cover mx-auto mb-4"
-            />
-            <h3 class="text-xl font-bold text-white">Coloring</h3>
-            <p class="text-gray-400 text-sm mt-2">
-              This is the content where we will write about hair styling
-              services available at Ziavii.
-            </p>
-          </div>
+      <!-- Service Item 2 -->
+      <div class="text-center">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+          <img src="assets/images/serv/spa.png" alt="Hair Care" class="w-full h-full object-cover">
         </div>
-         
+        <h3 class="text-2xl font-inter font-semibold mt-4">Hair Care</h3>
+        <p class="ext-lg text-gray font-inter font-normal mt-2">
+          This is the content where we will write about our Hair Care services available at.
+        </p>
+      </div>
+
+      <!-- Service Item 3 -->
+      <div class="text-center">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden ">
+          <img src="assets/images/serv/hair-cutting.png" alt="Hair Cutting" class="w-full h-full object-cover">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-nextx"></div>
-        <div class="swiper-button-prev"></div>
+        <h3 class="text-2xl font-inter font-semibold mt-4">Hair Cutting</h3>
+        <p class="ext-lg text-gray font-inter font-normal mt-2">
+          This is the content where we will write about our Hair Cutting services available at.
+        </p>
+      </div>
+
+      <!-- Service Item 4 -->
+      <div class="text-center">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden ">
+          <img src="assets/images/serv/facemask.png" alt="Coloring" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-2xl font-inter font-semibold mt-4">Coloring</h3>
+        <p class="ext-lg text-gray font-inter font-normal mt-2">
+          This is the content where we will write about our Coloring services available at.
+        </p>
       </div>
     </div>
 
+    <!-- Navigation Arrows -->
+    <div class="absolute top-1/2 transform -translate-y-1/2 right-10 flex space-x-4">
+      <!-- Left Arrow -->
+      <button class="bg-gray-600 hover:bg-gray-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <!-- Right Arrow -->
+      <button class="bg-gray-600 hover:bg-gray-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
     <!-- View More Button -->
-    <div class="mt-6 text-center">
-      <button class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300">
+    <div class="text-center mt-8">
+      <button class="bg-white  text-black font-inter font-bold text-lg px-6 py-2 rounded-md">
         View More
       </button>
     </div>
@@ -313,34 +310,32 @@
 
 <!-- gallery -->
 <section id="gallery" class="py-16 relative bg-white overflow-hidden">
-  <!-- <div class="absolute top-[-50px] right-[-100px] rotate-[30deg]">
+   <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px]">
     <img
-      src="assets/images/g-bg.png"
+      src="assets/images/gallery/g-bg.png"
       alt="Background Top Design"
-      class="w-[663px] h-[392px] opacity-10"
+      class=" opacity-25 "
     />
   </div>
-
-  Bottom-Left Background Image
-  <div class="absolute bottom-[0px] left-[-30px] ">
+<div class="absolute bottom-[227px] left-[-10px] w-[382px] h-[270px] ">
     <img
-      src="assets/images/g-bg-2.png"
+      src="assets/images/gallery/g-bg-2.png"
       alt="Background Bottom Design"
-      class="w-[382px] h-[270px] opacity-10"
+      class=" opacity-10"
     />
   </div>
-     -->
+     
   <div class="container max-w-[1390px] mx-auto px-4">
  
     <!-- Section Header -->
     <div class="text-center">
-      <p class="text-sm uppercase tracking-wide text-black flex items-center justify-center relative">
-        <i class="fa-solid fa-diamond absolute mr-[160px]  text-black text-[10px]"></i>
+      <p class="text-lg uppercase tracking-wide text-black font-inter font-bold flex items-center justify-center relative">
+        <i class="fa-solid fa-diamond absolute mr-[183px]  text-black text-[10px]  "></i>
         <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
         Gallery
-        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-5 my-[-5px]  text-black text-[10px]"></i></span>
+        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-5 my-[-4px]  text-black text-[10px]"></i></span>
       </p>
-      <h2 class="text-3xl lg:text-4xl font-bold text-black mt-2">
+      <h2 class="text-3xl lg:text-4xl font-bold text-black font-inter mt-2">
         Picture Perfect Moments
       </h2>
     </div>
@@ -348,23 +343,24 @@
        <!-- Gallery Grid -->
        <div class="grid grid-cols-2 gap-6 mt-0">
         <!-- Left Column (3 Rows, 2 Images in Each Row) -->
-        <div class="grid gap-6">
+        <div class="grid gap-6  z-40 ">
         <!-- Bottom Row -->
           <div class="grid  gap-6">
             <div class="grid grid-cols-2 gap-6 mt-10">
               <img
-                src="assets/images/g1.png"
+                src="assets/images/gallery/g1.png"
                 alt="Gallery Image "
                 class="w-[345px] h-[289px] rounded-lg object-cover shadow-md mt-10"
               />
               <img
-                src="assets/images/g2.png"
+                src="assets/images/gallery/g2.png"
                 alt="Gallery Image 9"
                 class="w-[345] h-[289px] rounded-lg object-cover shadow-md mt-10"
               />
+              
             </div>
             <img
-              src="assets/images/g3.png"
+              src="assets/images/gallery/g3.png"
               alt="Gallery Image 4"
               class="w-[700px] h-[289px] rounded-lg object-cover shadow-md mb-10"
             />
@@ -374,24 +370,24 @@
         </div>
   
         <!-- Right Column -->
-        <div class="grid gap-6 mt-10">
+        <div class="grid gap-6 mt-10 z-40 ">
           <!-- Top Image -->
           <div>
             <img
-              src="assets/images/g4.png"
+              src="assets/images/gallery/g4.png"
               alt="Gallery Image 7"
-              class="w-[700px] h-[289px] rounded-lg object-cover shadow-md mt-10"
+              class="w-[700px] h-[289px] rounded-lg object-cover shadow-md mt-10 "
             />
           </div>
           <!-- Bottom Row (2 Images) -->
           <div class="grid grid-cols-2 gap-6">
             <img
-              src="assets/images/g5.png"
+              src="assets/images/gallery/g5.png"
               alt="Gallery Image 8"
               class="w-[345px] h-[289px] rounded-lg object-cover shadow-md mb-10"
             />
             <img
-              src="assets/images/g6.png"
+              src="assets/images/gallery/g6.png"
               alt="Gallery Image 9"
               class="w-[345px] h-[289px] rounded-lg object-cover shadow-md mb-10"
             />
@@ -410,97 +406,542 @@
 </section>
 
 <!-- gallery -->
+ <!-- Blog Section -->
+ 
+<section id="blog" class="py-16 bg-black text-white">
+  <div class="container max-w-[1390px] mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center">
+      <p class="text-xl uppercase tracking-wide text-white flex items-center justify-center relative font-inter font-bold  ">
+        <i class="fa-solid fa-diamond absolute mr-[162px]  text-white text-[10px]"></i>
+        <span class="inline-block w-10 h-0.5 bg-white mr-2  "></span>
+        Blog
+        <span class="inline-block w-10 h-0.5 bg-white ml-2 relative "><i class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-white text-[10px]"></i></span>
+      </p>
+      <h2 class="text-3xl lg:text-5xl font-bold text-white mt-2 font-inter text-bold  ">
+      Insights And Updates
+      </h2>
+    </div>
 
-    <!-- Footer
-    <footer class="bg-black py-6">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Ziavii. All rights reserved.</p>
-        <p class="mt-2">Download Our App</p>
-        <div class="flex justify-center mt-4">
-          <a href="#"
-            ><img
-              src="assets/images/google-play.png"
-              alt="Google Play"
-              class="w-32 mx-2"
-          /></a>
-          <a href="#"
-            ><img
-              src="assets/images/app-store.png"
-              alt="App Store"
-              class="w-32 mx-2"
-          /></a>
+   <!-- Blog Cards -->
+   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
+    <!-- Blog Card 1 -->
+    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+      <div class="relative">
+        <!-- Blog Image -->
+        <img
+          src="assets/images/blog/blo-1.png"
+          alt="Blog Image 1"
+          class="w-[453px] h-[282px] object-cover"
+        />
+      </div>
+      <div class="py-5 flex items-start gap-4">
+        <!-- Date Badge -->
+        <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
+          <i class="fa-solid fa-calendar text-gray text-lg"></i>
+          <p class="text-lg font-bold text-gray">20</p>
+          <p class="text-lg text-gray text-inter text-bold">AUG</p>
+        </div>
+        <!-- Blog Content -->
+        <div>
+          <!-- Title -->
+           <div class="">
+          <h3 class="text-xl font-bold leading-tight font-inter font-bold mb-3  border-gray">
+            Its Christmas, Special Days Ahead
+          </h3>
+        </div>
+          <!-- Description -->
+          <p class="text-gray text-lg mt-2 leading-relaxed py-3 text-inter text-normal border-y-[1px] border-b-gray ">
+            Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum....
+          </p>
+          <!-- Footer -->
+          <div class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
+            <span class="flex items-center space-x-2 ">
+              <i class="fas fa-user"></i>
+              <span>Admin</span>
+            </span>
+            <span class="flex items-center space-x-2 mr-[50px]">
+              <i class="fas fa-tags"></i>
+              <span>Festival, Learning</span>
+            </span>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </div>
 
-    <!-- Scripts -->
-     <!-- Swiper JS -->
-     <script src="assets/js/main.js"></script>
-   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      // Mobile menu toggle
-      $("#mobile-menu-btn").click(function () {
-        $("#mobile-menu").toggle();
-      });
-      const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 4, // Show 4 slides at a time
-  spaceBetween: 30, // Space between slides
-  loop: true, // Infinite scrolling
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    // Responsive Breakpoints
-    320: {
-      slidesPerView: 1, // 1 slide on mobile
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2, // 2 slides on tablets
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 4, // 4 slides on desktop
-      spaceBetween: 40,
-    },
-  },
-});
-    </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Blog Card 2 -->
+    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+      <div class="relative">
+        <!-- Blog Image -->
+        <img
+          src="assets/images/blog/blo-2.png"
+          alt="Blog Image 1"
+          class="w-[453px] h-[282px] object-cover"
+        />
+      </div>
+      <div class="py-5 flex items-start gap-4">
+        <!-- Date Badge -->
+        <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
+          <i class="fa-solid fa-calendar text-gray text-lg"></i>
+          <p class="text-lg font-bold text-gray">20</p>
+          <p class="text-lg text-gray text-inter text-bold">AUG</p>
+        </div>
+        <!-- Blog Content -->
+        <div>
+          <!-- Title -->
+           <div class="">
+          <h3 class="text-xl font-bold leading-tight font-inter font-bold mb-3  border-gray">
+            Its Christmas, Special Days Ahead
+          </h3>
+        </div>
+          <!-- Description -->
+          <p class="text-gray text-lg mt-2 leading-relaxed py-3 text-inter text-normal border-y-[1px] border-b-gray ">
+            Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum....
+          </p>
+          <!-- Footer -->
+          <div class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
+            <span class="flex items-center space-x-2 ">
+              <i class="fas fa-user"></i>
+              <span>Admin</span>
+            </span>
+            <span class="flex items-center space-x-2 mr-[50px]">
+              <i class="fas fa-tags"></i>
+              <span>Festival, Learning</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-        breakpoints: {
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        },
-      });
-    </script>
-  </body>
+
+    <!-- Blog Card 3 -->
+    <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+      <div class="relative">
+        <!-- Blog Image -->
+        <img
+          src="assets/images/blog/blo-3.png"
+          alt="Blog Image 1"
+          class="w-[453px] h-[282px] object-cover"
+        />
+      </div>
+      <div class="py-5 flex items-start gap-4">
+        <!-- Date Badge -->
+        <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
+          <i class="fa-solid fa-calendar text-gray text-lg"></i>
+          <p class="text-lg font-bold text-gray">20</p>
+          <p class="text-lg text-gray text-inter text-bold">AUG</p>
+        </div>
+        <!-- Blog Content -->
+        <div>
+          <!-- Title -->
+           <div class="">
+          <h3 class="text-xl font-bold leading-tight font-inter font-bold mb-3  border-gray">
+            Its Christmas, Special Days Ahead
+          </h3>
+        </div>
+          <!-- Description -->
+          <p class="text-gray text-lg mt-2 leading-relaxed py-3 text-inter text-normal border-y-[1px] border-b-gray ">
+            Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum....
+          </p>
+          <!-- Footer -->
+          <div class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
+            <span class="flex items-center space-x-2 ">
+              <i class="fas fa-user"></i>
+              <span>Admin</span>
+            </span>
+            <span class="flex items-center space-x-2 mr-[50px]">
+              <i class="fas fa-tags"></i>
+              <span>Festival, Learning</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- View More Button -->
+ <div class="mt-8 text-center">
+  <button class="bg-white text-black px-6 py-3 rounded text-inter text-bold">
+    View More
+  </button>
+</div> 
+</section>
+<!-- Blog Section -->
+<!-- Our Team Section -->
+
+<section id="team" class="py-16 bg-white relative overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px]">
+    <img
+      src="assets/images/gallery/g-bg.png"
+      alt="Background Top Design"
+      class=" opacity-25 "
+    />
+  </div>
+
+  <div class="container max-w-[1390px] mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center">
+      <p class="text-lg uppercase text-black font-bold font-inter flex items-center justify-center relative">
+        <i class="fa-solid fa-diamond absolute mr-[183px]  text-black text-[10px] "></i>
+        <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
+        Our Team    
+        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-black text-[10px]"></i></span>
+      </p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-black font-inter mt-2">
+        Picture Perfect Moments
+      </h2>
+    </div>>
+
+    <!-- Team Members -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Team Member 1 -->
+      <div class="relative bg-gray-100 rounded-lg  shadow-lg">
+        <!-- Image -->
+        <img src="assets/images/our-team/t-1.png"  class="w-[341px] h-[410px] object-cover rounded-lg shadow-md " />
+        <!-- Name and Role -->
+        <div class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+          <h3 class="text-white text-xl font-bold font-inter ">JIM CARRY</h3>
+          <p class="text-gray-300 text-lg font-inter font-normal ">Facial Specialist</p>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="relative bg-gray-100 rounded-lg  shadow-lg">
+        <!-- Image -->
+        <img src="assets/images/our-team/t-2.png"  class="w-[341px] h-[410px] object-cover rounded-lg shadow-md " />
+        <!-- Name and Role -->
+        <div class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+          <h3 class="text-white text-xl font-bold font-inter ">MARK VICK</h3>
+          <p class="text-gray-300 text-lg font-inter font-normal ">Hair Stylist</p>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="relative bg-gray-100 rounded-lg  shadow-lg">
+        <!-- Image -->
+        <img src="assets/images/our-team/t-3.png"  class="w-[341px] h-[410px] object-cover rounded-lg shadow-md " />
+        <!-- Name and Role -->
+        <div class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+          <h3 class="text-white text-xl font-bold font-inter ">LINCY MINDO</h3>
+          <p class="text-gray-300 text-lg font-inter font-normal ">Facial Designer</p>
+        </div>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="relative bg-gray-100 rounded-lg  shadow-lg">
+        <!-- Image -->
+        <img src="assets/images/our-team/t-4.png"  class="w-[341px] h-[410px] object-cover rounded-lg shadow-md " />
+        <!-- Name and Role -->
+        <div class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+          <h3 class="text-white text-xl font-bold font-inter ">ELIZA RIKA</h3>
+          <p class="text-gray-300 text-lg font-inter font-normal ">wedding Specialist</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Team Section -->
+  <!-- Testimonials -->
+  <section id="testimonial" class="py-16 bg-black text-white">
+    <!-- Container -->
+    <div class="container mx-auto max-w-[1390px] px-4">
+    
+       
+      <!-- Section Header -->
+      <div class="mb-4 mx-0">
+        <p class="text-lg uppercase tracking-wide text-white font-bold flex items-center font-inter">
+          Testimonial
+          <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-5px]  text-[10px]"></i></span>
+        </p>
+      </div>
+      <!-- Heading -->
+      <h2 class="text-3xl lg:text-5xl font-bold text-white mb-10 font-inter">
+        Happy Users
+      </h2>
+  
+      <!-- Testimonial Content -->
+      <div class="flex gap-10 justify-center items-center">
+        <!-- Testimonial Card 1 -->
+        <div class="flex items-center bg-black py-6 rounded-lg shadow-md w-1/2">
+         
+          <!-- Image -->
+          <div class="w-[251px] h-[291px] flex-shrink-0 rounded-md overflow-hidden border border-1 border-white">
+            <img
+              src="assets/images/testi/te-1.png"
+              alt="Micky Walls"
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <!-- Content -->
+          <div class="ml-6">
+            <p class="text-gray text-lg font-inter font-normal mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+              you to a become will.
+            </p>
+            <div class="relative">
+            <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
+            <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+            <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+          </div>
+          </div>
+        </div>
+  
+        <!-- Testimonial Card 2 -->
+        <div class="flex items-center bg-black py-6 rounded-lg shadow-md w-1/2">
+         
+          <!-- Image -->
+          <div class=" h-[297px] flex-shrink-0 rounded-md overflow-hidden border border-1 border-white">
+            <img
+              src="assets/images/testi/te-2.png"
+              alt="Micky Walls"
+              class="  object-scale-down w-[251px]  "
+            />
+          </div>
+          <!-- Content -->
+          <div class="ml-6">
+            <p class="text-gray text-lg font-inter font-normal mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+              you to a become will.
+            </p>
+            <div class="relative">
+            <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
+            <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+            <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+          </div>
+          </div>
+        </div>
+  
+  
+    
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonials -->
+   <!-- faq -->
+   <section id="faq" class="py-16 bg-white relative">
+    <!-- Container -->
+    <div class="container mx-auto max-w-[1390px] px-4">
+      <!-- Section Header -->
+      <div class="text-center">
+        <p class="text-xl uppercase tracking-wide text-black flex items-center justify-center relative font-inter font-bold  ">
+          <i class="fa-solid fa-diamond absolute mr-[145px]  text-black text-[10px]"></i>
+          <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
+          Faq
+          <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-black text-[10px]"></i></span>
+        </p>
+        <h2 class="text-3xl lg:text-5xl font-bold text-black mt-2 font-inter text-bold  ">
+        Frequently Asked Questions
+        </h2>
+      </div>
+  
+      <!-- FAQ Content -->
+      <div class="bg-black text-white rounded-lg shadow-md px-6 py-8 mt-10">
+        <!-- Single FAQ -->
+        <div class="border border-white p-2 rounded-md">
+          <button
+            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="text-lg font-inter text-">How Can I Check My Booking Is Done Or Not?</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Repeat for other FAQs -->
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button
+            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="text-lg font-inter text-">How  Can I Check  My Booking is Accepted Or Not?</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div> 
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button
+            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="text-lg font-inter text-">How Long Does It Takse To Accept/Confirm The  booking ?</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+  
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button
+            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="text-lg font-inter text-">DO I Recevie Notification Of Booking Acceptance?</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button
+            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="text-lg font-inter text-">Report An Error</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button
+            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="text-lg font-inter text-">Technical Errors In Mobile App</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+  
+    <!-- Background Image -->
+     <div class="absolute left-12 top-[283px] h-[237px] w-[304px] opacity-10 rotate-[-95deg]">
+      <img
+        src="assets/images/faq/bg-2.png"
+        alt="Background Icon"
+        class="w-full h-full object-contain"
+      />
+    </div> 
+     <!-- Right-Side Background Image -->
+     <div class="absolute right-0 top-0 h-[306px] w-[294px] opacity-10 z-0">
+      <img
+        src="assets/images/faq/bg-1.png"
+        alt="Background Icon"
+        class="w-full h-full object-contain"
+      />
+    </div>
+  </div>
+  </section>
+   
+<!-- Toggle FAQ -->
+ <!-- faq -->
+
+    <!-- Footer -->
+    <footer class="relative bg-cover bg-center text-white overflow-hidden" style="background-image: url('assets/images/footer/bg.png');">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+      <div class="absolute border-b-[1px] border-gray bottom-[229px] w-[1952px]"></div>
+      <div class="absolute border-b border-gray bottom-[30px] w-[1952px]"></div>
+    
+      <div class="relative container mx-auto   pt-16" style="max-width: 1390px;">
+        <!-- Top Section -->
+        <div class="pb-6 ">
+          <div class="flex flex-wrap justify-between items-center">
+            <!-- Logo -->
+            <div class="w-full lg:w-auto mb-6 lg:mb-0">
+              <img src="assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[101px] w-[101px]">
+            </div>
+            <!-- Subscription Form -->
+            <div class="w-full lg:w-2/3 flex justify-content-end items-center space-x-0">
+              <h3 class="font-inter text-2xl mr-3 font-extrabold"> Subscribe Your News Letter</h3>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                class="w-[450px] px-4 py-2 h-[60px] rounded-l-md bg-white text-gray-800 focus:outline-none"
+              />
+              <button
+                class="bg-dark text-white px-6 py-2 rounded-r-md  h-[60px] text-xl text-inter"
+              >
+                SEND
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Middle Section -->
+        <div class="py-6 ">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center lg:text-left mt-3">
+            <!-- Column 1 -->
+            <div class="">
+              <h3 class="text-2xl font-inter font-bold mb-2">See Your Style</h3>
+              <p class="text-xl font-inter font-normal ">
+                We suggest the nearest salons <br> according to your preference.
+              </p>
+              <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+                <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
+                  <i class="fab fa-facebook-f text-black mt-2"></i>
+                </a>
+                <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
+                  <i class="fab fa-instagram text-black mt-2"></i>
+                </a>
+                <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
+                  <i class="fab fa-twitter text-black mt-2"></i>
+                </a>
+                <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
+                  <i class="fab fa-youtube text-black mt-2"></i>
+                </a>
+              </div>
+            </div>
+    
+            <!-- Column 2 -->
+            <div>
+              <h3 class="text-5xl font-bold font-inter text-enter mb-2">Download Our App</h3>
+              <div class="flex justify-center lg:justify-center space-x-4 mt-4">
+                <a href="#">
+                  <img src="assets/images/footer/go.png"  class="w-[163px] h-[48px]">
+                </a>
+                <a href="#">
+                  <img src="assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+                </a>
+              </div>
+            </div>
+    
+            <!-- Column 3 -->
+            <div>
+              <h3 class="text-2xl font-bold font-inter text-center mb-2">AI Recognizes You</h3>
+              <p class="text-lg font-normal font-inter ">
+                Go to our AI Page and let us recommend you what's the best!
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Bottom Section -->
+        <div class=" text-center text-sm">
+          <p>&copy; 2023 Copyright En Marketing Private Limited</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!--footer  -->
+</body>
 </html>
