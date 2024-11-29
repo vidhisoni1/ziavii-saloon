@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ziavii - Barbers & Hair Cutting</title>
     <!-- Tailwind CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- jQuery (if needed) -->
     <script src="assets/js/jquery.min.js"></script>
@@ -56,161 +58,181 @@
   </head>
 
   <body class="bg-gray-900 text-white">
-   <!-- Header -->
- <header class="bg-black border-b-[0.5px] border-gray">
-  <div
-    class="container max-w-[1390px] mx-auto flex justify-between items-center  "
-  >
+ <!-- Header -->
+<header class="bg-black border-b-[0.5px] border-gray">
+  <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
     <a href="index.html">
       <img src="assets/images/banner/logo.png" class="h-[89px]" />
     </a>
+    <!-- Desktop Navigation -->
     <nav class="hidden lg:flex space-x-8">
       <a href="index.html" class="text-gray hover:text-white font-inter">Home</a>
-      <a href="/pages/about.html" class="text-gray hover:text-white font-inter"
-        >About Us</a
-      >
-      <a href="/pages/services.html" class="text-gray hover:text-white font-inter"
-        >Services</a
-      >
+      <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
+      <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
       <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
-      <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter"
-        >Gallery</a
-      >
-      <a href="/pages/contact.html" class="text-gray hover:text-white"
-        >Contact Us</a
-      >
-      <button
-        class="bg-white text-black px-4 py-2 rounded font-inter"
-      >
-        Book Now
-      </button>
+      <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter">Gallery</a>
+      <a href="/pages/contact.html" class="text-gray hover:text-white font-inter">Contact Us</a>
+      <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
     </nav>
-   
+    
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-black space-y-2 p-4">
+    <a href="index.html" class="block text-white hover:text-gray-400 font-inter">Home</a>
+    <a href="about.html" class="block text-white hover:text-gray-400 font-inter">About Us</a>
+    <a href="services.html" class="block text-white hover:text-gray-400 font-inter">Services</a>
+    <a href="gallery.html" class="block text-white hover:text-gray-400 font-inter">Gallery</a>
+    <a href="blog.html" class="block text-white hover:text-gray-400 font-inter">Blog</a>
+    <a href="contact.html" class="block text-white hover:text-gray-400 font-inter">Contact Us</a>
+    <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 w-full font-inter">Book Now</button>
   </div>
 </header>
-<!-- header -->
- <!-- Hero Section -->
-    <section class="relative">
-     <!-- Hero Background Image -->
-       <div class="relative w-full h-[850px]">
-    <img  src="assets/images/banner/banner-back.jpg" class="w-full h-full object-cover"/>
-       <!-- Hero Content -->
-         <div class="container max-w-[1390px] mx-auto flex flex-wrap items-center justify-between   py-12 absolute top-0 left-1/2 transform -translate-x-1/2 h-full">
+
+<!-- Hero Section -->
+<section class="relative">
+  <!-- Hero Background Image -->
+  <div class="relative w-full h-[850px]">
+    <img src="assets/images/banner/banner-back.jpg" class="w-full h-full object-cover" />
+    
+    <!-- Hero Content -->
+    <div class="container max-w-[1390px] mx-auto flex flex-wrap items-center justify-between py-12 absolute top-0 left-1/2 transform -translate-x-1/2 h-full px-4">
       <!-- Left Content (Text) -->
       <div class="w-full lg:w-1/2 text-white">
-        <h1 class="text-4xl lg:text-8xl font-inter font-bold ">
+        <h1 class="text-4xl lg:text-8xl font-inter font-bold leading-tight">
           BARBERS & HAIR CUTTING
         </h1>
-        <p class="text-white text-lg  font-inter  line-height-22px mt-4 ">
-          Lorem ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem will be come to ipsum......
+        <p class="text-white text-lg font-inter line-height-22px mt-4">
+          Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem will be come to ipsum......
         </p>
-        <button
-          class="mt-6 bg-white text-black px-6 py-3 rounded   font-inter font-bold"
-        >
-          Book Now
-        </button>
+        <button class="mt-6 bg-white text-black px-6 py-3 rounded font-inter font-bold">Book Now</button>
       </div>
 
       <!-- Right Content (Image) -->
       <div class="w-full lg:w-auto mt-6 lg:mt-0">
-        <img
-          src="assets/images/banner/Rectangle 5.png"
-       
-          class="w-[600px] h-[599px] rounded-lg"
-        />
+        <img src="assets/images/banner/Rectangle 5.png" class="w-[600px] h-[599px] rounded-lg" />
       </div>
     </div>
   </div>
-    </section>
+</section>
 <!-- Hero Section  -->
  <!-- why choose us -->
-  <section  class="py-16 bg-dark">
+ <section class="py-16 bg-dark">
   <div class="container max-w-[1390px] mx-auto px-4">
     <!-- 2-Column Layout -->
-    <div class="grid lg:grid-cols-2 gap-2 items-center">
+    <div class="grid lg:grid-cols-2 gap-4 items-center">
       <!-- Column 1: Image -->
-      <div>
+      <div class="lg:mt-0 mt-8"> <!-- Adjust margin to remove unwanted space -->
         <img
           src="assets/images/features/why-choose-us.png"
-         
-          class="w-[572px] h-[611px] rounded-lg "
+          class="w-full h-auto rounded-lg"
         />
       </div>
 
       <!-- Column 2: Features and Heading -->
-       <div>
+      <div class="px-4">
         <!-- Features  -->
-        <div class="mb-4 mx-0">
+        <div class="mb-5 ">
           <p class="text-lg uppercase tracking-wide text-white text-bold flex items-center font-inter">
             Features
-            <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-5px]  text-[10px]"></i></span>
+            <span class="inline-block w-10 h-0.5 bg-white ml-2 relative">
+              <i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-[10px]"></i>
+            </span>
           </p>
         </div>
         <!-- Heading -->
-        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-20 font-inter">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-10  font-inter">
           Why Choose Us
         </h2>
 
         <!-- 3-Card Layout -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 ">
-      <!-- Card 1: Experienced Team -->
-      <div class="p-3 bg-dark border-x border-b  border-white border-top-[0px] rounded-lg  text-center transform -translate-y-4 relative   ">
-        <div class=""><i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i></div>
-        <h3 class="text-lg font-bold text-white mt-10 font-inter">Experienced Team</h3>
-        <p class="text-gray-400 text-sm mt-2 font-inter">
-          We at Ziavii believe in customer satisfaction. Our team works on the needs of the user.
-        </p>
-      </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-">
+          <!-- Card 1: Experienced Team -->
+          <div class="p-3 bg-dark border-x border-b border-white border-top-[0px] rounded-lg text-center transform -translate-y-4 relative">
+            <div>
+              <i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mt-10 font-inter">Experienced Team</h3>
+            <p class="text-gray-400 text-sm mt-2 font-inter">
+              We at Ziavii believe in customer satisfaction. Our team works on the needs of the user.
+            </p>
+          </div>
 
-      <!-- Card 2: Book Your Slot -->
-      <div class="p-3 bg-dark border-x border-b  border-white rounded-lg  text-center transform translate-y-4 relative   ">
-        <div><i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i></div>
-        <h3 class="text-lg  text-white mt-10 font-inter">Book Your Slot</h3>
-        <p class="text-gray-400 text-sm mt-2 font-inter">
-          We at Ziavii ensure you get an easy booking process with instant scheduling.
-        </p>
-      </div>
+          <!-- Card 2: Book Your Slot -->
+          <div class="p-3 bg-dark border-x border-b border-white rounded-lg text-center transform translate-y-4 relative">
+            <div>
+              <i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i>
+            </div>
+            <h3 class="text-lg text-white mt-10 font-inter">Book Your Slot</h3>
+            <p class="text-gray-400 text-sm mt-2 font-inter">
+              We at Ziavii ensure you get an easy booking process with instant scheduling.
+            </p>
+          </div>
 
-      <!-- Card 3: Affordable Cost -->
-      <div class="p-3 bg-dark border-x border-b  bg-border-gradient  rounded-lg  text-center transform -translate-y-4 relative ">
-        <div class=""> <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i></div>
-        <h3 class="text-lg font-bold text-white mt-10 font-inter">Affordable Cost</h3>
-        <p class="text-gray-400 text-sm mt-2 font-inter">
-          Our services are not only top-notch but also affordable for everyone.
-        </p>
-      </div>
-    </div>
+          <!-- Card 3: Affordable Cost -->
+          <div class="p-3 bg-dark border-x border-b bg-border-gradient hidden lg:block rounded-lg text-center transform -translate-y-4 relative">
+            <div>
+              <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mt-10 font-inter">Affordable Cost</h3>
+            <p class="text-gray-400 text-sm mt-2 font-inter">
+              Our services are not only top-notch but also affordable for everyone.
+            </p>
+          </div>
+        </div>
 
-    <!-- View More Button -->
-    <div class="mt-8 text-left">
-      <a href="/pages/about.html" class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300 font-inter font-bold">
-        View More
-      </a>
+        <!-- View More Button -->
+        <div class="mt-8 text-left">
+          <a href="/pages/about.html" class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300 font-inter">
+            View More
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+
 <!-- whychooseus -->
 <!-- services -->
+<!-- Slick Slider Container
+<section class="slider-container">
+  <div class="slider">
+    <div><img src="assets/images/slider-image-1.jpg" alt="Slide 1" class="w-full h-auto object-cover" /></div>
+    <div><img src="assets/images/slider-image-2.jpg" alt="Slide 2" class="w-full h-auto object-cover" /></div>
+    <div><img src="assets/images/slider-image-3.jpg" alt="Slide 3" class="w-full h-auto object-cover" /></div>
+    <div><img src="assets/images/slider-image-4.jpg" alt="Slide 4" class="w-full h-auto object-cover" /></div>
+  </div>
+</section> -->
+
 <section id="services" class="bg-black py-16">
   <div class="container max-w-[1390px] mx-auto px-4">
     <!-- Heading -->
     <div class="mb-4">
-      <p class="text-lg uppercase  font-inter font-bold  text-white flex items-center">
+      <p class="text-lg uppercase font-inter font-bold text-white flex items-center">
         SERVICES
-        <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-white  text-[10px] "></i></span>
+        <span class="inline-block w-10 h-0.5 bg-white ml-2 relative">
+          <i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-white text-[10px]"></i>
+        </span>
       </p>
     </div>
+
     <!-- Heading -->
     <h2 class="text-3xl lg:text-4xl font-bold text-white mb-20">
       We Provide Better
     </h2>
 
+    <!-- Service Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
       <!-- Service Item 1 -->
       <div class="text-center">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden  ">
-          <img src="assets/images/serv/hair-styling.png"  class="w-full h-full object-cover">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+          <img src="assets/images/serv/hair-styling.png" class="w-full h-full object-cover">
         </div>
         <h3 class="text-2xl font-inter font-semibold mt-4">Hair Styling</h3>
         <p class="text-lg text-gray font-inter font-normal mt-2">
@@ -221,104 +243,107 @@
       <!-- Service Item 2 -->
       <div class="text-center">
         <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
-          <img src="assets/images/serv/spa.png"  class="w-full h-full object-cover">
+          <img src="assets/images/serv/spa.png" class="w-full h-full object-cover">
         </div>
         <h3 class="text-2xl font-inter font-semibold mt-4">Hair Care</h3>
-        <p class="ext-lg text-gray font-inter font-normal mt-2">
+        <p class="text-lg text-gray font-inter font-normal mt-2">
           This is the content where we will write about our Hair Care services available at.
         </p>
       </div>
 
       <!-- Service Item 3 -->
       <div class="text-center">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden ">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
           <img src="assets/images/serv/hair-cutting.png" class="w-full h-full object-cover">
         </div>
         <h3 class="text-2xl font-inter font-semibold mt-4">Hair Cutting</h3>
-        <p class="ext-lg text-gray font-inter font-normal mt-2">
+        <p class="text-lg text-gray font-inter font-normal mt-2">
           This is the content where we will write about our Hair Cutting services available at.
         </p>
       </div>
 
-      <!-- Service Item 4 -->
-      <div class="text-center">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden ">
+      <!-- Service Item 4 (Hidden on small screens, visible on large screens) -->
+      <div class="text-center hidden lg:block">
+        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
           <img src="assets/images/serv/facemask.png" class="w-full h-full object-cover">
         </div>
         <h3 class="text-2xl font-inter font-semibold mt-4">Coloring</h3>
-        <p class="ext-lg text-gray font-inter font-normal mt-2">
+        <p class="text-lg text-gray font-inter font-normal mt-2">
           This is the content where we will write about our Coloring services available at.
         </p>
       </div>
     </div>
-  <!-- View More Button -->
+
+    <!-- View More Button -->
     <div class="text-center mt-8">
-      <a href="/pages/services.html" class="bg-white  text-black font-inter font-bold text-lg px-6 py-2 rounded-md">
+      <a href="/pages/services.html" class="bg-white text-black font-inter font-bold text-lg px-6 py-2 rounded-md">
         View More
       </a>
     </div>
   </div>
 </section>
+
 <!-- services -->
 <!-- gallery -->
 <section class="py-16 relative bg-white overflow-hidden">
-   <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px]">
-    <img  src="assets/images/gallery/g-bg.png" class=" opacity-25 "/>
+  <!-- Background Images -->
+  <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px]">
+   <img src="assets/images/gallery/g-bg.png" class="opacity-25"/>
   </div>
-<div class="absolute bottom-[227px] left-[-10px] w-[382px] h-[270px] ">
-    <img src="assets/images/gallery/g-bg-2.png" class=" opacity-10"/>
+  <div class="absolute bottom-[227px] left-[-10px] w-[382px] h-[270px]">
+   <img src="assets/images/gallery/g-bg-2.png" class="opacity-10"/>
   </div>
-    <div class="container max-w-[1390px] mx-auto px-4">
- <!-- Section Header -->
+
+  <div class="container max-w-[1390px] mx-auto px-4">
+    <!-- Section Header -->
     <div class="text-center">
-      <p class="text-lg uppercase  text-black font-inter font-bold flex items-center justify-center relative">
-        <i class="fa-solid fa-diamond absolute mr-[183px]  text-black text-[10px]  "></i>
-        <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
+      <p class="text-lg uppercase text-black font-inter font-bold flex items-center justify-center relative">
+        <i class="fa-solid fa-diamond absolute mr-[183px] text-black text-[10px]"></i>
+        <span class="inline-block w-10 h-0.5 bg-black mr-2"></span>
         Gallery
-        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-5 my-[-4px]  text-black text-[10px]"></i></span>
+        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative">
+          <i class="fa-solid fa-diamond absolute mx-5 my-[-4px] text-black text-[10px]"></i>
+        </span>
       </p>
       <h2 class="text-3xl lg:text-4xl font-bold text-black font-inter mt-2">
         Picture Perfect Moments
       </h2>
     </div>
-<!-- Gallery Grid -->
-  <div class="grid grid-cols-2 gap-6 mt-0">
-        <!-- Left Column (3 Rows, 2 Images in Each Row) -->
-        <div class="grid gap-6  z-40 ">
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <!-- Left Column (3 Rows, 2 Images in Each Row) -->
+      <div class="grid gap-6 z-40">
         <!-- Bottom Row -->
-          <div class="grid  gap-6">
-            <div class="grid grid-cols-2 gap-6 mt-10">
-              <img
-                src="assets/images/gallery/g1.png"
-               
-                class="w-[345px] h-[289px] rounded-lg object-cover  mt-10"
-              />
-              <img src="assets/images/gallery/g2.png" class="w-[345] h-[289px] rounded-lg object-cover  mt-10"/>
-              </div>
-            <img src="assets/images/gallery/g3.png" class="w-[700px] h-[289px] rounded-lg object-cover  mb-10" />
-           </div>
+        <div class="grid grid-cols-2 gap-6 mt-10">
+          <img src="assets/images/gallery/g1.png" class="w-full h-[289px] rounded-lg object-cover"/>
+          <img src="assets/images/gallery/g2.png" class="w-full h-[289px] rounded-lg object-cover"/>
         </div>
-    <!-- Right Column -->
-        <div class="grid gap-6 mt-10 z-40 ">
-          <!-- Top Image -->
-          <div>
-            <img src="assets/images/gallery/g4.png" class="w-[700px] h-[289px] rounded-lg object-cover  mt-10 " />
-          </div>
-          <!-- Bottom Row (2 Images) -->
-          <div class="grid grid-cols-2 gap-6">
-            <img  src="assets/images/gallery/g5.png" class="w-[345px] h-[289px] rounded-lg object-cover  mb-10" />
-            <img src="assets/images/gallery/g6.png" class="w-[345px] h-[289px] rounded-lg object-cover  mb-10" />
-          </div>
+        <!-- Larger Image in Bottom Row -->
+        <img src="assets/images/gallery/g3.png" class="w-full h-[289px] rounded-lg object-cover"/>
+      </div>
+
+      <!-- Right Column -->
+      <div class="grid gap-6 mt-10 z-40">
+        <!-- Top Image -->
+        <img src="assets/images/gallery/g4.png" class="w-full h-[289px] rounded-lg object-cover"/>
+        <!-- Bottom Row -->
+        <div class="grid grid-cols-2 gap-6">
+          <img src="assets/images/gallery/g5.png" class="w-full h-[289px] rounded-lg object-cover"/>
+          <img src="assets/images/gallery/g6.png" class="w-full h-[289px] rounded-lg object-cover"/>
         </div>
       </div>
-   <!-- View More Button -->
+    </div>
+
+    <!-- View More Button -->
     <div class="mt-8 text-center">
-      <a href="/pages/gallery.html" class="bg-black text-white px-6 py-3 rounded  font-inter font-bold text-lg">
+      <a href="/pages/gallery.html" class="bg-black text-white px-6 py-3 rounded font-inter font-bold text-lg">
         View More
       </a>
     </div>
   </div> 
 </section>
+
 <!-- gallery -->
  <!-- Blog Section -->
  <section id="blog" class="py-16 bg-black text-white">
@@ -808,6 +833,57 @@
   </footer>
   
   <!--footer  -->
+
+  <!-- script -->
+   <!-- JavaScript for Mobile Menu Toggle -->
+   <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Slider JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+ <script>
+  $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+ </script>
+
   
   
 </body>
