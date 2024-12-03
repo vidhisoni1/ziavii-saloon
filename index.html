@@ -1,641 +1,929 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ziavii - Barbers & Hair Cutting</title>
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- jQuery (if needed) -->
-    <script src="assets/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- font-awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-<!-- Swiper CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<!-- fonts -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-</style>
-<script>
-  tailwind.config = {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ziavii - Barbers & Hair Cutting</title>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- jQuery (if needed) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  </style>
+  <script>
+    tailwind.config = {
       theme: {
-          extend: {
-             
-              fontFamily: {
-                inter: ["Inter", "serif"],
-                  
-              },
-              fontWeight: {
-                        thin: "100",
-                        hairline: "100",
-                        extralight: "200",
-                        light: "300",
-                        normal: "400",
-                        medium: "500",
-                        semibold: "600",  
-                        bold: "700",
-                        extrabold: "800",
-                        "extra-bold": "800",
-                        black: "900",
-                    },
-                    colors: {
-                       lblack: "#101010",
-                        dark: "#1B1B1B",
-                        gray: "#8D8C8C",
-                        darkgray:"#282727",
-                        dblack:"#080808",
-                  
-                    },
+        extend: {
+
+          fontFamily: {
+            inter: ["Inter", "serif"],
+
           },
+          fontWeight: {
+            thin: "100",
+            hairline: "100",
+            extralight: "200",
+            light: "300",
+            normal: "400",
+            medium: "500",
+            semibold: "600",
+            bold: "700",
+            extrabold: "800",
+            "extra-bold": "800",
+            black: "900",
+          },
+          colors: {
+            lblack: "#101010",
+            dark: "#1B1B1B",
+            gray: "#8D8C8C",
+            darkgray: "#282727",
+            dblack: "#080808",
+
+          },
+
+        },
       },
-  };
-</script>
-  </head>
+    };
+  </script>
+</head>
 
-  <body class="bg-gray-900 text-white">
- <!-- Header -->
-<header class="bg-black border-b-[0.5px] border-gray">
-  <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
-    <a href="index.html">
-      <img src="assets/images/banner/logo.png" class="h-[89px]" />
-    </a>
-    <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex space-x-8">
-      <a href="index.html" class="text-gray hover:text-white font-inter">Home</a>
-      <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
-      <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
-      <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
-      <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter">Gallery</a>
-      <a href="/pages/contact.html" class="text-gray hover:text-white font-inter">Contact Us</a>
-      <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
-    </nav>
-    
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
-      ☰
-    </button>
-  </div>
+<body class="bg-gray-900 text-white">
+  <!-- Header -->
+  <header class="bg-black border-b-[0.5px] border-gray">
+    <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
+      <a href="index.html">
+        <img src="assets/images/banner/logo.png" class="h-[89px]" />
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex space-x-8">
+        <a href="index.html" class="text-gray hover:text-white font-inter">Home</a>
+        <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
+        <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
+        <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
+        <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter">Gallery</a>
+        <a href="/pages/contact.html" class="text-gray hover:text-white font-inter">Contact Us</a>
+        <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
+      </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl">
-    <a href="index.html" class="block text-black hover:text-gray-400 font-inter">Home</a>
-    <a href="about.html" class="block text-black hover:text-gray-400 font-inter">About Us</a>
-    <a href="services.html" class="block text-black hover:text-gray-400 font-inter">Services</a>
-    <a href="gallery.html" class="block text-black hover:text-gray-400 font-inter">Gallery</a>
-    <a href="blog.html" class="block text-black hover:text-gray-400 font-inter">Blog</a>
-    <a href="contact.html" class="block text-vlack hover:text-gray-400 font-inter">Contact Us</a>
-   
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="relative">
-  <!-- Hero Background Image -->
-  <div class="relative w-full h-[850px]">
-    <img src="assets/images/banner/banner-back.jpg" class="w-full h-full object-cover" />
-    
-    <!-- Hero Content -->
-    <div class="container max-w-[1390px] mx-auto flex flex-wrap items-center justify-between py-12 absolute top-0 left-1/2 transform -translate-x-1/2 h-full px-4">
-      <!-- Left Content (Text) -->
-      <div class="w-full lg:w-1/2 text-white">
-        <h1 class="text-4xl lg:text-8xl font-inter font-bold leading-tight">
-          BARBERS & HAIR CUTTING
-        </h1>
-        <p class="text-white text-lg font-inter line-height-22px mt-4">
-          Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem will be come to ipsum......
-        </p>
-        <button class="mt-6 bg-white text-black px-6 py-3 rounded font-inter font-bold">Book Now</button>
-      </div>
-
-      <!-- Right Content (Image) -->
-      <div class="w-full lg:w-auto mt-6 lg:mt-0">
-        <img src="assets/images/banner/Rectangle 5.png" class="w-[600px] h-[599px] rounded-lg" />
-      </div>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
+        ☰
+      </button>
     </div>
-  </div>
-</section>
-<!-- Hero Section  -->
- <!-- why choose us -->
- <section class="py-16 bg-dark">
-  <div class="container max-w-[1390px] mx-auto px-4">
-    <!-- 2-Column Layout -->
-    <div class="grid lg:grid-cols-2 gap-4 items-center">
-      <!-- Column 1: Image -->
-      <div class="lg:mt-0 mt-8"> <!-- Adjust margin to remove unwanted space -->
-        <img
-          src="assets/images/features/why-choose-us.png"
-          class="w-full h-auto rounded-lg"
-        />
-      </div>
 
-      <!-- Column 2: Features and Heading -->
-      <div class="px-4">
-        <!-- Features  -->
-        <div class="mb-5 ">
-          <p class="text-lg uppercase tracking-wide text-white text-bold flex items-center font-inter">
-            Features
-            <span class="inline-block w-10 h-0.5 bg-white ml-2 relative">
-              <i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-[10px]"></i>
-            </span>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl">
+      <a href="index.html" class="block text-black hover:text-gray-400 font-inter">Home</a>
+      <a href="/pages/about.html" class="block text-black hover:text-gray-400 font-inter">About Us</a>
+      <a href="/pages/services.html" class="block text-black hover:text-gray-400 font-inter">Services</a>
+      <a href="/pages/gallery.html" class="block text-black hover:text-gray-400 font-inter">Gallery</a>
+      <a href="/pages/blog.html" class="block text-black hover:text-gray-400 font-inter">Blog</a>
+      <a href="/pages/contact.html" class="block text-vlack hover:text-gray-400 font-inter">Contact Us</a>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <!-- Hero Background Image -->
+    <div class="relative w-full lg:h-[850px] h-[350px]">
+      <img src="assets/images/banner/banner-back.jpg" class="w-full h-full object-cover" />
+
+      <!-- Hero Content -->
+      <div
+        class="container max-w-[1390px] mx-auto flex flex-wrap items-center justify-between lg:py-12 absolute top-0 left-1/2 transform -translate-x-1/2 h-full px-4">
+        <!-- Left Content (Text) -->
+        <div class="w-full lg:w-1/2  lg:text-left order-2 lg:order-1 text-white">
+          <h1 class="text-2xl lg:text-8xl font-inter font-bold leading-tight">
+            BARBERS & HAIR CUTTING
+          </h1>
+          <p class="text-white text-sm lg:text-lg font-inter line-height-22px mt-4">
+            Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem will be come to ipsum......
           </p>
-        </div>
-        <!-- Heading -->
-        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-10  font-inter">
-          Why Choose Us
-        </h2>
-
-        <!-- 3-Card Layout -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-">
-          <!-- Card 1: Experienced Team -->
-          <div class="p-3 bg-dark border-x border-b border-white border-top-[0px] rounded-lg text-center transform -translate-y-4 relative">
-            <div>
-              <i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i>
-            </div>
-            <h3 class="text-lg font-bold text-white mt-10 font-inter">Experienced Team</h3>
-            <p class="text-gray-400 text-sm mt-2 font-inter">
-              We at Ziavii believe in customer satisfaction. Our team works on the needs of the user.
-            </p>
-          </div>
-
-          <!-- Card 2: Book Your Slot -->
-          <div class="p-3 bg-dark border-x border-b border-white rounded-lg text-center transform translate-y-4 relative">
-            <div>
-              <i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i>
-            </div>
-            <h3 class="text-lg text-white mt-10 font-inter">Book Your Slot</h3>
-            <p class="text-gray-400 text-sm mt-2 font-inter">
-              We at Ziavii ensure you get an easy booking process with instant scheduling.
-            </p>
-          </div>
-
-          <!-- Card 3: Affordable Cost -->
-          <div class="p-3 bg-dark border-x border-b bg-border-gradient hidden lg:block rounded-lg text-center transform -translate-y-4 relative">
-            <div>
-              <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i>
-            </div>
-            <h3 class="text-lg font-bold text-white mt-10 font-inter">Affordable Cost</h3>
-            <p class="text-gray-400 text-sm mt-2 font-inter">
-              Our services are not only top-notch but also affordable for everyone.
-            </p>
-          </div>
+          <button class="mt-6 bg-white text-black px-6 py-3 rounded font-inter font-bold">Book Now</button>
         </div>
 
-        <!-- View More Button -->
-        <div class="mt-8 text-left">
-          <a href="/pages/about.html" class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300 font-inter">
-            View More
-          </a>
+        <!-- Right Content (Image) -->
+        <div class="w-full lg:w-auto order-1 lg:order-3 lg:mt-6 lg:mt-0 flex justify-center">
+          <img src="assets/images/banner/Rectangle 5.png"
+            class="lg:w-[600px] lg:h-[599px] w-[184px] h-[152px] rounded-lg object-cover" />
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- whychooseus -->
-<!-- services -->
-<!-- Slick Slider Container
-<section class="slider-container">
-  <div class="slider">
-    <div><img src="assets/images/slider-image-1.jpg" alt="Slide 1" class="w-full h-auto object-cover" /></div>
-    <div><img src="assets/images/slider-image-2.jpg" alt="Slide 2" class="w-full h-auto object-cover" /></div>
-    <div><img src="assets/images/slider-image-3.jpg" alt="Slide 3" class="w-full h-auto object-cover" /></div>
-    <div><img src="assets/images/slider-image-4.jpg" alt="Slide 4" class="w-full h-auto object-cover" /></div>
-  </div>
-</section> -->
-
-<section id="services" class="bg-lblack py-16">
-  <div class="container max-w-[1390px] mx-auto px-4">
-    <!-- Heading -->
-    <div class="mb-4">
-      <p class="text-lg uppercase font-inter font-bold text-white flex items-center">
-        SERVICES
-        <span class="inline-block w-10 h-0.5 bg-white ml-2 relative">
-          <i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-white text-[10px]"></i>
-        </span>
-      </p>
-    </div>
-
-    <!-- Heading -->
-    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-20">
-      We Provide Better
-    </h2>
-
-    <!-- Service Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      
-      <!-- Service Item 1 -->
-      <div class="text-center">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
-          <img src="assets/images/serv/hair-styling.png" class="w-full h-full object-cover">
-        </div>
-        <h3 class="text-2xl font-inter font-semibold mt-4">Hair Styling</h3>
-        <p class="text-lg text-gray font-inter font-normal mt-2">
-          This is the content where we will write about our Hair Styling services available at.
-        </p>
-      </div>
-
-      <!-- Service Item 2 -->
-      <div class="text-center">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
-          <img src="assets/images/serv/spa.png" class="w-full h-full object-cover">
-        </div>
-        <h3 class="text-2xl font-inter font-semibold mt-4">Hair Care</h3>
-        <p class="text-lg text-gray font-inter font-normal mt-2">
-          This is the content where we will write about our Hair Care services available at.
-        </p>
-      </div>
-
-      <!-- Service Item 3 -->
-      <div class="text-center">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
-          <img src="assets/images/serv/hair-cutting.png" class="w-full h-full object-cover">
-        </div>
-        <h3 class="text-2xl font-inter font-semibold mt-4">Hair Cutting</h3>
-        <p class="text-lg text-gray font-inter font-normal mt-2">
-          This is the content where we will write about our Hair Cutting services available at.
-        </p>
-      </div>
-
-      <!-- Service Item 4 (Hidden on small screens, visible on large screens) -->
-      <div class="text-center hidden lg:block">
-        <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
-          <img src="assets/images/serv/facemask.png" class="w-full h-full object-cover">
-        </div>
-        <h3 class="text-2xl font-inter font-semibold mt-4">Coloring</h3>
-        <p class="text-lg text-gray font-inter font-normal mt-2">
-          This is the content where we will write about our Coloring services available at.
-        </p>
-      </div>
-    </div>
-
-    <!-- View More Button -->
-    <div class="text-center mt-8">
-      <a href="/pages/services.html" class="bg-white text-black font-inter font-bold text-lg px-6 py-2 rounded-md">
-        View More
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- services -->
-<!-- gallery -->
-<section class="py-16 relative bg-white overflow-hidden">
-  <!-- Background Images -->
-  <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px]">
-   <img src="assets/images/gallery/g-bg.png" class="opacity-25"/>
-  </div>
-  <div class="absolute bottom-[227px] left-[-10px] w-[382px] h-[270px]">
-   <img src="assets/images/gallery/g-bg-2.png" class="opacity-10"/>
-  </div>
-
-  <div class="container max-w-[1390px] mx-auto px-4">
-    <!-- Section Header -->
-    <div class="text-center">
-      <p class="text-lg uppercase text-black font-inter font-bold flex items-center justify-center relative">
-        <i class="fa-solid fa-diamond absolute mr-[183px] text-black text-[10px]"></i>
-        <span class="inline-block w-10 h-0.5 bg-black mr-2"></span>
-        Gallery
-        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative">
-          <i class="fa-solid fa-diamond absolute mx-5 my-[-4px] text-black text-[10px]"></i>
-        </span>
-      </p>
-      <h2 class="text-3xl lg:text-4xl font-bold text-black font-inter mt-2">
-        Picture Perfect Moments
-      </h2>
-    </div>
-
-    <!-- Gallery Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2  gap-6 mt-10">
-      <!-- Left Column (3 Rows, 2 Images in Each Row) -->
-      <div class="grid gap-6 z-40">
-        <!-- Bottom Row -->
-        <div class="grid grid-cols-2 gap-6 mt-10">
-          <img src="assets/images/gallery/g1.png" class="w-full h-[289px] rounded-lg object-cover"/>
-          <img src="assets/images/gallery/g2.png" class="w-full h-[289px] rounded-lg object-cover"/>
-        </div>
-        <!-- Larger Image in Bottom Row -->
-        <img src="assets/images/gallery/g3.png" class="w-full h-[289px] rounded-lg object-cover"/>
-      </div>
-
-      <!-- Right Column -->
-      <div class="grid gap-6 mt-10 z-40">
-        <!-- Top Image -->
-        <img src="assets/images/gallery/g4.png" class="w-full h-[289px] rounded-lg object-cover"/>
-        <!-- Bottom Row -->
-        <div class="grid grid-cols-2 gap-6">
-          <img src="assets/images/gallery/g5.png" class="w-full h-[289px] rounded-lg object-cover"/>
-          <img src="assets/images/gallery/g6.png" class="w-full h-[289px] rounded-lg object-cover"/>
-        </div>
-      </div>
-    </div>
-
-    <!-- View More Button -->
-    <div class="mt-8 text-center">
-      <a href="/pages/gallery.html" class="bg-black text-white px-6 py-3 rounded font-inter font-bold text-lg">
-        View More
-      </a>
-    </div>
-  </div> 
-</section>
-
-<!-- gallery -->
- <!-- Blog Section -->
- <section id="blog" class="py-16 bg-lblack text-white">
-  <div class="container max-w-[1390px] mx-auto px-4">
-    <!-- Section Header -->
-    <div class="text-center">
-      <p class="text-xl uppercase text-white flex items-center justify-center relative font-inter font-bold  ">
-        <i class="fa-solid fa-diamond absolute mr-[162px]  text-white text-[10px]"></i>
-        <span class="inline-block w-10 h-0.5 bg-white mr-2  "></span>
-        Blog
-        <span class="inline-block w-10 h-0.5 bg-white ml-2 relative "><i class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-white text-[10px]"></i></span>
-      </p>
-      <h2 class="text-3xl lg:text-5xl font-bold text-white mt-2 font-inter text-bold  ">
-      Insights And Updates
-      </h2>
-    </div>
-  <!-- Blog Cards -->
-   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
-    <!-- Blog Card 1 -->
-    <div class="bg-gray-800 rounded-lg  overflow-hidden">
-      <div class="relative">
-        <!-- Blog Image -->
-        <img src="assets/images/blog/blo-1.png" class="w-[453px] h-[282px] object-cover"/>
-      </div>
-      <div class="py-5 flex items-start gap-4">
-        <!-- Date Badge -->
-        <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
-          <i class="fa-solid fa-calendar text-gray text-lg"></i>
-          <p class="text-lg font-bold text-gray">20</p>
-          <p class="text-lg text-gray text-inter text-bold">AUG</p>
-        </div>
-        <!-- Blog Content -->
-        <div>
-         <h3 class="text-xl font-bold font-inter font-bold mb-3  border-gray"> Its Christmas, Special Days Ahead </h3>
-    
-     <p class="text-gray text-lg mt-2  py-3 text-inter text-normal border-y-[1px] border-b-gray ">
-            Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum....  </p>
-      <div class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
-            <span class="flex items-center space-x-2 ">
-              <i class="fas fa-user"></i>
-              <span>Admin</span>
-            </span>
-            <span class="flex items-center space-x-2 mr-[50px]">
-              <i class="fas fa-tags"></i>
-              <span>Festival, Learning</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- Blog Card 2 -->
-    <div class="bg-gray-800 rounded-lg overflow-hidden">
-      <div class="relative">
-        <!-- Blog Image -->
-        <img  src="assets/images/blog/blo-2.png" class="w-[453px] h-[282px] object-cover"  />
-      </div>
-      <div class="py-5 flex items-start gap-4">
-        <!-- Date Badge -->
-        <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
-          <i class="fa-solid fa-calendar text-gray text-lg"></i>
-          <p class="text-lg font-bold text-gray">20</p>
-          <p class="text-lg text-gray text-inter text-bold">AUG</p>
-        </div>
-        <!-- Blog Content -->
-        <div>
-       <h3 class="text-xl font-bold  font-inter font-bold mb-3  border-gray"> Its Christmas, Special Days Ahead</h3>
-       <p class="text-gray text-lg mt-2 py-3 text-inter text-normal border-y-[1px] border-b-gray ">
-         Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum.... </p>
-       <div class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
-            <span class="flex items-center space-x-2 ">
-              <i class="fas fa-user"></i>
-              <span>Admin</span>
-            </span>
-            <span class="flex items-center space-x-2 mr-[50px]">
-              <i class="fas fa-tags"></i>
-              <span>Festival, Learning</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- Blog Card 3 -->
-    <div class="bg-gray-800 rounded-lg  overflow-hidden hidden lg:block">
-      <div class="relative">
-        <!-- Blog Image -->
-        <img src="assets/images/blog/blo-3.png" class="w-[453px] h-[282px] object-cover"/>
-      </div>
-      <div class="py-5 flex items-start gap-4">
-        <!-- Date Badge -->
-        <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
-          <i class="fa-solid fa-calendar text-gray text-lg"></i>
-          <p class="text-lg font-bold text-gray">20</p>
-          <p class="text-lg text-gray text-inter text-bold">AUG</p>
-        </div>
-        <!-- Blog Content -->
-        <div>
-        <h3 class="text-xl font-bold leading-tight font-inter font-bold mb-3  border-gray">Its Christmas, Special Days Ahead </h3>
-    <p class="text-gray text-lg mt-2 leading-relaxed py-3 text-inter text-normal border-y-[1px] border-b-gray ">Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum.... </p>
-          <div class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
-            <span class="flex items-center space-x-2 ">
-              <i class="fas fa-user"></i>
-              <span>Admin</span>
-            </span>
-            <span class="flex items-center space-x-2 mr-[50px]">
-              <i class="fas fa-tags"></i>
-              <span>Festival, Learning</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- <!-- View More Button -->
- <div class="mt-8 text-center">
-  <a href="/pages/blog.html" class="bg-white text-black px-6 py-3 rounded font-inter font-bold">
-    View More
-  </a>
-</div> 
-</section>
-<!-- Blog Section -->
-<!-- Our Team Section -->
- <section id="team" class="py-16 bg-white relative overflow-hidden">
-  <!-- Background Image -->
-  <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px]">
-    <img src="assets/images/gallery/g-bg.png" class=" opacity-25 " />
-  </div>
-   <div class="container max-w-[1390px] mx-auto px-4">
-    <!-- Section Header -->
-    <div class="text-center">
-      <p class="text-lg uppercase text-black font-bold font-inter flex items-center justify-center relative">
-        <i class="fa-solid fa-diamond absolute mr-[183px]  text-black text-[10px] "></i>
-        <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
-        Our Team    
-        <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-black text-[10px]"></i></span>
-      </p>
-      <h2 class="text-3xl lg:text-4xl font-bold text-black font-inter mt-2">
-        Picture Perfect Moments
-      </h2>
-    </div>>
- <!-- Team Members -->
-    <div class="grid  grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Team Member 1 -->
-      <div class="relative bg-gray-100 rounded-lg  ">
-        <!-- Image -->
-        <img src="assets/images/our-team/t-1.png"  class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
-        <!-- Name and Role -->
-        <div class="absolute   top-[200px] left-[-10px] bg-black  p-4  lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
-          <h3 class="text-white lg:text-xl font-bold font-inter text-sm">JIM CARRY</h3>
-          <p class="text-gray-300 lg:text-lg font-inter font-normal text-sm">Facial Specialist</p>
-        </div>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="relative bg-gray-100 rounded-lg  ">
-        <!-- Image -->
-        <img src="assets/images/our-team/t-2.png"  class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
-        <!-- Name and Role -->
-        <div class="absolute   top-[200px] left-[-10px] bg-black  p-4  lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
-          <h3 class="text-white text-xl font-bold font-inter ">MARK VICK</h3>
-          <p class="text-gray-300 text-lg font-inter font-normal ">Hair Stylist</p>
-        </div>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="relative bg-gray-100 rounded-lg   hidden lg:block">
-        <!-- Image -->
-        <img src="assets/images/our-team/t-3.png"  class="w-[341px] h-[410px] object-cover rounded-lg " />
-        <!-- Name and Role -->
-        <div class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
-          <h3 class="text-white text-xl font-bold font-inter ">LINCY MINDO</h3>
-          <p class="text-gray-300 text-lg font-inter font-normal ">Facial Designer</p>
-        </div>
-      </div>
-
-      <!-- Team Member 4 -->
-      <div class="relative bg-gray-100 rounded-lg  hidden lg:block">
-        <!-- Image -->
-        <img src="assets/images/our-team/t-4.png"  class="w-[341px] h-[410px] object-cover rounded-lg  " />
-        <!-- Name and Role -->
-        <div class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
-          <h3 class="text-white text-xl font-bold font-inter ">ELIZA RIKA</h3>
-          <p class="text-gray-300 text-lg font-inter font-normal ">wedding Specialist</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Our Team Section -->
-  <!-- Testimonials -->
-  <section id="testimonial" class="py-16 bg-lblack text-white overflow-hidden">
-    <!-- Container -->
-    <div class="container mx-auto max-w-[1390px] px-4">
-    
-       
-      <!-- Section Header -->
-      <div class="mb-4 mx-0">
-        <p class="text-lg uppercase tracking-wide text-white font-bold flex items-center font-inter">
-          Testimonial
-          <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i class="fa-solid fa-diamond absolute mx-10 my-[-5px]  text-[10px]"></i></span>
-        </p>
-      </div>
-      <!-- Heading -->
-      <h2 class="text-3xl lg:text-5xl font-bold text-white mb-10 font-inter">
-        Happy Users
-      </h2>
-  
-      <!-- Testimonial Content -->
-      <div class="lg:flex gap-10 justify-center items-center">
-        <!-- Testimonial Card 1 -->
-        <div class="lg:flex lg:items-center bg-lblack py-6 rounded-lg shadow-md w-1/2">
-         
-          <!-- Image -->
-          <div class=" place-content-center ">
-            <img
-              src="assets/images/testi/te-1.png"
-             
-              class="object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]"
-            />
-          </div>
-          <!-- Content -->
-          <div class="lg:ml-6 w-[350px] h-[120px] lg:block">
-            <p class="text-gray text-lg font-inter font-normal mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
-              you to a become will.
-            </p>
-            <div class="relative">
-            <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
-            <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
-            <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
-          </div>
-          </div>
-        </div>
-  
-        <!-- Testimonial Card 2 -->
-        <div class="lg:flex items-center bg-lblack py-6 rounded-lg shadow-md w-1/2">
-         
-          <!-- Image -->
-          <div class="place-content-center">
-            <img
-              src="assets/images/testi/te-2.png"
-             
-              class=" object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]  "
-            />
-          </div>
-          <!-- Content -->
-          <div class="lg:ml-6 w-[350px] h-[120px] lg:block">
-            <p class="text-gray text-lg font-inter font-normal mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
-              you to a become will.
-            </p>
-            <div class="relative">
-            <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
-            <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
-            <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
-          </div>
-          </div>
-        </div>
-  
-  
-    
       </div>
     </div>
   </section>
-  
+  <!-- Hero Section  -->
+  <!-- why choose us -->
+  <section class="lg:py-16 py-12 bg-dark ">
+    <div class="container max-w-[1390px] mx-auto px-4">
+      <!-- 2-Column Layout -->
+      <div class="grid lg:grid-cols-2 gap-4 items-center">
+        <!-- Column 1: Image -->
+        <div class="  lg:mt-8  flex justify-center "> <!-- Adjust margin to remove unwanted space -->
+          <img src="assets/images/features/why-choose-us.png"
+            class="object-cover rounded-lg w-[345px] h-[220px] lg:w-[572px] lg:h-[611px] hidden lg:block " />
+        </div>
+
+        <!-- Column 2: Features and Heading -->
+        <div class="px-4 ">
+          <!-- Features  -->
+
+          <div class=" lg:mb-5 mb-2  ">
+            <p class="lg:text-lg text-sm uppercase tracking-wide text-white text-bold flex items-center font-inter ">
+              Features
+              <span class="inline-block w-10 h-0.5 bg-white ml-2 relative">
+                <i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-[10px]"></i>
+              </span>
+            </p>
+          </div>
+          <h2 class="text-xl lg:text-4xl font-bold text-white mb-10  font-inter flex ">
+            Why Choose Us
+          </h2>
+
+
+          <div class="  lg:mt-8  flex justify-center order-2 lg:order-1">
+            <!-- Adjust margin to remove unwanted space -->
+            <img src="assets/images/features/why-choose-us.png"
+              class="object-cover rounded-lg w-[345px] h-[220px] lg:w-[572px] lg:h-[611px] lg:hidden " />
+          </div>
+          <!-- bg-gradient-to-b from-[#fafafa00] to-[#fafafa] -->
+
+          <!-- 3-Card Layout -->
+          <div class="grid grid-cols-1  lg:grid-cols-3 gap-4 mt-10 ">
+            <!-- Card 1: Experienced Team -->
+            <div
+              class="p-3 bg-dark  border-x border-b border-white rounded-lg text-center transform -translate-y-4 relative ">
+              <div>
+                <i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mt-10 font-inter">Experienced Team</h3>
+              <p class="text-gray-400 text-sm mt-2 font-inter">
+                We at Ziavii believe in customer satisfaction. Our team works on the needs of the user.
+              </p>
+            </div>
+
+            <!-- Card 2: Book Your Slot -->
+            <div
+              class="p-3 bg-dark border-x border-b border-white rounded-lg text-center transform translate-y-4 relative">
+              <div>
+                <i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i>
+              </div>
+              <h3 class="text-lg text-white mt-10 font-inter">Book Your Slot</h3>
+              <p class="text-gray-400 text-sm mt-2 font-inter">
+                We at Ziavii ensure you get an easy booking process with instant scheduling.
+              </p>
+            </div>
+
+            <!-- Card 3: Affordable Cost -->
+            <div
+              class="p-3 bg-dark border-x border-b bg-border-gradient hidden lg:block rounded-lg text-center transform -translate-y-4 relative">
+              <div>
+                <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mt-10 font-inter">Affordable Cost</h3>
+              <p class="text-gray-400 text-sm mt-2 font-inter">
+                Our services are not only top-notch but also affordable for everyone.
+              </p>
+            </div>
+          </div>
+
+          <!-- View More Button -->
+          <div class="mt-8 lg:text-left text-center ">
+            <a href="/pages/about.html" class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300 font-inter">
+              View More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- whychooseus -->
+  <!-- services -->
+  <section id="services" class="bg-lblack lg:py-16 py-12">
+    <div class="container max-w-[1390px] overflow-hidden mx-auto px-4">
+      <!-- Heading -->
+      <div class="lg:mb-4 flex justify-center lg:block">
+        <span class="inline-block w-10 h-0.5 bg-white mr-2 top-3 relative lg:hidden">
+          <i class="fa-solid fa-diamond absolute mx-[-10px] my-[-5px] text-white text-[10px]"></i>
+        </span>
+        <p class="lg:text-lg text:sm uppercase font-inter font-bold text-white flex items-center">
+          SERVICES
+          <span class="inline-block w-10 h-0.5 bg-white ml-2 relative">
+            <i class="fa-solid fa-diamond absolute mx-10 my-[-5px] text-white text-[10px]"></i>
+          </span>
+        </p>
+
+      </div>
+
+      <!-- Heading -->
+
+
+      <h2 class="text-xl lg:text-4xl font-bold text-white mb-20 flex justify-center lg:block">
+        We Provide Better
+      </h2>
+      <!-- slider start -->
+      <div class="swiper mySwiper">
+        <div class="swiper-button-next top-[-55px] right-[0px] z-40 hidden lg:block">
+          <img src="assets/images/Group.svg" alt="">
+
+        </div>
+        <div class="swiper-button-prev bg-[#101010] top-[-55px] left-[93%] hidden lg:block">
+          <img src="assets/images/Frame.svg" alt="">
+
+        </div>
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide hidden lg:block">
+            <div class="text-center">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/hair-styling.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Hair Styling</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Hair Styling services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/spa.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Hair Care</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Hair Care services available at.
+              </p>
+
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/hair-cutting.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Hair Cutting</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Hair Cutting services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center hidden lg:block">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/facemask.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Coloring</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Coloring services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/hair-styling.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Hair Styling</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Hair Styling services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/spa.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Hair Care</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Hair Care services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/hair-cutting.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Hair Cutting</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Hair Cutting services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+          <div class="swiper-slide  hidden lg:block">
+            <div class="text-center hidden lg:block">
+              <div class="relative mx-auto w-[190px] h-[190px] rounded-full overflow-hidden">
+                <img src="assets/images/serv/facemask.png" class="w-full h-full object-cover">
+              </div>
+              <h3 class="text-2xl font-inter font-semibold mt-4">Coloring</h3>
+              <p class="text-lg text-gray font-inter font-normal mt-2">
+                This is the content where we will write about our Coloring services available at.
+              </p>
+            </div>
+            <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+            <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+            <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- Service Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:hidden">
+
+        <!-- Service Item 1 -->
+        <div class="text-center">
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mb-4 lg:hidden">Hair Styling</h3>
+          <div class="relative mx-auto lg:w-[190px] lg:h-[190px] w-[120px] h-[129px] rounded-full overflow-hidden ">
+            <img src="assets/images/serv/hair-styling.png" class="w-full h-full  object-cover ">
+          </div>
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mt-4 hidden lg:block">Hair Styling</h3>
+          <p class="lg:text-lg  text-sm text-gray font-inter font-normal mt-2 ">
+            This is the content where we will write about our Hair Styling services available at.
+          </p>
+          <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+          <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+          <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="text-center">
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mb-4 lg:hidden ">Hair Care</h3>
+          <div class="relative mx-auto lg:w-[190px] lg:h-[190px] w-[120px] h-[129px] rounded-full overflow-hidden ">
+            <img src="assets/images/serv/spa.png" class="w-full h-full object-cover">
+          </div>
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mb-4 hidden lg:block ">Hair Care</h3>
+          <p class="lg:text-lg  text-sm text-gray font-inter font-normal mt-2 ">
+            This is the content where we will write about our Hair Care services available at.
+          </p>
+          <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+          <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+          <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+        </div>
+
+        <!-- Service Item 3 -->
+        <div class="text-center">
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mb-4 lg:hidden">Hair Cutting</h3>
+          <div class="relative mx-auto lg:w-[190px] lg:h-[190px] w-[120px] h-[129px] rounded-full overflow-hidden ">
+            <img src="assets/images/serv/hair-cutting.png" class="w-full h-full object-cover">
+          </div>
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mt-4 hidden lg:block">Hair Cutting</h3>
+          <p class="lg:text-lg  text-sm text-gray font-inter font-normal mt-2 ">
+            This is the content where we will write about our Hair Cutting services available at.
+          </p>
+          <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+          <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+          <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+        </div>
+
+        <!-- Service Item 4 (Hidden on small screens, visible on large screens) -->
+        <div class="text-center hidden lg:block">
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mb-4 lg:hidden ">Coloring</h3>
+          <div class="relative mx-auto lg:w-[190px] lg:h-[190px] w-[120px] h-[129px] rounded-full overflow-hidden ">
+            <img src="assets/images/serv/facemask.png" class="w-full h-full object-cover">
+          </div>
+          <h3 class="lg:text-2xl text-md font-inter font-semibold mt-4 hidden lg:block">Coloring</h3>
+          <p class="lg:text-lg  text-sm text-gray font-inter font-normal mt-2 ">
+            This is the content where we will write about our Coloring services available at.
+          </p>
+          <span class="inline-block w-20 h-0.5 bg-gray mr-2"></span>
+          <i class="fa-solid fa-diamond   text-gray text-[10px]"></i>
+          <span class="inline-block w-20 h-0.5 bg-gray ml-2 relative"></span>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+
+    </div>
+    <div class="text-center lg:mt-5 mt-2">
+      <a href="/pages/services.html"
+        class="bg-white text-black font-inter font-bold lg:text-lg px-6 py-2 rounded-md text:sm">
+        View More
+      </a>
+    </div>
+  </section>
+
+  <!-- services -->
+  <!-- gallery -->
+  <section class="lg:py-16 py-12 relative bg-white overflow-hidden">
+    <!-- Background Images -->
+    <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px] hidden lg:block">
+      <img src="assets/images/gallery/g-bg.png" class="opacity-25" />
+    </div>
+    <div class="absolute bottom-[227px] left-[-10px] w-[382px] h-[270px]">
+      <img src="assets/images/gallery/g-bg-2.png" class="opacity-10" />
+    </div>
+
+    <div class="container max-w-[1390px] mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center">
+        <p class="text-lg uppercase text-black font-inter font-bold flex items-center justify-center relative">
+          <i class="fa-solid fa-diamond absolute mr-[183px] text-black text-[10px]"></i>
+          <span class="inline-block w-10 h-0.5 bg-black mr-2"></span>
+          Gallery
+          <span class="inline-block w-10 h-0.5 bg-black ml-2 relative">
+            <i class="fa-solid fa-diamond absolute mx-5 my-[-4px] text-black text-[10px]"></i>
+          </span>
+        </p>
+        <h2 class="text-2xl lg:text-4xl font-bold text-black font-inter mt-2">
+          Picture Perfect Moments
+        </h2>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2  gap-6 lg:mt-10">
+        <!-- Left Column (3 Rows, 2 Images in Each Row) -->
+        <div class="grid gap-6 z-40">
+          <!-- Bottom Row -->
+          <div class="grid grid-cols-2 gap-6 mt-10 ">
+            <img src="assets/images/gallery/g1.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover " />
+            <img src="assets/images/gallery/g2.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover " />
+          </div>
+          <!-- Larger Image in Bottom Row -->
+          <img src="assets/images/gallery/g4.png"
+            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover lg:hidden " />
+          <img src="assets/images/gallery/g3.png"
+            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover hidden lg:block" />
+        </div>
+
+        <!-- Right Column -->
+        <div class="grid lg:gap-6 gap-3 lg:mt-10 z-40">
+          <!-- Top Image -->
+          <div class="grid grid-cols-2 gap-6 lg:hidden">
+            <img src="assets/images/gallery/g5.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover " />
+            <img src="assets/images/gallery/g6.png" class="w-full lg;h-[289px] h-[140px] rounded-lg object-cover  " />
+          </div>
+          <img src="assets/images/gallery/g4.png" class="w-full h-[289px] rounded-lg object-cover hidden lg:block " />
+          <!-- Bottom Row -->
+          <div class="grid lg:grid-cols-2 lg:gap-6 ">
+            <img src="assets/images/gallery/g5.png" class="w-full h-[289px] rounded-lg object-cover hidden lg:block" />
+            <img src="assets/images/gallery/g6.png" class="w-full h-[289px] rounded-lg object-cover  hidden lg:block" />
+          </div>
+          <img src="assets/images/gallery/g3.png"
+            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover lg:hidden " />
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="mt-8 text-center">
+        <a href="/pages/gallery.html" class="bg-black text-white px-6 py-3 rounded font-inter font-bold text-lg">
+          View More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <!-- Blog Section -->
+  <section id="blog" class="lg:py-16 py-12 bg-lblack text-white">
+    <div class="container max-w-[1390px] mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center">
+        <p class="text-xl uppercase text-white flex items-center justify-center relative font-inter font-bold  ">
+          <i class="fa-solid fa-diamond absolute mr-[159px]  text-white text-[10px]"></i>
+          <span class="inline-block w-10 h-0.5 bg-white mr-2  "></span>
+          Blog
+          <span class="inline-block w-10 h-0.5 bg-white ml-2 relative "><i
+              class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-white text-[10px]"></i></span>
+        </p>
+        <h2 class="text-2xl lg:text-5xl font-bold text-white mt-2 font-inter text-bold  ">
+          Insights And Updates
+        </h2>
+      </div>
+      <!-- Blog Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <!-- Blog Card 1 -->
+        <div class="bg-gray-800 rounded-lg  overflow-hidden">
+          <div class="relative">
+            <!-- Blog Image -->
+            <img src="assets/images/blog/blo-1.png"
+              class="lg:w-[453px] lg:h-[282px] w-[345px] h-[136px]  object-cover" />
+          </div>
+          <div class="py-5 flex items-start gap-4">
+            <!-- Date Badge -->
+            <div class="bg-darkgray  text-center px-3 py-2 rounded lg:w-[57px] lg:h-[105px] w-[47px] h-[80px] ">
+              <i class="fa-solid fa-calendar text-gray lg:text-lg"></i>
+              <p class="lg:text-lg font-bold text-gray">20</p>
+              <p class="lg:text-lg text-gray text-inter text-bold">AUG</p>
+            </div>
+            <!-- Blog Content -->
+            <div>
+              <h3 class="lg:text-xl font-bold font-inter font-bold mb-3 text-lg border-gray"> Its Christmas, Special
+                Days Ahead
+              </h3>
+
+              <p class="text-gray lg:text-lg text-sm mt-2  py-3 text-inter text-normal border-y-[1px] border-b-gray ">
+                Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum.... </p>
+              <div
+                class="flex items-center text-gray text-sm lg:text-lg text-gray mt-4 space-x-10 lg:space-x-[100px] text-inter text-medium">
+                <span class="flex items-center space-x-2 ">
+                  <i class="fas fa-user"></i>
+                  <span>Admin</span>
+                </span>
+                <span class="flex items-center space-x-2  lg:mr-[50px] ">
+                  <i class="fas fa-tags  "></i>
+                  <span>Festival, Learning</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <div class="relative">
+            <!-- Blog Image -->
+            <img src="assets/images/blog/blo-2.png"
+              class="lg:w-[453px] lg:h-[282px] w-[345px] h-[136px]  object-cover" />
+          </div>
+          <div class="py-5 flex items-start gap-4">
+            <!-- Date Badge -->
+            <div class="bg-darkgray  text-center px-3 py-2 rounded lg:w-[57px] lg:h-[105px] w-[47px] h-[80px]">
+              <i class="fa-solid fa-calendar text-gray lg:text-lg"></i>
+              <p class="lg:text-lg font-bold text-gray">20</p>
+              <p class="lg:text-lg text-gray text-inter text-bold">AUG</p>
+            </div>
+            <!-- Blog Content -->
+            <div>
+              <h3 class="lg:text-xl font-bold font-inter font-bold mb-3 text-lg border-gray"> Its Christmas, Special
+                Days Ahead
+              </h3>
+              <p class="text-gray lg:text-lg text-sm mt-2  py-3 text-inter text-normal border-y-[1px] border-b-gray">
+                Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum.... </p>
+              <div
+                class="flex items-center text-gray text-sm lg:text-lg text-gray mt-4 space-x-10 lg:space-x-[100px] text-inter text-medium">
+                <span class="flex items-center space-x-2 ">
+                  <i class="fas fa-user"></i>
+                  <span>Admin</span>
+                </span>
+                <span class="flex items-center space-x-2 mr-[50px]">
+                  <i class="fas fa-tags"></i>
+                  <span>Festival, Learning</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="bg-gray-800 rounded-lg  overflow-hidden hidden lg:block">
+          <div class="relative">
+            <!-- Blog Image -->
+            <img src="assets/images/blog/blo-3.png" class="w-[453px] h-[282px] object-cover" />
+          </div>
+          <div class="py-5 flex items-start gap-4">
+            <!-- Date Badge -->
+            <div class="bg-darkgray  text-center px-3 py-2 rounded w-[57px] h-[105px] ">
+              <i class="fa-solid fa-calendar text-gray text-lg"></i>
+              <p class="text-lg font-bold text-gray">20</p>
+              <p class="text-lg text-gray text-inter text-bold">AUG</p>
+            </div>
+            <!-- Blog Content -->
+            <div>
+              <h3 class="text-xl font-bold leading-tight font-inter font-bold mb-3  border-gray">Its Christmas, Special
+                Days Ahead </h3>
+              <p
+                class="text-gray text-lg mt-2 leading-relaxed py-3 text-inter text-normal border-y-[1px] border-b-gray ">
+                Lorem Ipsum Is Simply Dummy Text Of The Printing Come Psum.... </p>
+              <div
+                class="flex items-center text-gray-400 text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
+                <span class="flex items-center space-x-2 ">
+                  <i class="fas fa-user"></i>
+                  <span>Admin</span>
+                </span>
+                <span class="flex items-center space-x-2 mr-[50px]">
+                  <i class="fas fa-tags"></i>
+                  <span>Festival, Learning</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- View More Button -->
+      <div class=" lg:mt-8 mt:4 text-center">
+        <a href="/pages/blog.html"
+          class="bg-white text-black px-6 py-3 rounded font-inter font-bold lg:text-lg text-sm">
+          View More
+        </a>
+      </div>
+  </section>
+  <!-- Blog Section -->
+  <!-- Our Team Section -->
+  <section id="team" class="lg:py-16 py-12 bg-white relative overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px] hidden lg:block">
+      <img src="assets/images/gallery/g-bg.png" class=" opacity-25 " />
+    </div>
+    <div class="container max-w-[1390px] mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center">
+        <p class="text-lg uppercase text-black font-bold font-inter flex items-center justify-center relative">
+          <i class="fa-solid fa-diamond absolute mr-[183px]  text-black text-[10px] "></i>
+          <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
+          Our Team
+          <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i
+              class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-black text-[10px]"></i></span>
+        </p>
+        <h2 class="text-2xl lg:text-4xl font-bold text-black font-inter mt-2">
+          Picture Perfect Moments
+        </h2>
+      </div>>
+      <!-- Team Members -->
+      <div class="grid  grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-2">
+        <!-- Team Member 1 -->
+        <div class="relative bg-gray-100 rounded-lg  ">
+          <!-- Image -->
+          <img src="assets/images/our-team/t-1.png"
+            class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
+          <!-- Name and Role -->
+          <div
+            class="absolute   top-[185px] left-[-20px] bg-black  lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
+            <h3 class="text-white lg:text-xl font-bold font-inter text-sm">JIM CARRY</h3>
+            <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs">Facial Specialist</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="relative bg-gray-100 rounded-lg  ">
+          <!-- Image -->
+          <img src="assets/images/our-team/t-2.png"
+            class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
+          <!-- Name and Role -->
+          <div
+            class="absolute   top-[185px] left-[-20px] bg-black  lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
+            <h3 class="text-white lg:text-xl font-bold font-inter text-sm ">MARK VICK</h3>
+            <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs ">Hair Stylist</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="relative bg-gray-100 rounded-lg   hidden lg:block">
+          <!-- Image -->
+          <img src="assets/images/our-team/t-3.png" class="w-[341px] h-[410px] object-cover rounded-lg " />
+          <!-- Name and Role -->
+          <div
+            class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+            <h3 class="text-white text-xl font-bold font-inter ">LINCY MINDO</h3>
+            <p class="text-gray-300 text-lg font-inter font-normal ">Facial Designer</p>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="relative bg-gray-100 rounded-lg  hidden lg:block">
+          <!-- Image -->
+          <img src="assets/images/our-team/t-4.png" class="w-[341px] h-[410px] object-cover rounded-lg  " />
+          <!-- Name and Role -->
+          <div
+            class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+            <h3 class="text-white text-xl font-bold font-inter ">ELIZA RIKA</h3>
+            <p class="text-gray-300 text-lg font-inter font-normal ">wedding Specialist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Team Section -->
+  <!-- Testimonials -->
+  <section id="testimonial" class="lg:py-16 py-12 bg-lblack text-white overflow-hidden">
+    <!-- Container -->
+    <div class="container mx-auto max-w-[1390px] px-4 overflow-hidden">
+
+
+      <!-- Section Header -->
+      <div class="mb-4 mx-0 flex justify-center lg:justify-start">
+
+        <p class="lg:text-lg text:sm uppercase tracking-wide text-white font-bold flex items-center font-inter">
+          <span class="inline-block w-10 h-0.5 bg-white mr-2 relative lg:hidden"><i
+              class="fa-solid fa-diamond absolute mx-[-10px] my-[-5px]  text-[10px]"></i></span>
+          Testimonial
+          <span class="inline-block w-10 h-0.5 bg-white ml-2 relative"><i
+              class="fa-solid fa-diamond absolute mx-10 my-[-5px]  text-[10px]"></i></span>
+        </p>
+      </div>
+      <!-- Heading -->
+      <h2 class="text-2xl lg:text-5xl font-bold text-white mb-10 font-inter flex justify-center lg:justify-start">
+        Happy Users
+      </h2>
+      <div class="swiper mySwipers hidden lg:block">
+        <div class="swiper-button-next lg:top-[-55px] lg:right-[0px] z-40 ">
+          <img src="assets/images/Group.svg" alt="">
+
+        </div>
+        <div class="swiper-button-prev bg-[#101010] top-[-55px] left-[93%] ">
+          <img src="assets/images/Frame.svg" alt="">
+
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="lg:flex lg:items-center bg-lblack py-6 rounded-lg shadow-md w-full">
+
+              <!-- Image -->
+              <div class="   ">
+                <img src="assets/images/testi/te-1.png"
+                  class="object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]" />
+              </div>
+              <!-- Content -->
+              <div class="ml-6 w-[350px] h-[120px] text-start">
+                <p class="text-gray text-lg font-inter font-normal mb-4 ">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+                  you to a become will.
+                </p>
+                <div class="relative">
+                  <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
+                  <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+                  <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i
+                      class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="lg:flex items-center bg-lblack py-6 rounded-lg shadow-md w-full">
+
+              <!-- Image -->
+              <div class="place-content-center">
+                <img src="assets/images/testi/te-2.png"
+                  class=" object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[297px]  " />
+              </div>
+              <!-- Content -->
+              <div class="ml-6 w-[350px] h-[120px] text-start">
+                <p class="text-gray text-lg font-inter font-normal mb-4  ">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+                  you to a become will.
+                </p>
+                <div class="relative">
+                  <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
+                  <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+                  <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i
+                      class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex items-center bg-lblack py-6 rounded-lg shadow-md w-full">
+
+              <!-- Image -->
+              <div class="   ">
+                <img src="assets/images/testi/te-1.png"
+                  class="object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]" />
+              </div>
+              <!-- Content -->
+              <div class="ml-6 w-[350px] h-[120px] text-start">
+                <p class="text-gray text-lg font-inter font-normal mb-4 ">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+                  you to a become will.
+                </p>
+                <div class="relative">
+                  <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
+                  <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+                  <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i
+                      class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="lg:flex items-center bg-lblack py-6 rounded-lg shadow-md w-full">
+
+              <!-- Image -->
+              <div class="place-content-center">
+                <img src="assets/images/testi/te-2.png"
+                  class=" object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]  " />
+              </div>
+              <!-- Content -->
+              <div class="ml-6 w-[350px] h-[120px] text-start">
+                <p class="text-gray text-lg font-inter font-normal mb-4 ">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+                  you to a become will.
+                </p>
+                <div class="relative">
+                  <h4 class="text-2xl font-bold font-inter">Micky Walls</h4>
+                  <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+                  <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i
+                      class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="lg:hidden ">
+      <div>
+        <!-- Image -->
+        <div class="flex justify-center  ">
+          <img src="assets/images/testi/te-1.png"
+            class="object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]" />
+        </div>
+        <!-- Content -->
+        <div class=" w-[350px] h-[120px] text-start mt-3 px-5">
+          <p class="text-gray text-sm font-inter font-normal mb-4 ">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+            you to a become will.
+          </p>
+          <div class="relative">
+            <h4 class="text-lg font-bold font-inter">Micky Walls</h4>
+            <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+            <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i
+                class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- Image -->
+          <div class="flex justify-center  mt-5">
+            <img src="assets/images/testi/te-2.png  "
+              class="object-cover w-[136px] h-[161px] border border-1 border-white rounded-md  lg:w-[251px] lg:h-[291px]" />
+          </div>
+          <!-- Content -->
+          <div class=" w-[350px] h-[120px] text-start mt-3 px-5">
+            <p class="text-gray text-sm font-inter font-normal mb-4 ">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. A lorem can
+              you to a become will.
+            </p>
+            <div class="relative">
+              <h4 class="text-lg font-bold font-inter">Micky Walls</h4>
+              <p class="text-yellow-400 w-[18px] h-[18px]">★★★★★</p>
+              <div class="absolute top-0 right-0 w-[50px] h-[64px]"><i
+                  class="fa-solid fa-quote-right text-6xl text-gray"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
 
   <!-- Testimonials -->
-   <!-- faq -->
-   <section id="faq" class="py-16 bg-white relative">
+  <!-- faq -->
+  <section id="faq" class="lg:py-16 py-12 bg-white relative">
     <!-- Container -->
     <div class="container mx-auto max-w-[1390px] px-4">
       <!-- Section Header -->
       <div class="text-center">
-        <p class="text-xl uppercase tracking-wide text-black flex items-center justify-center relative font-inter font-bold  ">
+        <p
+          class="lg:text-xl text-lg uppercase tracking-wide text-black flex items-center justify-center relative font-inter font-bold  ">
           <i class="fa-solid fa-diamond absolute mr-[145px]  text-black text-[10px]"></i>
           <span class="inline-block w-10 h-0.5 bg-black mr-2  "></span>
           Faq
-          <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-black text-[10px]"></i></span>
+          <span class="inline-block w-10 h-0.5 bg-black ml-2 relative "><i
+              class="fa-solid fa-diamond absolute mx-4 my-[-4px]  text-black text-[10px]"></i></span>
         </p>
-        <h2 class="text-3xl lg:text-5xl font-bold text-black mt-2 font-inter text-bold  ">
-        Frequently Asked Questions
+        <h2 class="text-2xl lg:text-5xl font-bold text-black mt-2 font-inter text-bold  ">
+          Frequently Asked Questions
         </h2>
       </div>
-  
+
       <!-- FAQ Content -->
       <div class="bg-black text-white rounded-lg shadow-md px-6 py-8 mt-10">
         <!-- Single FAQ -->
         <div class="border border-white p-2 rounded-md">
-          <button
-            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
-            onclick="toggleFaq(this)"
-          >
+          <button class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)">
             <span class="text-lg font-inter text-">How Can I Check My Booking Is Done Or Not?</span>
             <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
           </button>
@@ -646,45 +934,12 @@
             </p>
           </div>
         </div>
-  
+
         <!-- Repeat for other FAQs -->
         <div class="border border-white p-2 rounded-md mt-5">
-          <button
-            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
-            onclick="toggleFaq(this)"
-          >
-            <span class="text-lg font-inter text-">How  Can I Check  My Booking is Accepted Or Not?</span>
-            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
-          </button>
-          <div class="hidden">
-            <p class="text-gray-400 text-sm mt-2">
-              You can check your booking status by visiting the bookings page and entering your
-              booking ID.
-            </p>
-          </div>
-        </div> 
-        <div class="border border-white p-2 rounded-md mt-5">
-          <button
-            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
-            onclick="toggleFaq(this)"
-          >
-            <span class="text-lg font-inter text-">How Long Does It Takse To Accept/Confirm The  booking ?</span>
-            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
-          </button>
-          <div class="hidden">
-            <p class="text-gray-400 text-sm mt-2">
-              You can check your booking status by visiting the bookings page and entering your
-              booking ID.
-            </p>
-          </div>
-        </div>
-  
-        <div class="border border-white p-2 rounded-md mt-5">
-          <button
-            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
-            onclick="toggleFaq(this)"
-          >
-            <span class="text-lg font-inter text-">DO I Recevie Notification Of Booking Acceptance?</span>
+          <button class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="lg:text-lg text-sm font-inter font-bold">How Can I Check My Booking is Accepted Or Not?</span>
             <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
           </button>
           <div class="hidden">
@@ -695,11 +950,25 @@
           </div>
         </div>
         <div class="border border-white p-2 rounded-md mt-5">
-          <button
-            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
-            onclick="toggleFaq(this)"
-          >
-            <span class="text-lg font-inter text-">Report An Error</span>
+          <button class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="lg:text-lg text-sm font-inter font-bold">How Long Does It Takse To Accept/Confirm The booking
+              ?</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="lg:text-lg text-sm font-inter font-bold">DO I Recevie Notification Of Booking
+              Acceptance?</span>
             <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
           </button>
           <div class="hidden">
@@ -710,11 +979,9 @@
           </div>
         </div>
         <div class="border border-white p-2 rounded-md mt-5">
-          <button
-            class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
-            onclick="toggleFaq(this)"
-          >
-            <span class="text-lg font-inter text-">Technical Errors In Mobile App</span>
+          <button class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="lg:text-lg text-sm font-inter font-bold">Report An Error</span>
             <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
           </button>
           <div class="hidden">
@@ -724,168 +991,223 @@
             </p>
           </div>
         </div>
-  
-    <!-- Background Image -->
-     <div class="absolute left-12 top-[283px] h-[237px] w-[304px] opacity-10 rotate-[-95deg]">
-      <img
-        src="assets/images/faq/bg-2.png"
-        alt="Background Icon"
-        class="w-full h-full object-contain"
-      />
-    </div> 
-     <!-- Right-Side Background Image -->
-     <div class="absolute right-0 top-0 h-[306px] w-[294px] opacity-10 z-0">
-      <img
-        src="assets/images/faq/bg-1.png"
-        alt="Background Icon"
-        class="w-full h-full object-contain"
-      />
-    </div>
-  </div>
+        <div class="border border-white p-2 rounded-md mt-5">
+          <button class="flex justify-between items-center w-full py-3 text-left focus:outline-none"
+            onclick="toggleFaq(this)">
+            <span class="lg:text-lg text-sm font-inter font-bold  ">Technical Errors In Mobile App</span>
+            <span class="text-2xl font-bold"><i class="fa-solid fa-circle-plus"></i></span>
+          </button>
+          <div class="hidden">
+            <p class="text-gray-400 text-sm mt-2">
+              You can check your booking status by visiting the bookings page and entering your
+              booking ID.
+            </p>
+          </div>
+        </div>
+
+        <!-- Background Image -->
+        <div class="absolute left-12 top-[283px] h-[237px] w-[304px] opacity-10 rotate-[-95deg] hidden lg:block">
+          <img src="assets/images/faq/bg-2.png" alt="Background Icon" class="w-full h-full object-contain" />
+        </div>
+        <!-- Right-Side Background Image -->
+        <div class="absolute right-0 top-0 h-[306px] w-[294px] opacity-10 z-0 hidden lg:block">
+          <img src="assets/images/faq/bg-1.png" alt="Background Icon" class="w-full h-full object-contain" />
+        </div>
+      </div>
   </section>
-   
-<!-- Toggle FAQ -->
- <!-- faq -->
+
+  <!-- Toggle FAQ -->
+  <!-- faq -->
   <!-- Footer -->
-  <footer class="relative bg-cover bg-center text-white overflow-hidden" style="background-image: url('assets/images/footer/bg.png');">
+  <footer class="relative bg-cover bg-center text-white overflow-hidden"
+    style="background-image: url('assets/images/footer/bg.png');">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-90"></div>
-    <div class="absolute border-b-[1px] border-gray bottom-[229px] w-[1952px]"></div>
-    <div class="absolute border-b border-gray bottom-[30px] w-[1952px]"></div>
-  
-    <div class="relative container mx-auto   pt-16" style="max-width: 1390px;">
+    <div class="absolute border-b-[1px] border-gray lg:bottom-[70%] w-[1952px] top-[50%]"></div>
+    <div class="absolute border-b border-gray lg:bottom-[30px] bottom-[20px] w-[1952px]"></div>
+
+    <div class="relative container mx-auto   lg:pt-16 pt-12 max-w-[1390px]">
       <!-- Top Section -->
-      <div class="pb-6 text-center">
-        <div class="flex flex-wrap justify-between items-center">
+      <div class="pb-6 ">
+        <div class="lg:flex lg:flex-wrap lg:justify-between lg:items-center">
           <!-- Logo -->
-          <div class="w-full lg:w-auto mb-6 lg:mb-0 place-content-center">
+          <div class="w-full lg:w-auto mb-6  flex justify-center ">
             <img src="assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[101px] w-[101px] ">
           </div>
           <!-- Subscription Form -->
-          <div class="w-full lg:w-2/3 lg:flex justify-content-end items-center space-x-0">
-            <h3 class="font-inter text-2xl mr-3 font-extrabold"> Subscribe Your News Letter</h3>
-            <input
-              type="email"
-              placeholder="Enter Email"
-              class="lg:w-[450px] px-4 py-2 lg:h-[60px] rounded-l-md bg-white text-gray-800 focus:outline-none"
-            />
-            <button
-              class="bg-dark text-white px-6 py-2 rounded-r-md  lg:h-[60px] text-xl text-inter"
-            >
+          <div class="w-full lg:w-2/3 lg:flex lg:justify-content-end lg:items-center space-x-5 lg:space-x-0 ">
+            <h3 class="font-inter lg:text-2xl text-lg mr-3 font-extrabold text-center"> Subscribe Your News Letter</h3>
+            <input type="email" placeholder="Enter Email"
+              class="lg:w-[450px] lg:px-4 lg:py-2 lg:h-[60px] rounded-l-md bg-white text-gray focus:outline-none w-[255px] h-[45px] mr-4" />
+            <button class="bg-dark text-white lg:px-6 lg:py-2 rounded-r-md  lg:h-[60px] text-xl font-inter h-[45px]">
               SEND
             </button>
           </div>
         </div>
       </div>
-  
+
       <!-- Middle Section -->
       <div class="py-6 ">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center lg:text-left mt-3">
+        <div class=" lg:flex lg:flex-wrap text-center lg:text-left ">
           <!-- Column 1 -->
-          <div class="">
-            <h3 class="text-2xl font-inter font-bold mb-2">See Your Style</h3>
-            <p class="text-xl font-inter font-normal ">
-              We suggest the nearest salons <br> according to your preference.
+          <div class="lg:w-[500px] lg:h-[165px] w-[202px] h-[60px] ml-20 lg:pt-5 lg:hidden">
+          <h3 class="lg:text-5xl font-bold font-inter text-right text-xl mb-2">Download Our App</h3>
+          <div class="flex justify-center lg:justify-end space-x-4 mt-4">
+            <a href="#">
+              <img src="assets/images/footer/go.png" class="w-[163px] h-[48px]">
+            </a>
+            <a href="#">
+              <img src="assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+            </a>
+          </div>
+        </div>
+
+          <div class="lg:w-[300px] lg:h-[165px] w-[145px] h-[68px] lg:pt-5 ">
+            <h3 class="lg:text-2xl font-inter font-bold mb-2 text-base mt-10 lg:mt-0">See Your Style</h3>
+            <p class="lg:text-xl font-inter font-normal text-xs">
+              We suggest the nearest salons  according to your preference.
             </p>
-            <div class="flex justify-center lg:justify-start space-x-4 mt-4">
-              <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
-                <i class="fab fa-facebook-f text-black mt-2"></i>
+            <div class="flex justify-center  space-x-4 lg:mt-4 mt-6    lg:ml-[0px] hidden lg:block">
+              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-facebook-f  text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
               </a>
-              <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
-                <i class="fab fa-instagram text-black mt-2"></i>
+              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-instagram text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
               </a>
-              <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
-                <i class="fab fa-twitter text-black mt-2"></i>
+              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-twitter text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
               </a>
-              <a href="#" class="text-center  w-[30px] h-[30px] bg-white rounded-full ">
-                <i class="fab fa-youtube text-black mt-2"></i>
+              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-youtube text-black lg:mt-1 lg:text-lg text-sm mb-0"></i>
               </a>
             </div>
           </div>
-  
+          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] lg:pt-5 w-[138px] h-[70px] lg:hidden mt-[-70px]">
+            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
+            <p class="lg:text-lg font-normal font-inter text-xs">
+              Go to our AI Page and let us recommend you what's the best!
+            </p>
+          </div>
+
           <!-- Column 2 -->
-          <div>
-            <h3 class="text-5xl font-bold font-inter text-enter mb-2">Download Our App</h3>
-            <div class="flex justify-center lg:justify-center space-x-4 mt-4">
+          <div class="w-[500px] h-[165px] ml-20 pt-5 hidden lg:block">
+            <h3 class="lg:text-5xl font-bold font-inter text-right mb-2">Download Our App</h3>
+            <div class="flex justify-center lg:justify-end space-x-4 mt-4">
               <a href="#">
-                <img src="assets/images/footer/go.png"  class="w-[163px] h-[48px]">
+                <img src="assets/images/footer/go.png" class="w-[163px] h-[48px]">
               </a>
               <a href="#">
                 <img src="assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
               </a>
             </div>
           </div>
-  
+
           <!-- Column 3 -->
-          <div>
-            <h3 class="text-2xl font-bold font-inter text-center mb-2">AI Recognizes You</h3>
-            <p class="text-lg font-normal font-inter ">
+          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] pt-5 w-[138px] h-[70px] hidden lg:block">
+            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
+            <p class="lg:text-lg font-normal font-inter text-xs">
               Go to our AI Page and let us recommend you what's the best!
             </p>
           </div>
         </div>
       </div>
-  
+
       <!-- Bottom Section -->
-      <div class=" text-center text-sm">
+      <div class=" text-center lg:text-sm  text-xs mt-10">
         <p>&copy; 2023 Copyright En Marketing Private Limited</p>
       </div>
     </div>
   </footer>
-  
+
   <!--footer  -->
 
   <!-- script -->
-   <!-- JavaScript for Mobile Menu Toggle -->
-   <script>
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenu.classList.toggle('hidden');
     });
-  </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Slick Slider JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
- <script>
-  $('.responsive').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+    function toggleFAQ(this) {
+      const answerElement = document.getElementById(`faq-answer-${this}`);
+      const iconElement = answerElement.previousElementSibling.querySelector('span:last-child');
+      answerElement.classList.toggle('hidden');
+      if (answerElement.classList.contains('hidden')) {
+        iconElement.textContent = '+';
+      } else {
+        iconElement.textContent = '-';
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
- </script>
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  
-  
+  <!-- Slick Slider JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $('.responsive').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwipers", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
 </body>
+
 </html>

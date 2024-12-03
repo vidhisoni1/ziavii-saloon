@@ -58,80 +58,36 @@
   <body class="bg-gray-900 text-white">
     <!-- Header -->
     <header class="bg-black border-b-[0.5px] border-gray">
-      <div
-        class="container max-w-[1390px] mx-auto flex justify-between items-center"
-      >
+      <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
         <a href="index.html">
           <img src="/assets/images/banner/logo.png" class="h-[89px]" />
         </a>
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex space-x-8">
-          <a href="/index.html" class="text-gray hover:text-white font-inter"
-            >Home</a
-          >
-          <a
-            href="/pages/about.html"
-            class="text-gray hover:text-white font-inter"
-            >About Us</a
-          >
-          <a href="services.html" class="text-gray hover:text-white font-inter"
-            >Services</a
-          >
-          <a href="blog.html" class="text-gray hover:text-white font-inter"
-            >Blog</a
-          >
-          <a href="gallery.html" class="text-gray hover:text-white font-inter"
-            >Gallery</a
-          >
-         <a href="contact.html" class="text-gray hover:text-white"
-            >Contact Us</a
-          >
-          <button
-            class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 font-inter"
-          >
-            Book Now
-          </button>
+          <a href="/index.html" class="text-gray hover:text-white font-inter">Home</a>
+          <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
+          <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
+          <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
+          <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter">Gallery</a>
+          <a href="/pages/contact.html" class="text-gray hover:text-white font-inter">Contact Us</a>
+          <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
         </nav>
+        
+        <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
           ☰
         </button>
       </div>
-      <div id="mobile-menu" class="hidden lg:hidden bg-black space-y-2 p-4">
-        <a
-          href="index.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Home</a
-        >
-        <a
-          href="about.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >About Us</a
-        >
-        <a
-          href="services.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Services</a
-        >
-        <a
-          href="blog.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Blog</a
-        > 
-        <a
-          href="gallery.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Gallery</a
-        >
-        
-        <a
-          href="contact.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Contact Us</a
-        >
-        <button
-          class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 w-full font-inter"
-        >
-          Book Now
-        </button>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl">
+        <a href="index.html" class="block text-black hover:text-gray-400 font-inter">Home</a>
+        <a href="/pages/about.html" class="block text-black hover:text-gray-400 font-inter">About Us</a>
+        <a href="/pages/services.html" class="block text-black hover:text-gray-400 font-inter">Services</a>
+        <a href="/pages/gallery.html" class="block text-black hover:text-gray-400 font-inter">Gallery</a>
+        <a href="/pages/blog.html" class="block text-black hover:text-gray-400 font-inter">Blog</a>
+        <a href="/pages/contact.html" class="block text-vlack hover:text-gray-400 font-inter">Contact Us</a>
+       
       </div>
     </header>
     <!-- header -->
@@ -169,7 +125,7 @@
     <section class="py-16 bg-white overflow-hidden">
       <div class="relative bg-white py-16">
         <!-- Background Images -->
-        <div class="top-0 left-0 w-full h-full -z-10 ">
+        <div class="top-0 left-0 w-full h-full -z-10 hidden lg:block ">
           <img
             src="/assets/images/features/bg-2.png"
             alt="Background"
@@ -184,10 +140,10 @@
 
         <!-- Main Container -->
         <div
-          class="container mx-auto max-w-[1390px] grid grid-cols-12 gap-6 items-center"
+          class="container mx-auto max-w-[1390px] grid lg:grid-cols-12 gap-6 items-center"
         >
           <!-- First Column (Image) -->
-          <div class="col-span-6">
+          <div class="lg:col-span-6">
             <img
               src="/assets/images/features/ab-1.png"
               alt="Salon Service"
@@ -196,7 +152,7 @@
           </div>
 
           <!-- Second Column (Text) -->
-          <div class="col-span-6 ml-10">
+          <div class="lg:col-span-6 ">
             <div class="mb-4">
               <h3
                 class="text-5xl tracking-wide font-inter font-bold text-black flex items-center"
@@ -209,31 +165,34 @@
                 ></span>
               </h3>
             </div>
-            <ul class="text-gray-600 space-y-4">
-              <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+            <ul class="text-[gray] space-y-4">
+              <li class="flex items-start">
+               
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   Search Nearby Salons, Parlours, Spas & Book Appointments in
                   Real-Time.
                 </p>
               </li>
-              <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+              <li class="lg:flex items-start  ">
+                
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   Ziavii is a platform that connects user Salons and Parlours in
                   India. Everyday we are focused providing better services to
                   the people.
                 </p>
               </li>
               <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+               
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   India’s first time salon and parlour appointment platform to
                   book beauty services like hair-spa, shave, keratin,
                   smoothening, pedicure, makeup from your favorite at a beauty
@@ -241,10 +200,11 @@
                 </p>
               </li>
               <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+                
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   We are currently available in Lucknow , we have immense number
                   of options to choose customers’ type of hair-styles/nail
                   arts/makeups.
@@ -254,13 +214,14 @@
           </div>
 
           <!-- Third Column (Text) -->
-          <div class="col-span-6 mt-8">
+          <div class="lg:col-span-6 mt-8">
             <ul class="text-gray-600 space-y-4">
               <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+                
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   Ziavii is an Indian online service providing company, the
                   company provides online services of its prior booking
                   appointments pertaining to hair-dressing and makeups for
@@ -268,27 +229,30 @@
                 </p>
               </li>
               <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+                
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   We provide a platform for the Salons/Spas/Beauty parlors to
                   offer their services and for the customers to consume them.
                 </p>
               </li>
               <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+               
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   We are link between the customers and vendors.
                 </p>
               </li>
               <li class="flex items-start space-x-3">
-                <span class="text-4xl text-gray rotate-[-40deg]"
+               
+                <p class="text-gray text-lg font-inter font-normal">
+                  <span class="text-4xl text-gray rotate-[-40deg]"
                   ><i class="fa-solid fa-scissors pr-3"></i
                 ></span>
-                <p class="text-gray text-lg font-inter font-normal">
                   Available in Lucknow only. Coming soon in Noida , Delhi,
                   Mumbai, Bangalore etc .
                 </p>
@@ -297,7 +261,7 @@
           </div>
 
           <!-- Fourth Column (Image) -->
-          <div class="col-span-6 mt-8">
+          <div class="lg:col-span-6 mt-8">
             <img
               src="/assets/images/features/ab-2.png"
               alt="Stylist Service"
@@ -320,8 +284,8 @@
         <div class="container mx-auto max-w-[1390px] text-center py-16">
           <!-- Heading -->
           <div class="text-center relative">
-            <p class="text-5xl  tracking-wide text-white font-inter font-bold flex items-center justify-center relative">
-              <i class="fa-solid fa-diamond absolute ml-[-500px]  text-white text-sm"></i>
+            <p class="lg:text-5xl  tracking-wide text-white font-inter font-bold flex items-center justify-center relative">
+              <i class="fa-solid fa-diamond absolute lg:ml-[-500px]  ml-[-300px] text-white text-sm"></i>
               <span class="inline-block w-20 h-0.5 bg-white mr-2  "></span>
                 Our Numbers
               <span class="inline-block w-20 h-0.5 bg-white ml-2 relative "><i class="fa-solid fa-diamond absolute mx-10 my-[-8px]  text-white text-sm"></i></span>
@@ -334,41 +298,41 @@
             <!-- Number 1 -->
             <div class="flex flex-col  items-center">
               <div
-                class="w-[150px] h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg"
+                class="lg:w-[150px] lg:h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg w-[82px] h-[82px]"
               >
-                <span class="text-4xl font-bold text-black font-inter">75%</span>
+                <span class="lg:text-4xl text-xl font-bold text-black font-inter">75%</span>
               </div>
-              <p class="mt-4 text-2xl font-inter font-bold">Experts</p>
+              <p class="mt-4 lg:text-2xl text-lg font-inter font-bold">Experts</p>
             </div>
 
             <!-- Number 2 -->
             <div class="flex flex-col  items-center">
               <div
-                class="w-[150px] h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg"
+                class="lg:w-[150px] lg:h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg w-[82px] h-[82px]"
               >
-                <span class="text-4xl font-bold text-black font-inter">68%</span>
+                <span class="lg:text-4xl text-xl font-bold text-black font-inter">68%</span>
               </div>
-              <p class="mt-4 text-2xl font-inter font-bold">Hair Styling</p>
+              <p class="mt-4 lg:text-2xl text-lg font-inter font-bold">Hair Styling</p>
             </div>
 
             <!-- Number 3 -->
             <div class="flex flex-col items-center">
               <div
-                class="w-[150px] h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg"
+                class="lg:w-[150px] lg:h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg w-[82px] h-[82px]"
               >
-                <span class="text-4xl font-bold text-black">80%</span>
+                <span class="lg:text-4xl text-xl font-bold text-black font-inter">80%</span>
               </div>
-              <p class="mt-4 text-2xl font-inter font-bold">Beauty Tips</p>
+              <p class="mt-4 lg:text-2xl text-lg font-inter font-bold">Beauty Tips</p>
             </div>
 
             <!-- Number 4 -->
             <div class="flex flex-col items-center">
               <div
-                class="w-[150px] h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg"
+                class="lg:w-[150px] lg:h-[150px] bg-white rounded-full flex items-center justify-center shadow-lg w-[82px] h-[82px]"
               >
-                <span class="text-4xl font-bold text-black">88%</span>
+                <span class="lg:text-4xl text-xl font-bold text-black font-inter">88%</span>
               </div>
-              <p class="mt-4 text-2xl font-inter font-bold">Cutting</p>
+              <p class="mt-4 lg:text-2xl text-lg font-inter font-bold">Cutting</p>
             </div>
           </div>
         </div>
@@ -381,7 +345,7 @@
       <section class="overflow-hidden">
         <div class="py-16 bg-white relative">
             <!-- background-image -->
-            <div class="absolute top-[-46px] right-[144px]  w-[371px] h-[445px] rotate-[-2deg]">
+            <div class="absolute top-[-46px] right-[144px]  w-[371px] h-[445px] rotate-[-2deg] hidden lg:block">
                 <img
                   src="/assets/images/features/vi-bg.png"
                   alt="Background Top Design"
@@ -392,36 +356,36 @@
           
             <div class="container mx-auto max-w-[1390px] grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <!-- Left Side: Images -->
-              <div class="grid grid-cols-2 gap-4 overflow-hidden place-items-center">
+              <div class="grid grid-cols-2 gap-4 overflow-hidden lg:place-items-center place-items-right">
                 <div class="">
-                  <img src="/assets/images/features/vi-1.png" alt="Hair Styling" class="rounded-md w-[299px] h-[415px] object-cover">
+                  <img src="/assets/images/features/vi-1.png" alt="Hair Styling" class="rounded-md lg:w-[299px] lg:h-[415px] object-cover w-[179px] h-[293px] ml-[50px]">
                 </div>
-                <div class="">
-                  <img src="/assets/images/features/vi-2.png" alt="Customer" class="rounded-md w-[256px] h-[238px] object-cover mb-4 mr-20">
-                  <img src="/assets/images/features/v-3.png" alt="Barber" class="rounded-md w-[256px] h-[238px] object-cover">
+                <div class="p-3">
+                  <img src="/assets/images/features/vi-2.png" alt="Customer" class="rounded-md lg:w-[256px] lg:h-[238px] w-[151px] h-[140px] object-cover lg:mb-4 mb-2 lg:mr-20">
+                  <img src="/assets/images/features/v-3.png" alt="Barber" class="rounded-md lg:w-[256px] lg:h-[238px] w-[151px] h-[140px] object-cover ">
                 </div>
               </div>
           
               <!-- Right Side: Vision and Mission -->
-              <div class="space-y-8">
+              <div class="space-y-8 ">
                 <!-- Vision Section -->
-                <div class="grid grid-cols-1 gap-8 z-4">
-                    <div class="p-6 border border-black rounded-md shadow-md w-[557px] h-[223px]">
+                <div class="grid lg:grid-cols-1 gap-8 z-4 items-center justify-center">
+                    <div class="lg:p-6 border border-lblack rounded-md shadow-md lg:w-[557px] lg:h-[223px] w-[345px] h-[173px] lg:block p-3">
                       <div class="flex items-center space-x-4">
-                        <div class="w-[60px] h-[60px] bg-black rounded-full text-center"><i class="fas fa-eye text-4xl text-white mt-3"></i></div>
-                        <h3 class="text-4xl font-bold font-inter text-black">Our Vision</h3>
+                        <div class="lg:w-[60px] lg:h-[60px] w-[40px] h-[40px] bg-lblack rounded-full text-center lg:block"><i class="fas fa-eye lg:text-4xl text-white mt-3"></i></div>
+                        <h3 class="lg:text-4xl font-bold font-inter text-lblack">Our Vision</h3>
                       </div>
-                      <p class="mt-4 text-gray font-inter font-normal">
+                      <p class="lg:mt-4 text-gray  font-inter font-normal text-sm lg:text-xl lg:block mt-3 ">
                         Lorem Ipsum is simply dummy text of we see we a the printing  be  wil be atypesetting industry. aLoremcan you a  see can ato becomewill aLorem Ipsum is  we asimplu  becomewill be come  to Ipsum....
                       </p>
                     </div>
               
-                    <div class="p-6 border border-black rounded-md shadow-md w-[557px] h-[223px] ml-[200px]">
+                    <div class="lg:p-6 border border-lblack rounded-md shadow-md lg:w-[557px] lg:h-[223px] w-[345px] h-[173px] lg:block p-3 lg:ml-[200px]">
                         <div class="flex items-center space-x-4">
-                          <div class="w-[60px] h-[60px] bg-black rounded-full text-center">  <i class="fas fa-bullseye text-4xl text-white mt-3"></i></div>
-                          <h3 class="text-4xl font-bold font-inter text-black">Our Mission</h3>
+                          <div class="lg:w-[60px] lg:h-[60px] w-[40px] h-[40px] bg-lblack rounded-full text-center lg:block">  <i class="fas fa-bullseye lg:text-4xl text-white mt-3"></i></div>
+                          <h3 class="lg:text-4xl font-bold font-inter text-lblack">Our Mission</h3>
                         </div>
-                        <p class="mt-4 text-gray font-inter font-normal">
+                        <p class="lg:mt-4 text-gray  font-inter font-normal text-sm  lg:text-xl lg:block mt-3 ">
                             Lorem Ipsum is simply dummy text of we see we a the printing  be  wil be atypesetting industry. aLoremcan you a  see can ato becomewill aLorem Ipsum is  we asimplu  becomewill be come  to Ipsum...
                         </p>
                       </div>
@@ -447,13 +411,13 @@
       <div class="relative container mx-auto pt-16" style="max-width: 1390px">
         <!-- Top Section -->
         <div class="pb-6">
-          <div class="flex flex-wrap justify-between items-center">
+          <div class="flex flex-wrap lg:justify-between  ">
             <!-- Logo -->
-            <div class="w-full lg:w-auto mb-6 lg:mb-0">
+            <div class="w-full lg:w-auto mb-6 lg:mb-0 justify-content-end">
               <img
                 src="/assets/images/banner/logo.png"
                 alt="Ziavii Logo"
-                class="h-[101px] w-[101px]"
+                class="lg:h-[101px] lg:w-[101px]"
               />
             </div>
             <!-- Subscription Form -->
@@ -559,5 +523,13 @@
     </footer>
 
     <!--footer  -->
+
+     <!-- JavaScript for Mobile Menu Toggle -->
+   <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
   </body>
 </html>

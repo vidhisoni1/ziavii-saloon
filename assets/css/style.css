@@ -1,6 +1,34 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible !important;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .swiper-slide img {
+    display: block;
+    width: 251px;
+    height: 297px;
+    object-fit: cover;
+  }
 
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-button-prev::after {
+    content: none !important; /* No additional content */
+}
+.swiper-button-next::after {
+    content: none !important; /* No additional content */
+}
 
 
 
