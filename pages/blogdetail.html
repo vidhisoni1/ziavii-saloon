@@ -58,130 +58,81 @@
   <body class="bg-gray-900 text-white">
     <!-- Header -->
     <header class="bg-black border-b-[0.5px] border-gray">
-      <div
-        class="container max-w-[1390px] mx-auto flex justify-between items-center"
-      >
+      <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
         <a href="index.html">
           <img src="/assets/images/banner/logo.png" class="h-[89px]" />
         </a>
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex space-x-8">
-          <a href="/index.html" class="text-gray hover:text-white font-inter"
-            >Home</a
-          >
-          <a
-            href="/pages/about.html"
-            class="text-gray hover:text-white font-inter"
-            >About Us</a
-          >
-          <a
-            href="/pages/services.html"
-            class="text-gray hover:text-white font-inter"
-            >Services</a
-          >
-          <a
-            href="/pages/blog.html"
-            class="text-gray hover:text-white font-inter"
-            >Blog</a
-          >
-          <a href="gallery.html" class="text-gray hover:text-white font-inter"
-            >Gallery</a
-          >
-
-          <a href="contact.html" class="text-gray hover:text-white"
-            >Contact Us</a
-          >
-          <button
-            class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 font-inter"
-          >
-            Book Now
-          </button>
+          <a href="/index.html" class="text-gray hover:text-white font-inter">Home</a>
+          <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
+          <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
+          <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
+          <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter">Gallery</a>
+          <a href="/pages/contact.html" class="text-gray hover:text-white font-inter">Contact Us</a>
+          <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
         </nav>
+        
+        <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
           ☰
         </button>
       </div>
-      <div id="mobile-menu" class="hidden lg:hidden bg-black space-y-2 p-4">
-        <a
-          href="index.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Home</a
-        >
-        <a
-          href="about.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >About Us</a
-        >
-        <a
-          href="services.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Services</a
-        >
-        <a
-          href="gallery.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Gallery</a
-        >
-        <a
-          href="blog.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Blog</a
-        >
-        <a
-          href="contact.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Contact Us</a
-        >
-        <button
-          class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 w-full font-inter"
-        >
-          Book Now
-        </button>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl">
+        <a href="index.html" class="block text-black hover:text-gray-400 font-inter">Home</a>
+        <a href="/pages/about.html" class="block text-black hover:text-gray-400 font-inter">About Us</a>
+        <a href="/pages/services.html" class="block text-black hover:text-gray-400 font-inter">Services</a>
+        <a href="/pages/blog.html" class="block text-black hover:text-gray-400 font-inter">Blog</a>
+        <a href="/pages/gallery.html" class="block text-black hover:text-gray-400 font-inter">Gallery</a>
+        <a href="/pages/contact.html" class="block text-vlack hover:text-gray-400 font-inter">Contact Us</a>
+       
       </div>
     </header>
     <!-- header -->
     <!-- Hero-Section -->
     <section
-      class="relative bg-cover bg-center overflow-hidden"
-      style="
-        background-image: url('/assets/images/features/bg.png');
-        height: 743px;
-      "
+    class="relative bg-cover bg-center overflow-hidden lg:h-[743px] h-[225px]"
+    style="
+      background-image: url('/assets/images/features/bg.png');
+     
+    "
+  >
+    <div
+      class="bg-black bg-opacity-80 w-full h-full flex items-center justify-center"
     >
       <div
-        class="bg-black bg-opacity-80 w-full h-full flex items-center justify-center"
+        class="container mx-auto max-w-[1390px] h-full d-flex flex-wrap w-full items-start justify-start"
       >
-        <div
-          class="container mx-auto max-w-[1390px] h-full d-flex flex-wrap w-full items-start justify-start"
-        >
-          <h1
-            class="text-white text-7xl font-bold font-inter uppercase tracking-wide mt-[220px]"
-          >
-            BLOG
-          </h1>
-          <div class="flex items-center justify-start ml-0">
-            <span class="block h-[2px] w-[80px] bg-white"></span>
-            <i class="fas fa-diamond text-white mx-3 text-sm"></i>
-
-            <span class="block h-[2px] w-[80px] bg-white"></span>
-          </div>
+        <h1 class="text-white lg:text-7xl font-bold font-inter uppercase tracking-wide lg:mt-[220px] mt-[100px] text-2xl px-3 lg:px-0">
+         BLOG
+        </h1>
+        <div class="flex items-center lg:justify-start ml-3 lg:ml-0 ">
+          <span class="block h-[2px] lg:w-[80px] w-[25px] bg-white"></span>
+          <i class="fas fa-diamond text-white lg:mx-3 mx-1 lg:text-sm text-[7px]"></i>
+          
+          <span class="block h-[2px] lg:w-[80px] w-[25px] bg-white"></span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- Hero-Section -->
     <!-- blog-detail -->
-    <section class="py-16 bg-white">
+    <section class="lg:py-16 py-12 bg-white">
       <div class="container mx-auto max-w-[1390px] ">
         <div class="border-b-2 border-gray">
         <!-- image -->
-            <div class="h-[583px]">
+            <div class="lg:h-[583px] flex justify-center ">
                  <img
                 src="/assets/images/blog/bd-1.png"
              alt=""
-             class="w-full h-full object-cover rounded-xl"
+             class="lg:w-full lg:h-full w-[380px] h-[184px] object-cover lg:rounded-xl rounded-md"
                 />
              </div>
-          <div class="flex items-center text-lg text-gray mt-4 space-x-[100px] text-inter text-medium">
+          <div class="flex items-center lg:text-lg text-sm text-gray mt-4 lg:space-x-[100px] space-x-5 text-inter text-medium px-3 lg:px-0" >
                 <span class="flex items-center space-x-2">
                 <i class="fas fa-user"></i>
                 <span>Admin</span>
@@ -191,19 +142,19 @@
                 <span>Festival, Learning</span>
                  </span>
                  <div class="flex flex-wrap gap-2">
-                 <i class="fa-solid fa-calendar text-gray text-lg"></i>
-                <p class="text-lg font-bold text-gray">20</p>
-                <p class="text-lg text-gray text-inter text-bold">AUG</p>
+                 <i class="fa-solid fa-calendar text-gray lg:text-lg text-sm"></i>
+                <p class="lg:text-lg text-sm font-bold text-gray">20</p>
+                <p class="lg:text-lg text-sm text-gray text-inter text-bold">AUG</p>
             </div>
           </div>
         </div>
-        <div class="py-2">
-            <h2 class="text-black text-4xl font-bold font-inter">Its Christmas, Special Days Ahead</h2>
-            <p class="text-gray font-inter mt-3 text-lg font-normal ">Lorem ipsum dolor sit amet, eloquentiam ullamcorper cu duo. Vero atqui efficiendi sit ad. At per debitis vivendo expetendis. Est dolor tollit ei. Eum will in partem prodesset. Id elit deserunt sit.</p>
-            <p class="text-gray font-inter mt-3 text-lg font-normal ">Eam ut vocent malorum efficiantur, eirmod nominavi et pri, nostrum hendrerit deterruisset has te. Vel vivendum indoctum ex. Invidunt constituam et vel, ut inani mucius pro. Ad modo sapientem vim, eu qui unum nostro, te oratio aperiam dolorem ius.</p>
-            <p class="text-gray font-inter mt-3 text-lg font-normal ">Vim ad soluta delicata principes. Delenit fierent sapientem vis cu. Vim nisl iracundia democritum at. No iusto audire electram vel, recusabo suscipiantur ea sed, dicit prompta quo ut. An movet possit interesset vim. Sed dicam inimicus ne.</p>
-            <p class="text-gray font-inter mt-3 text-lg font-normal ">Vim ad soluta delicata principes. Delenit fierent sapientem vis cu. Vim nisl iracundia democritum at. No iusto audire electram vel, recusabo suscipiantur ea sed, dicit prompta quo ut. An movet possit interesset vim. Sed dicam inimicus ne.</p>
-            <p class="text-gray font-inter mt-3 text-lg font-normal ">Iusto nihil liberavisse cu qui, nullam phaedrum no pro, has atqui fastidii an. Est falli eligendi interpretaris no, at eum lorem v will  ocurreret, pri et quidam molestie. Ad vix mucius percipitur, pro fabellas eloquentiam id, sed salutatus urbanitas ne. Mea in harum civibus iudicabit, eu dolorum euripidis concludaturque cum. Sed et errem dolor, ut inani essent feugait sit. Eos te fabulas adipiscing adversarium, ne aeque scaevola mea.</p>
+        <div class="py-2 px-3 lg:px-0">
+            <h2 class="text-black lg:text-4xl text-2xl font-bold font-inter">Its Christmas, Special Days Ahead</h2>
+            <p class="text-gray font-inter mt-3 lg:text-lg text-sm font-normal ">Lorem ipsum dolor sit amet, eloquentiam ullamcorper cu duo. Vero atqui efficiendi sit ad. At per debitis vivendo expetendis. Est dolor tollit ei. Eum will in partem prodesset. Id elit deserunt sit.</p>
+            <p class="text-gray font-inter mt-3 lg:text-lg text-sm font-normal ">Eam ut vocent malorum efficiantur, eirmod nominavi et pri, nostrum hendrerit deterruisset has te. Vel vivendum indoctum ex. Invidunt constituam et vel, ut inani mucius pro. Ad modo sapientem vim, eu qui unum nostro, te oratio aperiam dolorem ius.</p>
+            <p class="text-gray font-inter mt-3 lg:text-lg text-sm font-normal ">Vim ad soluta delicata principes. Delenit fierent sapientem vis cu. Vim nisl iracundia democritum at. No iusto audire electram vel, recusabo suscipiantur ea sed, dicit prompta quo ut. An movet possit interesset vim. Sed dicam inimicus ne.</p>
+            <p class="text-gray font-inter mt-3 lg:text-lg text-sm font-normal ">Vim ad soluta delicata principes. Delenit fierent sapientem vis cu. Vim nisl iracundia democritum at. No iusto audire electram vel, recusabo suscipiantur ea sed, dicit prompta quo ut. An movet possit interesset vim. Sed dicam inimicus ne.</p>
+            <p class="text-gray font-inter mt-3 lg:text-lg text-sm font-normal ">Iusto nihil liberavisse cu qui, nullam phaedrum no pro, has atqui fastidii an. Est falli eligendi interpretaris no, at eum lorem v will  ocurreret, pri et quidam molestie. Ad vix mucius percipitur, pro fabellas eloquentiam id, sed salutatus urbanitas ne. Mea in harum civibus iudicabit, eu dolorum euripidis concludaturque cum. Sed et errem dolor, ut inani essent feugait sit. Eos te fabulas adipiscing adversarium, ne aeque scaevola mea.</p>
         </div>
         </div>
       
@@ -212,131 +163,112 @@
     <!-- blog-detail -->
 
     <!-- Footer -->
-    <footer
-      class="relative bg-cover bg-center text-white overflow-hidden"
-      style="background-image: url('/assets/images/footer/bg.png')"
-    >
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black bg-opacity-90"></div>
-      <div
-        class="absolute border-b-[1px] border-gray bottom-[229px] w-[1952px]"
-      ></div>
-      <div class="absolute border-b border-gray bottom-[30px] w-[1952px]"></div>
+    <footer class="relative bg-cover bg-center text-white overflow-hidden"
+    style="background-image: url('/assets/images/footer/bg.png');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+    <div class="absolute border-b-[1px] border-gray lg:bottom-[70%] w-[1952px] top-[50%]"></div>
+    <div class="absolute border-b border-gray lg:bottom-[30px] bottom-[20px] w-[1952px]"></div>
 
-      <div class="relative container mx-auto pt-16 max-w-[1390px]">
-        <!-- Top Section -->
-        <div class="pb-6">
-          <div class="flex flex-wrap justify-between items-center">
-            <!-- Logo -->
-            <div class="w-full lg:w-auto mb-6 lg:mb-0">
-              <img
-                src="/assets/images/banner/logo.png"
-                alt="Ziavii Logo"
-                class="h-[101px] w-[101px]"
-              />
-            </div>
-            <!-- Subscription Form -->
-            <div
-              class="w-full lg:w-2/3 flex justify-content-end items-center space-x-0"
-            >
-              <h3 class="font-inter text-2xl mr-3 font-extrabold">
-                Subscribe Your News Letter
-              </h3>
-              <input
-                type="email"
-                placeholder="Enter Email"
-                class="w-[450px] px-4 py-2 h-[60px] rounded-l-md bg-white text-gray-800 focus:outline-none"
-              />
-              <button
-                class="bg-dark text-white px-6 py-2 rounded-r-md h-[60px] text-xl text-inter"
-              >
-                SEND
-              </button>
-            </div>
+    <div class="relative container mx-auto   lg:pt-16 pt-12 max-w-[1390px]">
+      <!-- Top Section -->
+      <div class="pb-6 ">
+        <div class="lg:flex lg:flex-wrap lg:justify-between lg:items-center">
+          <!-- Logo -->
+          <div class="w-full lg:w-auto mb-6  flex justify-center ">
+            <img src="/assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[101px] w-[101px] ">
           </div>
-        </div>
-
-        <!-- Middle Section -->
-        <div class="py-6">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center lg:text-left mt-3"
-          >
-            <!-- Column 1 -->
-            <div class="">
-              <h3 class="text-2xl font-inter font-bold mb-2">See Your Style</h3>
-              <p class="text-xl font-inter font-normal">
-                We suggest the nearest salons <br />
-                according to your preference.
-              </p>
-              <div class="flex justify-center lg:justify-start space-x-4 mt-4">
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-facebook-f text-black mt-2"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-instagram text-black mt-2"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-twitter text-black mt-2"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-youtube text-black mt-2"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div>
-              <h3 class="text-5xl font-bold font-inter text-enter mb-2">
-                Download Our App
-              </h3>
-              <div class="flex justify-center lg:justify-center space-x-4 mt-4">
-                <a href="#">
-                  <img
-                    src="/assets/images/footer/go.png"
-                    class="w-[163px] h-[48px]"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/assets/images/footer/app.png"
-                    alt="App Store"
-                    class="w-[163px] h-[48px]"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div>
-              <h3 class="text-2xl font-bold font-inter text-center mb-2">
-                AI Recognizes You
-              </h3>
-              <p class="text-lg font-normal font-inter">
-                Go to our AI Page and let us recommend you what's the best!
-              </p>
-            </div>
+          <!-- Subscription Form -->
+          <div class="w-full lg:w-2/3 lg:flex lg:justify-content-end lg:items-center space-x-5 lg:space-x-0 ">
+            <h3 class="font-inter lg:text-2xl text-lg mr-3 font-extrabold text-center"> Subscribe Your News Letter</h3>
+            <input type="email" placeholder="Enter Email"
+              class="lg:w-[450px] lg:px-4 lg:py-2 lg:h-[60px] rounded-l-md bg-white text-gray focus:outline-none w-[255px] h-[45px] mr-4" />
+            <button class="bg-dark text-white lg:px-6 lg:py-2 rounded-r-md  lg:h-[60px] text-xl font-inter h-[45px]">
+              SEND
+            </button>
           </div>
-        </div>
-
-        <!-- Bottom Section -->
-        <div class="text-center text-sm">
-          <p>&copy; 2023 Copyright En Marketing Private Limited</p>
         </div>
       </div>
-    </footer>
+
+      <!-- Middle Section -->
+      <div class="py-6 ">
+        <div class=" lg:flex lg:flex-wrap text-center lg:text-left ">
+          <!-- Column 1 -->
+          <div class="lg:w-[500px] lg:h-[165px] w-[202px] h-[60px] ml-20 lg:pt-5 lg:hidden">
+          <h3 class="lg:text-5xl font-bold font-inter text-right text-xl mb-2">Download Our App</h3>
+          <div class="flex justify-center lg:justify-end space-x-4 mt-4">
+            <a href="#">
+              <img src="/assets/images/footer/go.png" class="w-[163px] h-[48px]">
+            </a>
+            <a href="#">
+              <img src="/assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+            </a>
+          </div>
+        </div>
+
+          <div class="lg:w-[300px] lg:h-[165px] w-[145px] h-[68px] lg:pt-5 ">
+            <h3 class="lg:text-2xl font-inter font-bold mb-2 text-base mt-10 lg:mt-0">See Your Style</h3>
+            <p class="lg:text-xl font-inter font-normal text-xs">
+              We suggest the nearest salons  according to your preference.
+            </p>
+            <div class="flex justify-center  space-x-4 lg:mt-4 mt-6    lg:ml-[0px] hidden lg:block">
+              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-facebook-f  text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
+              </a>
+              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-instagram text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
+              </a>
+              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-twitter text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
+              </a>
+              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-youtube text-black lg:mt-1 lg:text-lg text-sm mb-0"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] lg:pt-5 w-[138px] h-[70px] lg:hidden mt-[-70px]">
+            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
+            <p class="lg:text-lg font-normal font-inter text-xs">
+              Go to our AI Page and let us recommend you what's the best!
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="w-[500px] h-[165px] ml-20 pt-5 hidden lg:block">
+            <h3 class="lg:text-5xl font-bold font-inter text-right mb-2">Download Our App</h3>
+            <div class="flex justify-center lg:justify-end space-x-4 mt-4">
+              <a href="#">
+                <img src="/assets/images/footer/go.png" class="w-[163px] h-[48px]">
+              </a>
+              <a href="#">
+                <img src="/assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] pt-5 w-[138px] h-[70px] hidden lg:block">
+            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
+            <p class="lg:text-lg font-normal font-inter text-xs">
+              Go to our AI Page and let us recommend you what's the best!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class=" text-center lg:text-sm  text-xs mt-10">
+        <p>&copy; 2023 Copyright En Marketing Private Limited</p>
+      </div>
+    </div>
+  </footer>
 
     <!--footer  -->
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>

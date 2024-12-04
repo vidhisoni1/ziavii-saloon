@@ -58,88 +58,45 @@
   <body class="bg-gray-900 text-white">
     <!-- Header -->
     <header class="bg-black border-b-[0.5px] border-gray">
-      <div
-        class="container max-w-[1390px] mx-auto flex justify-between items-center"
-      >
+      <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
         <a href="index.html">
           <img src="/assets/images/banner/logo.png" class="h-[89px]" />
         </a>
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex space-x-8">
-          <a href="/index.html" class="text-gray hover:text-white font-inter"
-            >Home</a
-          >
-          <a
-            href="/pages/about.html"
-            class="text-gray hover:text-white font-inter"
-            >About Us</a
-          >
-          <a href="/pages/services.html" class="text-gray hover:text-white font-inter"
-            >Services</a
-          >
-          <a href="blog.html" class="text-gray hover:text-white font-inter"
-          >Blog</a>
-          <a href="gallery.html" class="text-gray hover:text-white font-inter"
-            >Gallery</a
-          >
-    
-          <a href="contact.html" class="text-gray hover:text-white"
-            >Contact Us</a
-          >
-          <button
-            class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 font-inter"
-          >
-            Book Now
-          </button>
+          <a href="/index.html" class="text-gray hover:text-white font-inter">Home</a>
+          <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
+          <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
+          <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
+          <a href="/pages/gallery.html" class="text-gray hover:text-white font-inter">Gallery</a>
+          <a href="/pages/contact.html" class="text-gray hover:text-white font-inter">Contact Us</a>
+          <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
         </nav>
+        
+        <!-- Mobile Menu Button -->
         <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
           ☰
         </button>
       </div>
-      <div id="mobile-menu" class="hidden lg:hidden bg-black space-y-2 p-4">
-        <a
-          href="index.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Home</a
-        >
-        <a
-          href="about.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >About Us</a
-        >
-        <a
-          href="services.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Services</a
-        >
-        <a
-          href="gallery.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Gallery</a
-        >
-        <a
-          href="blog.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Blog</a
-        >
-        <a
-          href="contact.html"
-          class="block text-white hover:text-gray-400 font-inter"
-          >Contact Us</a
-        >
-        <button
-          class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 w-full font-inter"
-        >
-          Book Now
-        </button>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl">
+        <a href="index.html" class="block text-black hover:text-gray-400 font-inter">Home</a>
+        <a href="/pages/about.html" class="block text-black hover:text-gray-400 font-inter">About Us</a>
+        <a href="/pages/services.html" class="block text-black hover:text-gray-400 font-inter">Services</a>
+        <a href="/pages/blog.html" class="block text-black hover:text-gray-400 font-inter">Blog</a>
+        <a href="/pages/gallery.html" class="block text-black hover:text-gray-400 font-inter">Gallery</a>
+        <a href="/pages/contact.html" class="block text-vlack hover:text-gray-400 font-inter">Contact Us</a>
+       
       </div>
     </header>
     <!-- header -->
     <!-- Hero-Section -->
     <section
-      class="relative bg-cover bg-center overflow-hidden"
+      class="relative bg-cover bg-center overflow-hidden lg:h-[743px] h-[225px]"
       style="
         background-image: url('/assets/images/features/bg.png');
-        height: 743px;
+       
       "
     >
       <div
@@ -149,15 +106,15 @@
           class="container mx-auto max-w-[1390px] h-full d-flex flex-wrap w-full items-start justify-start"
         >
           <h1
-            class="text-white text-7xl font-bold font-inter uppercase tracking-wide mt-[220px]"
+            class="text-white lg:text-7xl font-bold font-inter uppercase tracking-wide lg:mt-[220px] mt-[100px] text-2xl px-3 lg:px-0"
           >
             SERVICES
           </h1>
-          <div class="flex items-center justify-start ml-10">
-            <span class="block h-[2px] w-[120px] bg-white"></span>
-            <i class="fas fa-diamond text-white mx-3 text-sm"></i>
+          <div class="flex items-center justify-start lg:ml-10 ml-3">
+            <span class="block h-[2px] lg:w-[120px] w-[45px] bg-white"></span>
+            <i class="fas fa-diamond text-white mx-3 lg:text-sm text-xs"></i>
             <!-- Font Awesome Diamond Icon -->
-            <span class="block h-[2px] w-[120px] bg-white"></span>
+            <span class="block h-[2px] lg:w-[120px] w-[45px] bg-white"></span>
           </div>
         </div>
       </div>
@@ -165,8 +122,8 @@
 
     <!-- Hero-Section -->
    <!-- our services -->
-   <section class=" bg-lblack bg-cover bg-center bg-no-repeat py-16 overflow-hidden relative">
-    <div class="absolute top-[-75px] left-[48px]  w-[249px] h-[266px]">
+   <section class=" bg-lblack bg-cover bg-center bg-no-repeat lg:py-16 py-12 overflow-hidden relative">
+    <div class="absolute top-[-75px] left-[48px]  w-[249px] h-[266px] hidden lg:block">
         <img
           src="/assets/images/serv/bg.png"
           alt="Background Top Design"
@@ -176,80 +133,116 @@
     <div class="container mx-auto max-w-[1390px] z-4">
       <!-- Section Title -->
       <div class="text-center">
-        <h2 class="text-5xl  tracking-wide text-white flex items-center justify-center relative font-inter  font-bold  ">
-          <i class="fa-solid fa-diamond absolute ml-[-485px]  text-white text-[10px]"></i>
+        <h2 class="lg:text-5xl text-2xl tracking-wide text-white flex items-center justify-center relative font-inter  font-bold  ">
+          <i class="fa-solid fa-diamond absolute lg:ml-[-485px] ml-[-320px] text-white text-[10px]"></i>
           <span class="inline-block w-20 h-0.5 bg-white mr-2  "></span>
           Our Services
           <span class="inline-block w-20 h-0.5 bg-white ml-2 relative "><i class="fa-solid fa-diamond absolute mx-10 my-[-4px]  text-white text-[10px]"></i></span>
         </h2>
+        <div class=" lg:hidden  place-items-center mt-5">
+          <button class=" w-[89px] h-[39px] bg-gray text-white lg:text-2xl font-inter  rounded font-extrabold ">
+            M E N
+          </button>
+        </div>
         </div>
       <!-- Service Content -->
-      <div class="grid grid-cols-12 gap-6 pt-5">
+      <div class="grid lg:grid-cols-12 gap-6 pt-5">
+        
         <!-- Left Column -->
-        <div class="col-span-6">
-          <div class="space-y-6">
-            <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-              <img src="/assets/images/serv/s-1.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+        <div class="lg:col-span-6  lg:mt-0">
+          <div class="space-y-6 ">
+            <div class="flex items-center space-x-4 lg:w-[477px] lg:h-[160px] w-[345px] h-[92px] mt-4 lg:mt-0 mx-10 lg:mx-0" >
+              <img src="/assets/images/serv/s-1.png"  class=" lg:w-[160px] lg:h-[160px] w-[92px] h-[92px] rounded-full object-cover">
               <div>
-                <h3 class="text-2xl font-semibold text-white font-inter">Hair Styling</h3>
-                <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
-                <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
+                <h3 class="lg:text-2xl text-xl font-semibold text-white font-inter">Hair Styling</h3>
+                <div class="inline-block lg:w-[255px] w-[131px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
+                <p class="lg:text-lg text-sm text-white font-inter">This is the content where we will write about our hair styling services.</p>
               </div>
             </div>
-            <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-                <img src="/assets/images/serv/s-2.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+            <div class="flex items-center space-x-4 lg:w-[477px] lg:h-[160px] w-[345px] h-[92px] mt-4 lg:mt-0 mx-10 lg:mx-0">
+                <img src="/assets/images/serv/s-2.png"  class="lg:w-[160px] lg:h-[160px] w-[92px] h-[92px] rounded-full object-cover">
                 <div>
-                  <h3 class="text-2xl font-semibold text-white font-inter">Face Care</h3>
-                  <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
-                  <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
+                  <h3 class="lg:text-2xl text-xl font-semibold text-white font-inter">Face Care</h3>
+                  <div class="inline-block lg:w-[255px] w-[131px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
+                  <p class="lg:text-lg text-sm text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
-              </div>
+                </div>
+                <div class="flex  justify-center space-x-3 lg:hidden ">
+                  <div class=" ">
+                    <img src="/assets/images/Frame.svg" alt="">
+          
+                  </div>
+                  <div class="  ">
+                    <img src="/assets/images/Group.svg" alt="">    
+          
+                  </div> 
+                </div>
+              <div class="hidden lg:block">
               <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-                <img src="/assets/images/serv/s-3.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+                <img src="/assets/images/serv/s-3.png" class="w-[160px] h-[160px] rounded-full object-cover">
                 <div>
                   <h3 class="text-2xl font-semibold text-white font-inter">Cutting</h3>
                   <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
                   <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
               </div>
-              <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-                <img src="/assets/images/serv/s-4.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+              <div class="flex items-center space-x-4 w-[477px] h-[160px] mt-5">
+                <img src="/assets/images/serv/s-4.png" class="w-[160px] h-[160px] rounded-full object-cover">
                 <div>
                   <h3 class="text-2xl font-semibold text-white font-inter">Styling</h3>
                   <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
                   <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
               </div>
+            </div>
           </div>
+          
         </div>
+        
         <!-- Right Column -->
-        <div class="col-span-6 place-items-end">
-            <div class="space-y-6">
-            <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-                <img src="/assets/images/serv/s-5.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+        <div class="lg:col-span-6 lg:place-items-end  ">
+          <div class="lg:hidden flex justify-center ">
+            <button class="lg:w-[91px] lg:h-[244px] w-[123px] h-[39px] bg-white text-gray lg:text-2xl font-inter  rounded font-extrabold ">
+              W O M E N
+            </button>
+          </div>
+            <div class="lg:space-y-6 space-y-10">
+            <div class="flex items-center space-x-4 lg:w-[477px] lg:h-[160px] w-[345px] h-[92px] mt-4 lg:mt-0 mx-10 lg:mx-0">
+                <img src="/assets/images/serv/s-5.png"  class="lg:w-[160px] lg:h-[160px] w-[92px] h-[92px] rounded-full object-cover">
                 <div>
-                  <h3 class="text-2xl font-semibold text-white font-inter">Facial</h3>
-                  <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
-                  <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
+                  <h3 class="lg:text-2xl text-xl font-semibold text-white font-inter">Facial</h3>
+                  <div class="inline-block lg:w-[255px] w-[131px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
+                  <p class="lg:text-lg text-sm text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
               </div>
-              <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-                <img src="/assets/images/serv/s-6.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+              <div class="flex items-center space-x-4 lg:w-[477px] lg:h-[160px] w-[345px] h-[92px] mt-4 lg:mt-0 mx-10 lg:mx-0">
+                <img src="/assets/images/serv/s-6.png"  class="lg:w-[160px] lg:h-[160px] w-[92px] h-[92px] rounded-full object-cover">
                 <div>
-                  <h3 class="text-2xl font-semibold text-white font-inter">Clooring</h3>
-                  <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
-                  <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
+                  <h3 class="lg:text-2xl text-xl font-semibold text-white font-inter">Clooring</h3>
+                  <div class="inline-block lg:w-[255px] w-[131px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
+                  <p class="lg:text-lg text-sm text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
               </div>
-              <div class="flex items-center space-x-4 w-[477px] h-[160px]">
-                <img src="/assets/images/serv/s-7.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
+              <div class="flex  justify-center space-x-3 lg:hidden">
+                <div class=" ">
+                  <img src="/assets/images/Frame.svg" alt="">
+        
+                </div>
+                <div class="  ">
+                  <img src="/assets/images/Group.svg" alt="">    
+        
+                </div> 
+              </div>
+              <div class="hidden lg:block">
+                <div class="flex items-center space-x-4 w-[477px] h-[160px] ">
+                  <img src="/assets/images/serv/s-7.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
                 <div>
                   <h3 class="text-2xl font-semibold text-white font-inter">Hair Styling</h3>
                   <div class="inline-block w-[255px] h-0.5 bg-white mr-2 relative"> <span> <i class="fa-solid fa-diamond absolute ml-[-6px] my-[-5px]  text-white text-[10px]"></i></span></div>
-                  <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
-                </div>
+                    <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
+                  </div>
               </div>
-              <div class="flex items-center space-x-4 w-[477px] h-[160px]">
+              <div class="flex items-center space-x-4 w-[477px] h-[160px] mt-5">
                 <img src="/assets/images/serv/s-8.png" alt="Hair Styling" class="w-[160px] h-[160px] rounded-full object-cover">
                 <div>
                   <h3 class="text-2xl font-semibold text-white font-inter">Hair Styling</h3>
@@ -257,15 +250,17 @@
                   <p class="text-lg text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
               </div>
+            </div>
           </div>
           </div>
         </div>
       </div>
       <!-- Gender Switch -->
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center ">
+        <div class="hidden lg:block">
         <div class="d-flex flex-wrap relative ">
           <!-- Men Button -->
-           <div class=" absolute top-[-450px] bottom-0 right-0 left-[-91px]">
+           <div class=" absolute top-[-450px] bottom-0 right-0 left-[-91px]  ">
           <button class="w-[91px] h-[204px]  bg-gray text-white text-2xl font-inter  rounded font-extrabold ">
             M <br/>
             E <br/>
@@ -275,7 +270,7 @@
           <!-- Women Button -->
            <div class="absolute top-[-469px] bottom-0 right-0 left-0">
           <button class="w-[91px] h-[244px]  bg-white text-gray text-2xl font-inter  rounded font-extrabold ">
-            w <br/>
+            W <br/>
             O<br/>
             M <br/>
             E<br/>
@@ -285,6 +280,7 @@
           </div>
         </div>
       </div>
+      </div>
       
     </div>
   </section>
@@ -292,8 +288,8 @@
    <!-- our services -->
    <!-- design&cut -->
      
-     <section class=" bg-white bg-cover bg-center bg-no-repeat py-16 overflow-hidden relative">
-        <div class="absolute top-[13px] left-[48px]  w-[249px] h-[266px]">
+     <section class=" bg-white bg-cover bg-center bg-no-repeat lg:py-16 py-12 overflow-hidden relative">
+        <div class="absolute top-[13px] left-[48px]  w-[249px] h-[266px] hidden lg:block">
             <img
               src="/assets/images/serv/bg-2.png"
               alt="Background Top Design"
@@ -302,63 +298,69 @@
           </div>
           <!-- Heading -->
      <div class="text-center relative ">
-        <p class="text-5xl  tracking-wide text-black font-inter font-bold flex items-center justify-center relative">
-          <i class="fa-solid fa-diamond absolute ml-[-490px]  text-black text-sm"></i>
+        <p class="lg:text-5xl text-2xl  tracking-wide text-black font-inter font-bold flex items-center justify-center relative">
+          <i class="fa-solid fa-diamond absolute lg:ml-[-490px] ml-[-340px] text-black text-sm"></i>
           <span class="inline-block w-20 h-0.5 bg-black mr-2  "></span>
            Design & Cut
           <span class="inline-block w-20 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-10 my-[-8px]  text-black text-sm"></i></span>
         </p>
       </div>
       <!-- content -->
-      <div
-      class="container mx-auto max-w-[1390px] grid grid-cols-12 gap-5 mt-10"
-    >
-      <!-- First Column (Image) -->
-      <div class="col-span-6">
-        <div class="">
+      <div class="container mx-auto max-w-[1390px] grid lg:grid-cols-12 gap-5 mt-10">
+      <!-- First Column (text) -->
+       
+      <div class="col-span-6 order-2 lg:order-1 mt-20 lg:mt-0 px-3 lg:px-0">
+        <div class="mt-10 ">
             <h3
-              class="text-5xl tracking-wide font-inter font-bold text-black flex items-center mb-4"
+              class="lg:text-5xl text-xl tracking-wide font-inter font-bold text-black  mb-4"
             >
               Styles We Do
              
             </h3>
-            <p class="text-lg text-gray font-inter font-normal mb-4">There are many variations of passages  we of Lorem Ipsum available,wea but the majority have suffered alteration in some see a form, by injected humour,allwe or randomised words which don't look even slightly believable.</p>
-            <p class="text-lg text-gray font-inter font-normal mb-4">Lorem Ipsum is simply dummy text of e printing and typesetting industry.</p>
-            <p class="text-lg text-gray font-inter font-normal mb-4">There are many variations of passages of Lorem will  Ipsum available, but will athe majority have suffered alteration in some form,</p>
-            <p class="text-lg text-gray font-inter font-normal mb-4">Excepteur sint occaecat cupidatat non proident, sunt in will see culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p class="text-lg text-gray font-inter font-normal mb-4">Lorem Ipsum is simply dummy text of  printing and typesetting industry.</p>
-            <p class="text-lg text-gray font-inter font-normal mb-4">India’s first  time salon and parlour  we appointment platform to book see beauty services like  pedicure,   beauty parlour or salon near you.</p>
+            <p class="lg:text-lg text-sm text-gray font-inter font-normal mb-4">There are many variations of passages  we of Lorem Ipsum available,wea but the majority have suffered alteration in some see a form, by injected humour,allwe or randomised words which don't look even slightly believable.</p>
+            <p class="lg:text-lg text-sm text-gray font-inter font-normal mb-4">Lorem Ipsum is simply dummy text of e printing and typesetting industry.</p>
+            <p class="lg:text-lg text-sm text-gray font-inter font-normal mb-4">There are many variations of passages of Lorem will  Ipsum available, but will athe majority have suffered alteration in some form,</p>
+            <p class="lg:text-lg text-sm text-gray font-inter font-normal mb-4">Excepteur sint occaecat cupidatat non proident, sunt in will see culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p class="lg:text-lg text-sm text-gray font-inter font-normal mb-4">Lorem Ipsum is simply dummy text of  printing and typesetting industry.</p>
+            <p class="lg:text-lg text-sm text-gray font-inter font-normal mb-4">India’s first  time salon and parlour  we appointment platform to book see beauty services like  pedicure,   beauty parlour or salon near you.</p>
           </div>
       </div>
 
-      <!-- Second Column (Text) -->
-      <div class="col-span-6  d-flex flex-wrap mt-0">
-        <div class="flex flex-wrap ">
-        <div class="w-[394px] h-[274px]">
-            <img src="/assets/images/serv/d-1.png"  alt="" class="w-full h-full rounded-md ">
-        </div>
-        <div class="w-[248px] h-[212px]">
+      <!-- Second Column (image) -->
+      <div class="col-span-6  d-flex flex-wrap mt-0  order-1 lg:order-2">
+        <div class="flex flex-wrap justify-center ">
+          <div class="lg:w-[394px] lg:h-[274px] w-[210px] h-[144px]">
+            <img src="/assets/images/serv/d-1.png"  alt="" class="w-full h-full rounded-md object-cover">
+          </div>
+         <div class="lg:w-[248px] lg:h-[212px] w-[135px] h-[111px]">
             <img src="/assets/images/serv/d-2.png" alt="" class="w-full h-full object-cover rounded-md ">
+          </div>
         </div>
-     </div>
-     <div class="flex flex-wrap relative">
-<div class="w-[213px] h-[200px] absolute top-[-20px] bottom-0 right-0 left-[50px]">
-<img src="/assets/images/serv/d-3.png" alt="" class="w-full h-full object-cover rounded-md ">
-</div>
-<div class="w-[384px] h-[300px] absolute top-[-98px] bottom-0 right-0 left-[260px]">
-    <img src="/assets/images/serv/d-4.png" alt="" class="w-full h-full object-cover rounded-md">
-</div>
-     </div>
+       <div class="flex flex-wrap relative">
+          <div class="lg:w-[213px] lg:h-[200px] w-[123px] h-[114px] absolute top-[-20px] bottom-0 right-0 lg:left-[70px] left-[30px]">
+          <img src="/assets/images/serv/d-3.png" alt="" class="w-full h-full object-cover rounded-md ">
+          </div>
+          <div class="lg:w-[384px] lg:h-[300px] w-[206px] h-[157px] absolute lg:top-[-98px] top-[-44px] bottom-0 right-0 lg:left-[280px] left-[144px]">
+          <img src="/assets/images/serv/d-4.png" alt="" class="w-full h-full object-cover rounded-md">
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
    <!-- design&cut -->
 <!-- our sepcial -->
-<section class=" bg-white bg-cover bg-center bg-no-repeat py-16 overflow-hidden relative">
-    
+<section class=" bg-white bg-cover bg-center bg-no-repeat lg:py-16 py-12 overflow-hidden relative">
+  <div class="absolute top-[-75px] right-[48px]  w-[249px] h-[266px] hidden lg:block">
+    <img
+      src="/assets/images/serv/bg.png"
+      alt="Background Top Design"
+      class=" opacity-10 "
+    />
+  </div>
       <!-- Heading -->
  <div class="text-center relative ">
-    <p class="text-5xl  tracking-wide text-black font-inter font-bold flex items-center justify-center relative">
-      <i class="fa-solid fa-diamond absolute ml-[-480px]  text-black text-sm"></i>
+    <p class="lg:text-5xl text-2xl tracking-wide text-black font-inter font-bold flex items-center justify-center relative">
+      <i class="fa-solid fa-diamond absolute lg:ml-[-480px] ml-[-340px] text-black text-sm"></i>
       <span class="inline-block w-20 h-0.5 bg-black mr-2  "></span>
       Our Specials
       <span class="inline-block w-20 h-0.5 bg-black ml-2 relative "><i class="fa-solid fa-diamond absolute mx-10 my-[-8px]  text-black text-sm"></i></span>
@@ -366,163 +368,144 @@
   </div>
   <!-- content -->
   <div
-  class="container mx-auto max-w-[1390px] grid grid-cols-12 gap-5 mt-10 items-center"
+  class="container mx-auto max-w-[1390px] grid lg:grid-cols-12 gap-5 mt-10 items-center"
 >
   <!-- First Column (Image) -->
-  <div class="col-span-6  ">
+  <div class="col-span-6 px-3 lg:px-0">
     
-        <img src="/assets/images/serv/o-1.png" alt="" class="w-[622px] h-[283px] object-cover rounded-lg">
+        <img src="/assets/images/serv/o-1.png" alt="" class="lg:w-[622px] lg:h-[283px] w-[380px] h-[158px] object-cover rounded-lg ">
   </div>
 
   <!-- Second Column (Text) -->
-  <div class="col-span-6  d-flex flex-wrap  ">
-    <h3 class="font-inter text-black text-4xl font-bold mt-4">Rebonding</h3>
-    <p class="font-inter text-gray text-lg font-normal mt-4">There are many variations of passages  we of Lorem Ipsum available, but the majority have suffered alteration in some see a form, by injected humour, or randomised words which don't look even slightly believable.</p>
-    <p class="font-inter text-gray text-lg font-normal mt-4">Excepteur sint occaecat cupidatat non proident, sunt in see culpa qui officia deserunt mollit anim id est laborum."</p>
+  <div class="col-span-6 px-4 lg:px-0">
+    <h3 class="font-inter text-black lg:text-4xl text-xl font-bold mt-4">Rebonding</h3>
+    <p class="font-inter text-gray lg:text-lg text:sm font-normal mt-4">There are many variations of passages  we of Lorem Ipsum available, but the majority have suffered alteration in some see a form, by injected humour, or randomised words which don't look even slightly believable.</p>
+    <p class="font-inter text-gray lg:text-lg text:sm font-normal mt-4">Excepteur sint occaecat cupidatat non proident, sunt in see culpa qui officia deserunt mollit anim id est laborum."</p>
   </div>
    <!-- third Column (Text) -->
-  <div class="col-span-6  place-items-center d-flex flex-wrap ">
-    <div class="    ">
-        <h3 class="font-inter text-black text-4xl font-bold mt-4">Rebonding</h3>
+  <div class="col-span-6    order-2 lg:order-1 px-3 lg:px-0">
+   
+        <h3 class="font-inter text-black lg:text-4xl text-xl font-bold mt-4">Rebonding</h3>
         <p class="font-inter text-gray text-lg font-normal mt-4">There are many variations of passages  we of Lorem Ipsum available, but the majority have suffered alteration in some see a form, by injected humour, or randomised words which don't look even slightly believable.</p>
         <p class="font-inter text-gray text-lg font-normal mt-4">Excepteur sint occaecat cupidatat non proident, sunt in see culpa qui officia deserunt mollit anim id est laborum."</p>
-      </div>
+     
         
   </div>
    <!-- fourth Column (Text) -->
-  <div class="col-span-6  d-flex flex-wrap mt-0">
-    <img src="/assets/images/serv/o-2.png" alt="" class="w-[622px] h-[283px] object-cover rounded-lg">
+  <div class="col-span-6 px-4 lg:px-0   order-1 lg:order-2">
+    <img src="/assets/images/serv/o-2.png" alt="" class="lg:w-[622px] lg:h-[283px] w-[380px] h-[158px] object-cover rounded-lg">
     
   </div>
   </div>
 </section>
 <!-- our sepcial -->
     <!-- Footer -->
-    <footer
-      class="relative bg-cover bg-center text-white overflow-hidden"
-      style="background-image: url('/assets/images/footer/bg.png')"
-    >
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black bg-opacity-90"></div>
-      <div
-        class="absolute border-b-[1px] border-gray bottom-[229px] w-[1952px]"
-      ></div>
-      <div class="absolute border-b border-gray bottom-[30px] w-[1952px]"></div>
+    <footer class="relative bg-cover bg-center text-white overflow-hidden"
+    style="background-image: url('/assets/images/footer/bg.png');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+    <div class="absolute border-b-[1px] border-gray lg:bottom-[70%] w-[1952px] top-[50%]"></div>
+    <div class="absolute border-b border-gray lg:bottom-[30px] bottom-[20px] w-[1952px]"></div>
 
-      <div class="relative container mx-auto pt-16" style="max-width: 1390px">
-        <!-- Top Section -->
-        <div class="pb-6">
-          <div class="flex flex-wrap justify-between items-center">
-            <!-- Logo -->
-            <div class="w-full lg:w-auto mb-6 lg:mb-0">  
-              <img
-                src="/assets/images/banner/logo.png"
-                alt="Ziavii Logo"
-                class="h-[101px] w-[101px]"
-              />
-            </div>
-            <!-- Subscription Form -->
-            <div
-              class="w-full lg:w-2/3 flex justify-content-end items-center space-x-0"
-            >
-              <h3 class="font-inter text-2xl mr-3 font-extrabold">
-                Subscribe Your News Letter
-              </h3>
-              <input
-                type="email"
-                placeholder="Enter Email"
-                class="w-[450px] px-4 py-2 h-[60px] rounded-l-md bg-white text-gray-800 focus:outline-none"
-              />
-              <button
-                class="bg-dark text-white px-6 py-2 rounded-r-md h-[60px] text-xl text-inter"
-              >
-                SEND
-              </button>
-            </div>
+    <div class="relative container mx-auto   lg:pt-16 pt-12 max-w-[1390px]">
+      <!-- Top Section -->
+      <div class="pb-6 ">
+        <div class="lg:flex lg:flex-wrap lg:justify-between lg:items-center">
+          <!-- Logo -->
+          <div class="w-full lg:w-auto mb-6  flex justify-center ">
+            <img src="/assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[101px] w-[101px] ">
           </div>
-        </div>
-
-        <!-- Middle Section -->
-        <div class="py-6">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center lg:text-left mt-3"
-          >
-            <!-- Column 1 -->
-            <div class="">
-              <h3 class="text-2xl font-inter font-bold mb-2">See Your Style</h3>
-              <p class="text-xl font-inter font-normal">
-                We suggest the nearest salons <br />
-                according to your preference.
-              </p>
-              <div class="flex justify-center lg:justify-start space-x-4 mt-4">
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-facebook-f text-black mt-2"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-instagram text-black mt-2"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-twitter text-black mt-2"></i>
-                </a>
-                <a
-                  href="#"
-                  class="text-center w-[30px] h-[30px] bg-white rounded-full"
-                >
-                  <i class="fab fa-youtube text-black mt-2"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div>
-              <h3 class="text-5xl font-bold font-inter text-enter mb-2">
-                Download Our App
-              </h3>
-              <div class="flex justify-center lg:justify-center space-x-4 mt-4">
-                <a href="#">
-                  <img
-                    src="/assets/images/footer/go.png"
-                    class="w-[163px] h-[48px]"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/assets/images/footer/app.png"
-                    alt="App Store"
-                    class="w-[163px] h-[48px]"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div>
-              <h3 class="text-2xl font-bold font-inter text-center mb-2">
-                AI Recognizes You
-              </h3>
-              <p class="text-lg font-normal font-inter">
-                Go to our AI Page and let us recommend you what's the best!
-              </p>
-            </div>
+          <!-- Subscription Form -->
+          <div class="w-full lg:w-2/3 lg:flex lg:justify-content-end lg:items-center space-x-5 lg:space-x-0 ">
+            <h3 class="font-inter lg:text-2xl text-lg mr-3 font-extrabold text-center"> Subscribe Your News Letter</h3>
+            <input type="email" placeholder="Enter Email"
+              class="lg:w-[450px] lg:px-4 lg:py-2 lg:h-[60px] rounded-l-md bg-white text-gray focus:outline-none w-[255px] h-[45px] mr-4" />
+            <button class="bg-dark text-white lg:px-6 lg:py-2 rounded-r-md  lg:h-[60px] text-xl font-inter h-[45px]">
+              SEND
+            </button>
           </div>
-        </div>
-
-        <!-- Bottom Section -->
-        <div class="text-center text-sm">
-          <p>&copy; 2023 Copyright En Marketing Private Limited</p>
         </div>
       </div>
-    </footer>
+
+      <!-- Middle Section -->
+      <div class="py-6 ">
+        <div class=" lg:flex lg:flex-wrap text-center lg:text-left ">
+          <!-- Column 1 -->
+          <div class="lg:w-[500px] lg:h-[165px] w-[202px] h-[60px] ml-20 lg:pt-5 lg:hidden">
+          <h3 class="lg:text-5xl font-bold font-inter text-right text-xl mb-2">Download Our App</h3>
+          <div class="flex justify-center lg:justify-end space-x-4 mt-4">
+            <a href="#">
+              <img src="/assets/images/footer/go.png" class="w-[163px] h-[48px]">
+            </a>
+            <a href="#">
+              <img src="/assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+            </a>
+          </div>
+        </div>
+
+          <div class="lg:w-[300px] lg:h-[165px] w-[145px] h-[68px] lg:pt-5 ">
+            <h3 class="lg:text-2xl font-inter font-bold mb-2 text-base mt-10 lg:mt-0">See Your Style</h3>
+            <p class="lg:text-xl font-inter font-normal text-xs">
+              We suggest the nearest salons  according to your preference.
+            </p>
+            <div class="flex justify-center  space-x-4 lg:mt-4 mt-6    lg:ml-[0px] hidden lg:block">
+              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-facebook-f  text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
+              </a>
+              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-instagram text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
+              </a>
+              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-twitter text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
+              </a>
+              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
+                <i class="fab fa-youtube text-black lg:mt-1 lg:text-lg text-sm mb-0"></i>
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] lg:pt-5 w-[138px] h-[70px] lg:hidden mt-[-70px]">
+            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
+            <p class="lg:text-lg font-normal font-inter text-xs">
+              Go to our AI Page and let us recommend you what's the best!
+            </p>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="w-[500px] h-[165px] ml-20 pt-5 hidden lg:block">
+            <h3 class="lg:text-5xl font-bold font-inter text-right mb-2">Download Our App</h3>
+            <div class="flex justify-center lg:justify-end space-x-4 mt-4">
+              <a href="#">
+                <img src="/assets/images/footer/go.png" class="w-[163px] h-[48px]">
+              </a>
+              <a href="#">
+                <img src="/assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] pt-5 w-[138px] h-[70px] hidden lg:block">
+            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
+            <p class="lg:text-lg font-normal font-inter text-xs">
+              Go to our AI Page and let us recommend you what's the best!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class=" text-center lg:text-sm  text-xs mt-10">
+        <p>&copy; 2023 Copyright En Marketing Private Limited</p>
+      </div>
+    </div>
+  </footer>
 
     <!--footer  -->
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
