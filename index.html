@@ -1128,16 +1128,7 @@
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenu.classList.toggle('hidden');
     });
-    function toggleFAQ(this) {
-      const answerElement = document.getElementById(`faq-answer-${this}`);
-      const iconElement = answerElement.previousElementSibling.querySelector('span:last-child');
-      answerElement.classList.toggle('hidden');
-      if (answerElement.classList.contains('hidden')) {
-        iconElement.textContent = '+';
-      } else {
-        iconElement.textContent = '-';
-      }
-    }
+    
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
