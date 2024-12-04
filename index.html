@@ -21,6 +21,15 @@
   <!-- fonts -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+   
+    .card-content {
+   border-image: linear-gradient(to top, #f3f7f7 0%, #1b1b1b) 1;
+   
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+    }
+    
   </style>
   <script>
     tailwind.config = {
@@ -163,7 +172,7 @@
           <div class="grid grid-cols-1  lg:grid-cols-3 gap-4 mt-10 ">
             <!-- Card 1: Experienced Team -->
             <div
-              class="p-3 bg-dark  border-x border-b border-white rounded-lg text-center transform -translate-y-4 relative ">
+              class="p-3 bg-dark  card-content rounded-lg text-center transform -translate-y-4 relative ">
               <div>
                 <i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i>
               </div>
@@ -175,7 +184,7 @@
 
             <!-- Card 2: Book Your Slot -->
             <div
-              class="p-3 bg-dark border-x border-b border-white rounded-lg text-center transform translate-y-4 relative">
+              class="p-3 bg-dark card-content rounded-lg text-center transform translate-y-4 relative">
               <div>
                 <i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i>
               </div>
@@ -186,8 +195,7 @@
             </div>
 
             <!-- Card 3: Affordable Cost -->
-            <div
-              class="p-3 bg-dark border-x border-b bg-border-gradient hidden lg:block rounded-lg text-center transform -translate-y-4 relative">
+            <div class="p-3 bg-dark  card-content hidden lg:block rounded-lg text-center transform -translate-y-4 relative">
               <div>
                 <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i>
               </div>
