@@ -86,22 +86,42 @@
         <button class="bg-white text-black px-4 py-2 rounded font-inter">Book Now</button>
       </nav>
 
+      <!-- <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-white bg-opacity-80 z-20 transform transform-x-full transition-transform duration-300">
+      <div class="flex justify-end p-4">
+        <button id="close-menu-btn" class="text-black text-5xl">
+          &times;
+        </button>
+                                     
+      </div>
+    </div> -->
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl">
         ☰
-      </button>
+    </button>
+    <button id="close-menu-btn" class=" text-5xl hidden text-white">
+        &times;
+    </button>
     </div>
+    
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl">
-      <a href="index.html" class="block text-black hover:text-gray-400 font-inter">Home</a>
-      <a href="/pages/about.html" class="block text-black hover:text-gray-400 font-inter">About Us</a>
-      <a href="/pages/services.html" class="block text-black hover:text-gray-400 font-inter">Services</a>
-      <a href="/pages/blog.html" class="block text-black hover:text-gray-400 font-inter">Blog</a>
-      <a href="/pages/gallery.html" class="block text-black hover:text-gray-400 font-inter">Gallery</a>
-      <a href="/pages/contact.html" class="block text-vlack hover:text-gray-400 font-inter">Contact Us</a>
-
+    <div id="mobile-menu" class="lg:hidden grid items-center h-[100vh] hidden bg-white space-y-2 p-4 text-center font-inter font-bold text-xl  ">
+      <div>
+        <!-- background-images -->
+         <div class="relative">
+          <img src="assets/images/features/vi-bg.png" alt="" class="absolute w-[180px] h-[200px] opacity-10 object-cover bottom-[-40px] left-[142px]">
+          <img src="assets/images/serv/bg.png" alt="" class="absolute w-[110px] h-[118px] opacity-10 object-cover top-[247px] left-[3px]  bg-center">
+         </div>
+        <a href="index.html" class="block py-2 text-black hover:text-gray-400 font-inter ">Home</a>
+        <a href="/pages/about.html" class="block py-2 text-black hover:text-gray-400 font-inter">About Us</a>
+        <a href="/pages/services.html" class="block py-2 text-black hover:text-gray-400 font-inter">Services</a>
+        <a href="/pages/blog.html" class="block py-2 text-black hover:text-gray-400 font-inter">Blog</a>
+        <a href="/pages/gallery.html" class="block py-2 text-black hover:text-gray-400 font-inter">Gallery</a>
+        <a href="/pages/contact.html" class="block py-2 text-vlack hover:text-gray-400 font-inter">Contact Us</a>
+      </div>
+     
     </div>
+    
   </header>
 
   <!-- Hero Section -->
@@ -121,7 +141,7 @@
           <p class="text-white text-sm lg:text-lg font-inter line-height-22px mt-4">
             Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem will be come to ipsum......
           </p>
-          <button class="mt-6 bg-white text-black px-6 py-3 rounded font-inter font-bold">Book Now</button>
+          <button class="lg:mt-6 bg-white text-black lg:px-6 lg:py-3 px-3 py-2 lg:text-xl text-sm rounded font-inter font-bold">Book Now</button>
         </div>
 
         <!-- Right Content (Image) -->
@@ -1131,13 +1151,55 @@
 
   <!-- script -->
   <!-- JavaScript for Mobile Menu Toggle -->
-  <script>
+  <!-- <script>
     document.getElementById('mobile-menu-btn').addEventListener('click', function () {
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenu.classList.toggle('hidden');
     });
    
-  </script>
+   </script> -->
+   <!-- <script>
+    const menuButton = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('moblie-menu');
+    const closemenubutton = document.getElementById('close-menu-btn');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon')
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('translate-x-full');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    } )
+
+    closemenubutton.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    })
+  </script> -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        
+        // Toggle the visibility of the menu and icons
+        mobileMenu.classList.toggle('hidden');
+        mobileMenuBtn.classList.toggle('hidden');
+        closeMenuBtn.classList.toggle('hidden');
+    });
+
+    document.getElementById('close-menu-btn').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        
+        // Close the menu and revert the icons
+        mobileMenu.classList.add('hidden');
+        mobileMenuBtn.classList.remove('hidden');
+        closeMenuBtn.classList.add('hidden');
+    });
+</script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Slick Slider JavaScript -->
