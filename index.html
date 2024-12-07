@@ -61,6 +61,16 @@
             dblack: "#080808",
 
           },
+          Animation: {
+            fade: 'fadeout 5s ease-in-out'
+          },
+          Keyframe: theme => ({
+            fadeout: {
+              '0%': {backgroundcolor : theme('color.white.300')},
+              '100%': {backgroundcolor: theme('color.tranparent')},
+
+            }
+          })
 
         },
       },
@@ -70,7 +80,7 @@
 
 <body class="bg-gray-900 text-white">
   <!-- Header -->
-  <header class="bg-black border-b-[0.5px] border-gray">
+  <header class="bg-black border-b-[0.5px] border-gray sticky top-0 z-50">
     <div class="container max-w-[1390px] mx-auto flex justify-between items-center px-4">
       <a href="index.html">
         <img src="assets/images/banner/logo.png" class="h-[89px]" />
@@ -191,8 +201,7 @@
           <!-- 3-Card Layout -->
           <div class="grid grid-cols-1  lg:grid-cols-3 gap-4 mt-10 ">
             <!-- Card 1: Experienced Team -->
-            <div
-              class="p-3 bg-dark  card-content rounded-lg text-center transform -translate-y-4 relative ">
+            <div class="p-3 bg-dark  card-content rounded-lg text-center transform -translate-y-4 relative hover:scale-105 transition-transform duration-300">
               <div>
                 <i class="fa-solid fa-people-group text-4xl absolute my-[-30px] mx-[-25px]"></i>
               </div>
@@ -204,7 +213,7 @@
 
             <!-- Card 2: Book Your Slot -->
             <div
-              class="p-3 bg-dark card-content rounded-lg text-center transform translate-y-4 relative">
+              class="p-3 bg-dark card-content rounded-lg text-center transform translate-y-4 relative hover:scale-105 transition-transform duration-300">
               <div>
                 <i class="fa-solid fa-calendar-days text-4xl absolute my-[-30px] mx-[-25px]"></i>
               </div>
@@ -215,7 +224,7 @@
             </div>
 
             <!-- Card 3: Affordable Cost -->
-            <div class="p-3 bg-dark  card-content hidden lg:block rounded-lg text-center transform -translate-y-4 relative">
+            <div class="p-3 bg-dark  card-content hidden lg:block rounded-lg text-center transform -translate-y-4 relative hover:scale-105 transition-transform duration-300">
               <div>
                 <i class="fa-solid fa-comments-dollar text-4xl absolute my-[-30px] mx-[-25px]"></i>
               </div>
@@ -263,7 +272,7 @@
         We Provide Better
       </h2>
       <!-- slider start -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper ">
         <div class="swiper-button-next top-[-55px] right-[0px] z-40 hidden lg:block">
           <img src="assets/images/Group.svg" alt="">
 
@@ -499,31 +508,31 @@
         <div class="grid gap-6 z-40">
           <!-- Bottom Row -->
           <div class="grid grid-cols-2 gap-6 mt-10 ">
-            <img src="assets/images/gallery/g1.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover " />
-            <img src="assets/images/gallery/g2.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover " />
+            <img src="assets/images/gallery/g1.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover hover:opacity-75 transition-opacity duration-300" />
+            <img src="assets/images/gallery/g2.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover hover:opacity-75 transition-opacity duration-300" />
           </div>
           <!-- Larger Image in Bottom Row -->
           <img src="assets/images/gallery/g4.png"
-            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover lg:hidden " />
+            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover lg:hidden hover:opacity-75 transition-opacity duration-300 " />
           <img src="assets/images/gallery/g3.png"
-            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover hidden lg:block" />
+            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover hidden lg:block hover:opacity-75 transition-opacity duration-300" />
         </div>
 
         <!-- Right Column -->
         <div class="grid lg:gap-6 gap-3 lg:mt-10 z-40">
           <!-- Top Image -->
           <div class="grid grid-cols-2 gap-6 lg:hidden">
-            <img src="assets/images/gallery/g5.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover " />
-            <img src="assets/images/gallery/g6.png" class="w-full lg;h-[289px] h-[140px] rounded-lg object-cover  " />
+            <img src="assets/images/gallery/g5.png" class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover hover:opacity-75 transition-opacity duration-300" />
+            <img src="assets/images/gallery/g6.png" class="w-full lg;h-[289px] h-[140px] rounded-lg object-cover  hover:opacity-75 transition-opacity duration-300" />
           </div>
-          <img src="assets/images/gallery/g4.png" class="w-full h-[289px] rounded-lg object-cover hidden lg:block " />
+          <img src="assets/images/gallery/g4.png" class="w-full h-[289px] rounded-lg object-cover hidden lg:block hover:opacity-75 transition-opacity duration-300" />
           <!-- Bottom Row -->
           <div class="grid lg:grid-cols-2 lg:gap-6 ">
-            <img src="assets/images/gallery/g5.png" class="w-full h-[289px] rounded-lg object-cover hidden lg:block" />
-            <img src="assets/images/gallery/g6.png" class="w-full h-[289px] rounded-lg object-cover  hidden lg:block" />
+            <img src="assets/images/gallery/g5.png" class="w-full h-[289px] rounded-lg object-cover hidden lg:block hover:opacity-75 transition-opacity duration-300" />
+            <img src="assets/images/gallery/g6.png" class="w-full h-[289px] rounded-lg object-cover  hidden lg:block hover:opacity-75 transition-opacity duration-300" />
           </div>
           <img src="assets/images/gallery/g3.png"
-            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover lg:hidden " />
+            class="w-full lg:h-[289px] h-[140px] rounded-lg object-cover lg:hidden hover:opacity-75 transition-opacity duration-300" />
         </div>
       </div>
 
@@ -556,7 +565,7 @@
       <!-- Blog Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         <!-- Blog Card 1 -->
-        <div class="bg-gray-800 rounded-lg  overflow-hidden">
+        <div class="bg-gray-800 rounded-lg  overflow-hidden ">
           <div class="relative">
             <!-- Blog Image -->
             <img src="assets/images/blog/blo-1.png"
@@ -693,7 +702,7 @@
       <!-- Team Members -->
       <div class="grid  grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-2">
         <!-- Team Member 1 -->
-        <div class="relative bg-gray-100 rounded-lg  ">
+        <div class="relative bg-gray-100 rounded-lg  hover:scale-105 transition duration-500 ease-in-out">
           <!-- Image -->
           <img src="assets/images/our-team/t-1.png"
             class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
@@ -706,7 +715,7 @@
         </div>
 
         <!-- Team Member 2 -->
-        <div class="relative bg-gray-100 rounded-lg  ">
+        <div class="relative bg-gray-100 rounded-lg hover:scale-105 transition duration-500 ease-in-out ">
           <!-- Image -->
           <img src="assets/images/our-team/t-2.png"
             class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
@@ -719,7 +728,7 @@
         </div>
 
         <!-- Team Member 3 -->
-        <div class="relative bg-gray-100 rounded-lg   hidden lg:block">
+        <div class="relative bg-gray-100 rounded-lg   hidden lg:block hover:scale-105 transition duration-500 ease-in-out">
           <!-- Image -->
           <img src="assets/images/our-team/t-3.png" class="w-[341px] h-[410px] object-cover rounded-lg " />
           <!-- Name and Role -->
@@ -731,7 +740,7 @@
         </div>
 
         <!-- Team Member 4 -->
-        <div class="relative bg-gray-100 rounded-lg  hidden lg:block">
+        <div class="relative bg-gray-100 rounded-lg  hidden lg:block hover:scale-105 transition duration-500 ease-in-out">
           <!-- Image -->
           <img src="assets/images/our-team/t-4.png" class="w-[341px] h-[410px] object-cover rounded-lg  " />
           <!-- Name and Role -->
