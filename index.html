@@ -23,12 +23,32 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
    
     .card-content {
-   border-image: linear-gradient(to top, #f3f7f7 0%, #1b1b1b) 1;
-   
-  border-width: 1px;
-  border-style: solid;
-  padding: 5px;
-    }
+  position: relative;
+  border-radius: 12px; 
+  background: white; 
+  padding: 20px; 
+  z-index: 1;
+}
+
+.card-content::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  z-index: -1;
+  border-radius: inherit; 
+  padding: 1px;
+  background: linear-gradient(to top, #f3f7f7 0%, #1b1b1b);
+  -webkit-mask: 
+    linear-gradient(white, white) content-box,
+    linear-gradient(white, white);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
     
   </style>
   <script>
@@ -87,7 +107,7 @@
       </a>
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex space-x-8">
-        <a href="index.html" class="text-gray hover:text-white font-inter">Home</a>
+        <a href="index.html" class="text-white  font-inter">Home</a>
         <a href="/pages/about.html" class="text-gray hover:text-white font-inter">About Us</a>
         <a href="/pages/services.html" class="text-gray hover:text-white font-inter">Services</a>
         <a href="/pages/blog.html" class="text-gray hover:text-white font-inter">Blog</a>
@@ -122,7 +142,7 @@
           <img src="assets/images/features/vi-bg.png" alt="" class="absolute w-[180px] h-[200px] opacity-10 object-cover bottom-[-40px] left-[142px]">
           <img src="assets/images/serv/bg.png" alt="" class="absolute w-[110px] h-[118px] opacity-10 object-cover top-[247px] left-[3px]  bg-center">
          </div>
-        <a href="index.html" class="block py-2 text-black hover:text-gray-400 font-inter ">Home</a>
+        <a href="index.html" class="block py-2 text-gray  font-inter ">Home</a>
         <a href="/pages/about.html" class="block py-2 text-black hover:text-gray-400 font-inter">About Us</a>
         <a href="/pages/services.html" class="block py-2 text-black hover:text-gray-400 font-inter">Services</a>
         <a href="/pages/blog.html" class="block py-2 text-black hover:text-gray-400 font-inter">Blog</a>
@@ -679,8 +699,8 @@
       </div>
   </section>
   <!-- Blog Section -->
-  <!-- Our Team Section -->
-  <section id="team" class="lg:py-16 py-12 bg-white relative overflow-hidden">
+   <!-- our-team -->
+  <section id="team" class="lg:py-16 py-12 bg-white relative overflow-hidden hidden lg:block">
     <!-- Background Image -->
     <div class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px] hidden lg:block">
       <img src="assets/images/gallery/g-bg.png" class=" opacity-25 " />
@@ -700,59 +720,188 @@
         </h2>
       </div>>
       <!-- Team Members -->
-      <div class="grid  grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-2">
+     
+   
+      
+      <div class="grid  grid-cols-2 lg:grid-cols-4 lg:gap-3 gap-2 ">
+       
         <!-- Team Member 1 -->
-        <div class="relative bg-gray-100 rounded-lg  hover:scale-105 transition duration-500 ease-in-out">
-          <!-- Image -->
-          <img src="assets/images/our-team/t-1.png"
-            class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
-          <!-- Name and Role -->
-          <div
-            class="absolute   top-[185px] left-[-20px] bg-black  lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
-            <h3 class="text-white lg:text-xl font-bold font-inter text-sm">JIM CARRY</h3>
-            <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs">Facial Specialist</p>
+        <div class=" relative bg-gray-100 rounded-lg 0">
+               
+              <!-- Image -->
+              <img src="assets/images/our-team/t-1.png"
+                class=" object-cover  rounded-lg mx-auto lg:w-[341px] lg:h-[410px] w-[177px] h-[213px]">
+              <!-- Name and Role -->
+              <div
+                class="absolute   top-[185px] left-[-20px] bg-black  lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
+                <h3 class="text-white lg:text-xl font-bold font-inter text-sm">JIM CARRY</h3>
+                <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs">Facial Specialist</p>
+              </div>
+           </div>
+              <!-- Team Member 2 -->
+              <div class="relative bg-gray-100 rounded-lg  ">
+                <!-- Image -->
+                <img src="assets/images/our-team/t-2.png"
+                  class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
+                <!-- Name and Role -->
+                <div
+                  class="absolute   top-[185px] left-[-20px] bg-black  lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
+                  <h3 class="text-white lg:text-xl font-bold font-inter text-sm ">MARK VICK</h3>
+                  <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs ">Hair Stylist</p>
+                </div>
+              </div>
+           <!-- Team Member 3 -->
+              <div class="relative bg-gray-100 rounded-lg   hidden lg:block r">
+                <!-- Image -->
+                <img src="assets/images/our-team/t-3.png" class="w-[341px] h-[410px] object-cover rounded-lg " />
+                <!-- Name and Role -->
+                <div
+                  class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+                  <h3 class="text-white text-xl font-bold font-inter ">LINCY MINDO</h3>
+                  <p class="text-gray-300 text-lg font-inter font-normal ">Facial Designer</p>
+                </div>
+             </div>
+              <!-- Team Member 4 -->
+              <div class="relative bg-gray-100 rounded-lg  hidden lg:block ">
+                <!-- Image -->
+                <img src="assets/images/our-team/t-4.png" class="w-[341px] h-[410px] object-cover rounded-lg  " />
+                <!-- Name and Role -->
+                <div
+                  class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
+                  <h3 class="text-white text-xl font-bold font-inter ">ELIZA RIKA</h3>
+                  <p class="text-gray-300 text-lg font-inter font-normal ">wedding Specialist</p>
+              
+              </div>
+            </div>
+           </div>
+       </div>
+     </div>
+     </section>  
+  <!-- Our Team Section responsive-->
+  <section id="team" class="lg:py-16 py-12 bg-white relative overflow-hidden lg:hidden">
+    <!-- Background Image -->
+    <div
+      class="absolute top-[38px] right-[-26px] rotate-[-80deg] w-[663px] h-[392px] hidden lg:block"
+    >
+      <img src="assets/images/gallery/g-bg.png" class="opacity-25" />
+    </div>
+    <div class="container max-w-[1390px] mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center">
+        <p
+          class="text-lg uppercase text-black font-bold font-inter flex items-center justify-center relative"
+        >
+          <i
+            class="fa-solid fa-diamond absolute mr-[183px] text-black text-[10px]"
+          ></i>
+          <span class="inline-block w-10 h-0.5 bg-black mr-2"></span>
+          Our Team
+          <span class="inline-block w-10 h-0.5 bg-black ml-2 relative"
+            ><i
+              class="fa-solid fa-diamond absolute mx-4 my-[-4px] text-black text-[10px]"
+            ></i
+          ></span>
+        </p>
+        <h2 class="text-2xl lg:text-4xl font-bold text-black font-inter mt-2">
+          Picture Perfect Moments
+        </h2>
+      </div>
+  
+      <!-- Swiper Slider for Responsive Design -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Team Member 1 -->
+          <div class="swiper-slide relative bg-gray-100 rounded-lg">
+            <img
+              src="assets/images/our-team/t-1.png"
+              class="object-cover rounded-lg mx-auto lg:w-[341px] lg:h-[410px] w-[177px] h-[213px]"
+            />
+            <div
+              class="absolute top-[270px] left-[-10px] bg-black lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[100px] h-[39px] lg:top-[350px] lg:left-[0px] lg:block"
+            >
+              <h3 class="text-white lg:text-xl font-bold font-inter text-sm">
+                JIM CARRY
+              </h3>
+              <p
+                class="text-gray-300 lg:text-lg font-inter font-normal text-xs"
+              >
+                Facial Specialist
+              </p>
+            </div>
+          </div>
+  
+          <!-- Team Member 2 -->
+          <div class="swiper-slide relative bg-gray-100 rounded-lg">
+            <img
+              src="assets/images/our-team/t-2.png"
+              class="object-cover rounded-lg mx-auto lg:w-[341px] lg:h-[410px] w-[177px] h-[213px]"
+            />
+            <div
+              class="absolute top-[270px] left-[-10px] bg-black lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[100px] h-[39px] lg:top-[350px] lg:left-[0px] lg:block"
+            >
+              <h3 class="text-white lg:text-xl font-bold font-inter text-sm">
+                MARK VICK
+              </h3>
+              <p
+                class="text-gray-300 lg:text-lg font-inter font-normal text-xs"
+              >
+                Hair Stylist
+              </p>
+            </div>
+          </div>
+  
+          <!-- Team Member 3 -->
+          <div class="swiper-slide relative bg-gray-100 rounded-lg">
+            <img
+              src="assets/images/our-team/t-3.png"
+              class="object-cover rounded-lg mx-auto lg:w-[341px] lg:h-[410px] w-[177px] h-[213px]"
+            />
+            <div
+              class="absolute top-[270px] left-[-10px] bg-black lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[100px] h-[39px] lg:top-[350px] lg:left-[0px] lg:block"
+            >
+              <h3 class="text-white lg:text-xl font-bold font-inter text-sm">
+                LINCY MINDO
+              </h3>
+              <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs">
+                Facial Designer
+              </p>
+            </div>
+          </div>
+  
+          <!-- Team Member 4 -->
+          <div class="swiper-slide relative bg-gray-100 rounded-lg">
+            <img
+              src="assets/images/our-team/t-4.png"
+              class="object-cover rounded-lg mx-auto lg:w-[341px] lg:h-[410px] w-[177px] h-[213px]"
+            />
+            <div
+              class="absolute top-[270px] left-[-10px] bg-black lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[100px] h-[39px] lg:top-[350px] lg:left-[0px] lg:block"
+            >
+              <h3 class="text-white lg:text-xl font-bold font-inter text-sm">
+                ELIZA RIKA
+              </h3>
+              <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs">
+                Wedding Specialist
+              </p>
+            </div>
           </div>
         </div>
+  
+        <!-- Pagination and Navigation -->
+       
+        <div class="swiper-button-next top-[319px] right-[100px] z-40 lg:hidden">
+          <img src="assets/images/Group.svg" alt="">
 
-        <!-- Team Member 2 -->
-        <div class="relative bg-gray-100 rounded-lg hover:scale-105 transition duration-500 ease-in-out ">
-          <!-- Image -->
-          <img src="assets/images/our-team/t-2.png"
-            class="lg:w-[341px] lg:h-[410px] w-[177px] h-[213px] object-cover rounded-lg " />
-          <!-- Name and Role -->
-          <div
-            class="absolute   top-[185px] left-[-20px] bg-black  lg:p-4 p-2 lg:w-[264px] lg:h-[71px] rounded-md text-center ml-[25px] mr-[25px] w-[147px] h-[49px] lg:top-[350px] lg:left-[0px] lg:block">
-            <h3 class="text-white lg:text-xl font-bold font-inter text-sm ">MARK VICK</h3>
-            <p class="text-gray-300 lg:text-lg font-inter font-normal text-xs ">Hair Stylist</p>
-          </div>
         </div>
+        <div class="swiper-button-prev  top-[319px] left-[100px] lg:hidden">
+          <img src="assets/images/Frame.svg" alt="">
 
-        <!-- Team Member 3 -->
-        <div class="relative bg-gray-100 rounded-lg   hidden lg:block hover:scale-105 transition duration-500 ease-in-out">
-          <!-- Image -->
-          <img src="assets/images/our-team/t-3.png" class="w-[341px] h-[410px] object-cover rounded-lg " />
-          <!-- Name and Role -->
-          <div
-            class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
-            <h3 class="text-white text-xl font-bold font-inter ">LINCY MINDO</h3>
-            <p class="text-gray-300 text-lg font-inter font-normal ">Facial Designer</p>
-          </div>
         </div>
-
-        <!-- Team Member 4 -->
-        <div class="relative bg-gray-100 rounded-lg  hidden lg:block hover:scale-105 transition duration-500 ease-in-out">
-          <!-- Image -->
-          <img src="assets/images/our-team/t-4.png" class="w-[341px] h-[410px] object-cover rounded-lg  " />
-          <!-- Name and Role -->
-          <div
-            class="absolute  bottom-[-20px] bg-black  p-4  w-[264px] h-[71px] rounded-md text-center ml-[25px] mr-[25px]">
-            <h3 class="text-white text-xl font-bold font-inter ">ELIZA RIKA</h3>
-            <p class="text-gray-300 text-lg font-inter font-normal ">wedding Specialist</p>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
+ 
   <!-- Our Team Section -->
   <!-- Testimonials -->
   <section id="testimonial" class="lg:py-16 py-12 bg-lblack text-white overflow-hidden">
@@ -1072,11 +1221,11 @@
             <img src="assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[101px] w-[101px] ">
           </div>
           <!-- Subscription Form -->
-          <div class="w-full lg:w-2/3 lg:flex lg:justify-content-end lg:items-center space-x-5 lg:space-x-0 ">
+          <div class="w-full lg:w-2/3 lg:flex lg:justify-content-end lg:items-center space-x-0 lg:space-x-0 ml-8 lg:ml-0">
             <h3 class="font-inter lg:text-2xl text-lg mr-3 font-extrabold text-center"> Subscribe Your News Letter</h3>
             <input type="email" placeholder="Enter Email"
-              class="lg:w-[450px] lg:px-4 lg:py-2 lg:h-[60px] rounded-l-md bg-white text-gray focus:outline-none w-[255px] h-[45px] mr-4" />
-            <button class="bg-dark text-white lg:px-6 lg:py-2 rounded-r-md  lg:h-[60px] text-xl font-inter h-[45px]">
+              class="lg:w-[450px] lg:px-4 lg:py-2 lg:h-[60px] rounded-l-md bg-white text-gray focus:outline-none w-[200px] h-[45px] mr-4" />
+            <button class="bg-dark text-white lg:px-6 lg:py-2 rounded-r-md  lg:h-[60px] lg:text-xl font-inter h-[45px] ">
               SEND
             </button>
           </div>
@@ -1252,6 +1401,7 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
 
   <!-- Initialize Swiper -->
   <script>
@@ -1276,7 +1426,34 @@
       },
     });
   </script>
-
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      // When screen width >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // When screen width >= 1024px
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+    },
+  });
+</script>
 
 </body>
 
