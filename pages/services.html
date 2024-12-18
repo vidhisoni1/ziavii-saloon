@@ -94,10 +94,10 @@
          </div>
         <a href="/index.html" class="block py-2 text-black hover:text-gray-400 font-inter ">Home</a>
         <a href="/pages/about.html" class="block py-2 text-black hover:text-gray-400 font-inter">About Us</a>
-        <a href="/pages/services.html" class="block py-2 text-black hover:text-gray-400 font-inter">Services</a>
+        <a href="/pages/services.html" class="block py-2 text-gray font-inter">Services</a>
         <a href="/pages/blog.html" class="block py-2 text-black hover:text-gray-400 font-inter">Blog</a>
         <a href="/pages/gallery.html" class="block py-2 text-black hover:text-gray-400 font-inter">Gallery</a>
-        <a href="/pages/contact.html" class="block py-2 text-vlack hover:text-gray-400 font-inter">Contact Us</a>
+        <a href="/pages/contact.html" class="block py-2 text-black hover:text-gray-400 font-inter">Contact Us</a>
       </div>
      
     </div>
@@ -151,14 +151,14 @@
           Our Services
           <span class="inline-block w-20 h-0.5 bg-white ml-2 relative "><i class="fa-solid fa-diamond absolute mx-10 my-[-4px]  text-white text-[10px]"></i></span>
         </h2>
-        <div class=" lg:hidden  place-items-center mt-5">
+        <div class=" md:hidden  place-items-center mt-5">
           <button class=" w-[89px] h-[39px] bg-gray text-white lg:text-2xl font-inter  rounded font-extrabold ">
             M E N
           </button>
         </div>
         </div>
       <!-- Service Content -->
-      <div class="grid lg:grid-cols-12 gap-6 pt-5">
+      <div class="grid lg:grid-cols-12 gap-6 pt-5 ">
         
         <!-- Left Column -->
         <div class="lg:col-span-6  lg:mt-0">
@@ -212,8 +212,8 @@
         </div>
         
         <!-- Right Column -->
-        <div class="lg:col-span-6 lg:place-items-end  ">
-          <div class="lg:hidden flex justify-center ">
+        <div class="lg:col-span-6 lg:place-items-end   ">
+          <div class="md:hidden flex justify-center ">
             <button class="lg:w-[91px] lg:h-[244px] w-[123px] h-[39px] bg-white text-gray lg:text-2xl font-inter  rounded font-extrabold ">
               W O M E N
             </button>
@@ -235,7 +235,7 @@
                   <p class="lg:text-lg text-sm text-white font-inter">This is the content where we will write about our hair styling services.</p>
                 </div>
               </div>
-              <div class="flex  justify-center space-x-3 lg:hidden">
+              <div class="flex  justify-center space-x-3 md:hidden">
                 <div class=" ">
                   <img src="/assets/images/Frame.svg" alt="">
         
@@ -340,23 +340,31 @@
 
       <!-- Second Column (image) -->
       <div class="col-span-6  d-flex flex-wrap mt-0  order-1 lg:order-2">
-        <div class="flex flex-wrap justify-center ">
-          <div class="lg:w-[394px] lg:h-[274px] w-[210px] h-[144px]">
-            <img src="/assets/images/serv/d-1.png"  alt="" class="w-full h-full rounded-md object-cover">
+        <div class="flex flex-wrap justify-center">
+          <!-- First Row: Image 1 -->
+          <div class="lg:w-[394px] lg:h-[274px] md:w-[300px] md:h-[210px] sm:w-[240px] sm:h-[160px] w-[210px] h-[144px] mb-4 sm:mb-6">
+            <img src="/assets/images/serv/d-1.png" alt="" class="w-full h-full rounded-md object-cover">
           </div>
-         <div class="lg:w-[248px] lg:h-[212px] w-[135px] h-[111px]">
-            <img src="/assets/images/serv/d-2.png" alt="" class="w-full h-full object-cover rounded-md ">
-          </div>
-        </div>
-       <div class="flex flex-wrap relative">
-          <div class="lg:w-[213px] lg:h-[200px] w-[123px] h-[114px] absolute top-[-20px] bottom-0 right-0 lg:left-[70px] left-[30px]">
-          <img src="/assets/images/serv/d-3.png" alt="" class="w-full h-full object-cover rounded-md ">
-          </div>
-          <div class="lg:w-[384px] lg:h-[300px] w-[206px] h-[157px] absolute lg:top-[-98px] top-[-44px] bottom-0 right-0 lg:left-[280px] left-[144px]">
-          <img src="/assets/images/serv/d-4.png" alt="" class="w-full h-full object-cover rounded-md">
+          <!-- First Row: Image 2 -->
+          <div class="lg:w-[248px] lg:h-[212px] md:w-[180px] md:h-[160px] sm:w-[150px] sm:h-[130px] w-[135px] h-[111px] mb-4 sm:mb-6">
+            <img src="/assets/images/serv/d-2.png" alt="" class="w-full h-full object-cover rounded-md">
           </div>
         </div>
-      </div>
+        
+        <!-- Second Row: Overlapping Images -->
+        <div class="flex flex-wrap relative">
+          <!-- Image 3 -->
+          <div
+            class="lg:w-[213px] lg:h-[200px] md:w-[160px] md:h-[150px] sm:w-[140px] sm:h-[120px] w-[123px] h-[114px] absolute top-[-10px] sm:top-[-27px] sm:left-[175px] md:top-[-35px] md:left-[309px] lg:top-[-24px] bottom-0 right-0 lg:left-[70px] left-[30px] ">
+            <img src="/assets/images/serv/d-3.png" alt="" class="w-full h-full object-cover rounded-md">
+          </div>
+          <!-- Image 4 -->
+          <div
+            class="lg:w-[384px] lg:h-[300px] md:w-[280px] md:h-[220 px] sm:w-[240px] sm:h-[180px] w-[206px] h-[157px] absolute lg:top-[-98px] md:top-[-70px] sm:top-[-57px] top-[-44px] bottom-0 right-0 lg:left-[280px] md:left-[468px] sm:left-[315px] left-[144px]">
+            <img src="/assets/images/serv/d-4.png" alt="" class="w-full h-full object-cover rounded-md">
+          </div>
+        </div>
+        
     </div>
   </section>
    <!-- design&cut -->
@@ -385,7 +393,7 @@
   <!-- First Column (Image) -->
   <div class="col-span-6 px-3 lg:px-0">
     
-        <img src="/assets/images/serv/o-1.png" alt="" class="lg:w-[622px] lg:h-[283px] w-[380px] h-[158px] object-cover rounded-lg ">
+        <img src="/assets/images/serv/o-1.png" alt="" class="lg:w-[622px] lg:h-[283px] w-[380px] h-[158px] md:w-[580px] md:h-[230px] sm:w-[480px] sm:h-[200px] object-cover rounded-lg ">
   </div>
 
   <!-- Second Column (Text) -->
@@ -405,7 +413,7 @@
   </div>
    <!-- fourth Column (Text) -->
   <div class="col-span-6 px-4 lg:px-0   order-1 lg:order-2">
-    <img src="/assets/images/serv/o-2.png" alt="" class="lg:w-[622px] lg:h-[283px] w-[380px] h-[158px] object-cover rounded-lg">
+    <img src="/assets/images/serv/o-2.png" alt="" class="lg:w-[622px] lg:h-[283px] w-[380px] h-[158px] md:w-[580px] md:h-[230px] sm:w-[480px] sm:h-[200px] object-cover rounded-lg">
     
   </div>
   </div>
@@ -416,97 +424,82 @@
     style="background-image: url('/assets/images/footer/bg.png');">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-90"></div>
-    <div class="absolute border-b-[1px] border-gray lg:bottom-[70%] w-[1952px] top-[50%]"></div>
-    <div class="absolute border-b border-gray lg:bottom-[30px] bottom-[20px] w-[1952px]"></div>
-
-    <div class="relative container mx-auto   lg:pt-16 pt-12 max-w-[1390px]">
-      <!-- Top Section -->
-      <div class="pb-6 ">
-        <div class="lg:flex lg:flex-wrap lg:justify-between lg:items-center">
-          <!-- Logo -->
-          <div class="w-full lg:w-auto mb-6  flex justify-center ">
-            <img src="/assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[101px] w-[101px] ">
-          </div>
-          <!-- Subscription Form -->
-          <div class="w-full lg:w-2/3 lg:flex lg:justify-content-end lg:items-center space-x-5 lg:space-x-0 ">
-            <h3 class="font-inter lg:text-2xl text-lg mr-3 font-extrabold text-center"> Subscribe Your News Letter</h3>
+    <div class="absolute border-b-[1px] border-gray w-full md:top-[50%] top-[38%] lg:top-[40%]"></div>
+    <div class="absolute border-b border-gray w-full bottom-[10%] lg:bottom-[20%]"></div>
+    <!-- Main Footer Content -->
+    <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
+      <!-- Top Section: Logo and Newsletter -->
+      <div class="lg:flex lg:justify-between lg:items-center pb-8 ">
+        <!-- Logo -->
+        <div class="flex justify-center lg:justify-start mb-6 lg:mb-0">
+          <img src="/assets/images/banner/logo.png" alt="Ziavii Logo" class="h-[60px] sm:h-[80px] lg:h-[101px]" />
+        </div>
+        <!-- Newsletter Subscription -->
+        <div class="text-center lg:text-left">
+          <h3 class="font-inter font-bold text-lg sm:text-2xl mb-4 lg:mb-0">
+            Subscribe Your News Letter
+          </h3>
+          <div class="flex justify-center lg:justify-start">
             <input type="email" placeholder="Enter Email"
-              class="lg:w-[450px] lg:px-4 lg:py-2 lg:h-[60px] rounded-l-md bg-white text-gray focus:outline-none w-[255px] h-[45px] mr-4" />
-            <button class="bg-dark text-white lg:px-6 lg:py-2 rounded-r-md  lg:h-[60px] text-xl font-inter h-[45px]">
+              class="w-[200px] sm:w-[300px] lg:w-[400px] h-[45px] sm:h-[50px] px-4 rounded-l-md bg-white text-gray-700 focus:outline-none" />
+            <button
+              class="bg-dark text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-r-md font-bold hover:bg-gray-600">
               SEND
             </button>
           </div>
         </div>
       </div>
-
-      <!-- Middle Section -->
-      <div class="py-6 ">
-        <div class=" lg:flex lg:flex-wrap text-center lg:text-left ">
-          <!-- Column 1 -->
-          <div class="lg:w-[500px] lg:h-[165px] w-[202px] h-[60px] ml-20 lg:pt-5 lg:hidden">
-          <h3 class="lg:text-5xl font-bold font-inter text-right text-xl mb-2">Download Our App</h3>
-          <div class="flex justify-center lg:justify-end space-x-4 mt-4">
-            <a href="#">
-              <img src="/assets/images/footer/go.png" class="w-[163px] h-[48px]">
+  
+      <!-- Middle Section: Features -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left py-8">
+        <!-- Column 1: See Your Style -->
+        <div>
+          <h3 class="font-inter font-bold text-lg sm:text-2xl mb-2">See Your Style</h3>
+          <p class="text-gray-300 text-sm sm:text-base mb-4">
+            We suggest the nearest salons according to your preference.
+          </p>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a href="#" class="w-[35px] h-[35px] bg-white rounded-full flex items-center justify-center">
+              <i class="fab fa-facebook-f text-black text-lg"></i>
             </a>
-            <a href="#">
-              <img src="/assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
+            <a href="#" class="w-[35px] h-[35px] bg-white rounded-full flex items-center justify-center">
+              <i class="fab fa-instagram text-black text-lg"></i>
+            </a>
+            <a href="#" class="w-[35px] h-[35px] bg-white rounded-full flex items-center justify-center">
+              <i class="fab fa-twitter text-black text-lg"></i>
+            </a>
+            <a href="#" class="w-[35px] h-[35px] bg-white rounded-full flex items-center justify-center">
+              <i class="fab fa-youtube text-black text-lg"></i>
             </a>
           </div>
         </div>
-
-          <div class="lg:w-[300px] lg:h-[165px] w-[145px] h-[68px] lg:pt-5 ">
-            <h3 class="lg:text-2xl font-inter font-bold mb-2 text-base mt-10 lg:mt-0">See Your Style</h3>
-            <p class="lg:text-xl font-inter font-normal text-xs">
-              We suggest the nearest salons  according to your preference.
-            </p>
-            <div class="flex justify-center  space-x-4 lg:mt-4 mt-6    lg:ml-[0px] hidden lg:block">
-              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
-                <i class="fab fa-facebook-f  text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
-              </a>
-              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
-                <i class="fab fa-instagram text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
-              </a>
-              <a href="#" class="text-center lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
-                <i class="fab fa-twitter text-black lg:mt-1 lg:text-lg text-sm mt-0 "></i>
-              </a>
-              <a href="#" class="text-center  lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] bg-white rounded-full p-2 ">
-                <i class="fab fa-youtube text-black lg:mt-1 lg:text-lg text-sm mb-0"></i>
-              </a>
-            </div>
+  
+        <!-- Column 2: Download Our App -->
+        <div class=" ">
+          <h3 class="font-inter font-bold text-lg sm:text-2xl mb-2">Download Our App</h3>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a href="#">
+              <img src="/assets/images/footer/go.png" alt="Google Play"
+                class="w-[130px] sm:w-[160px] md:w-[180px] h-auto" />
+            </a>
+            <a href="#">
+              <img src="/assets/images/footer/app.png" alt="App Store"
+                class="w-[130px] sm:w-[160px] md:w-[180px] h-auto" />
+            </a>
           </div>
-          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] lg:pt-5 w-[138px] h-[70px] lg:hidden mt-[-70px]">
-            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
-            <p class="lg:text-lg font-normal font-inter text-xs">
-              Go to our AI Page and let us recommend you what's the best!
-            </p>
-          </div>
-
-          <!-- Column 2 -->
-          <div class="w-[500px] h-[165px] ml-20 pt-5 hidden lg:block">
-            <h3 class="lg:text-5xl font-bold font-inter text-right mb-2">Download Our App</h3>
-            <div class="flex justify-center lg:justify-end space-x-4 mt-4">
-              <a href="#">
-                <img src="/assets/images/footer/go.png" class="w-[163px] h-[48px]">
-              </a>
-              <a href="#">
-                <img src="/assets/images/footer/app.png" alt="App Store" class="w-[163px] h-[48px]">
-              </a>
-            </div>
-          </div>
-
-          <!-- Column 3 -->
-          <div class="lg:w-[305px] lg:h-[165px] ml-[200px] pt-5 w-[138px] h-[70px] hidden lg:block">
-            <h3 class="lg:text-2xl font-bold font-inter mb-2 text-base ">AI Recognizes You</h3>
-            <p class="lg:text-lg font-normal font-inter text-xs">
-              Go to our AI Page and let us recommend you what's the best!
-            </p>
-          </div>
+        </div>
+  
+        <!-- Column 3: AI Recognizes You -->
+        <div>
+          <h3 class="font-inter font-bold text-lg sm:text-2xl mb-2">AI Recognizes You</h3>
+          <p class="text-gray-300 text-sm sm:text-base">
+            Go to our AI Page and let us recommend you what's the best!
+          </p>
         </div>
       </div>
-
-      <!-- Bottom Section -->
-      <div class=" text-center lg:text-sm  text-xs mt-10">
+  
+      <!-- Bottom Section: Copyright -->
+      <div class="text-center  text-sm">
         <p>&copy; 2023 Copyright En Marketing Private Limited</p>
       </div>
     </div>
